@@ -7,6 +7,8 @@ import pytz
 from typing import Dict, List, Any, Optional, Union
 from datetime import datetime, timedelta
 
+from src.config import DEFAULT_TIMEZONE
+
 from src.auth import get_bearer_token, AuthenticationError
 
 logger = logging.getLogger(__name__)
@@ -58,8 +60,8 @@ def convert_to_local_time(dt: datetime) -> datetime:
         # If datetime is naive, assume it's UTC
         dt = pytz.utc.localize(dt)
 
-    # Get the local timezone
-    local_tz = pytz.timezone('America/New_York')  # Default to Eastern Time
+    # Get the local timezone from config
+    local_tz = pytz.timezone(DEFAULT_TIMEZONE)
 
     # Convert to local time
     local_dt = dt.astimezone(local_tz)

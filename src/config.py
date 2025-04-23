@@ -55,6 +55,9 @@ SELENIUM_TIMEOUT = 10  # seconds
 MAX_RETRY_ATTEMPTS = 3
 RETRY_DELAY = 2  # seconds
 
+# Time zone settings
+DEFAULT_TIMEZONE = 'America/New_York'  # Eastern Time
+
 # Create a dictionary of all settings for easy access
 config: Dict[str, Any] = {
     'env': ENV,
@@ -76,5 +79,8 @@ config: Dict[str, Any] = {
         'timeout': SELENIUM_TIMEOUT,
         'max_retry_attempts': MAX_RETRY_ATTEMPTS,
         'retry_delay': RETRY_DELAY,
+    },
+    'timezone': {
+        'default': DEFAULT_TIMEZONE,
     }
 }
