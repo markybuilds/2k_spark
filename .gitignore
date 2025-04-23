@@ -35,3 +35,8 @@ env/
 cache/token.txt
 app.log
 .env
+
+# Data files
+data/raw/*.json
+data/processed/*.json
+*.json

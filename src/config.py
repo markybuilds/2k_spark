@@ -40,8 +40,13 @@ setup_logging()
 H2HGGL_BASE_URL = 'https://www.h2hggl.com'
 H2HGGL_PLAYERS_URL = f"{H2HGGL_BASE_URL}/en/ebasketball/players/"
 
-# Cache settings
+# Directory settings
 CACHE_DIR = os.path.join(PROJECT_ROOT, "cache")
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+RAW_DATA_DIR = os.path.join(DATA_DIR, "raw")
+PROCESSED_DATA_DIR = os.path.join(DATA_DIR, "processed")
+
+# Cache settings
 TOKEN_CACHE_FILE = os.path.join(CACHE_DIR, "token.txt")
 TOKEN_CACHE_DURATION = 3600  # Cache token for 1 hour (in seconds)
 
@@ -56,6 +61,9 @@ config: Dict[str, Any] = {
     'debug': DEBUG,
     'project_root': PROJECT_ROOT,
     'cache_dir': CACHE_DIR,
+    'data_dir': DATA_DIR,
+    'raw_data_dir': RAW_DATA_DIR,
+    'processed_data_dir': PROCESSED_DATA_DIR,
     'h2hggl': {
         'base_url': H2HGGL_BASE_URL,
         'players_url': H2HGGL_PLAYERS_URL,

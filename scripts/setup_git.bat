@@ -5,7 +5,7 @@ rem Initialize Git repository
 git init
 
 rem Add remote origin
-git remote add origin https://github.com/markybuilds/2K_Spark.git
+git remote add origin https://github.com/markybuilds/2k_spark.git
 
 rem Add all files to staging
 git add .
@@ -18,5 +18,3 @@ echo.
 echo To push to GitHub, run:
 echo git push -u origin main
 echo.
-echo Note: You'll need to create the repository on GitHub first at:
-echo https://github.com/markybuilds/2K_Spark
