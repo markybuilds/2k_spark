@@ -142,6 +142,13 @@ Example response for upcoming matches:
    - Upcoming matches have `fixtureStart` instead of `startDate`
    - Upcoming matches don't have score or result fields
 
+3. **Time Zone Handling**:
+   - All date/time fields from the API are in UTC (indicated by the 'Z' suffix)
+   - The project includes utility functions to convert UTC times to local time:
+     - `parse_utc_datetime()`: Parses a UTC datetime string into a timezone-aware datetime object
+     - `convert_to_local_time()`: Converts a UTC datetime to local time
+     - `format_datetime()`: Formats a datetime object as a string
+
 #### Other Endpoints
 
 Additional API endpoints will be documented as they are discovered and implemented.
@@ -186,11 +193,14 @@ for match in matches_data[:3]:  # First 3 matches
 # Fetch upcoming matches for the next 24 hours
 upcoming_matches = fetch_upcoming_matches(hours_ahead=24, tournament_id=1)
 
-# Process upcoming matches
+# Process upcoming matches with proper time zone handling
 print(f"\nUpcoming matches: {len(upcoming_matches)}")
 for match in upcoming_matches[:3]:  # First 3 upcoming matches
-    fixture_time = datetime.strptime(match['fixtureStart'], '%Y-%m-%dT%H:%M:%SZ')
-    print(f"{fixture_time.strftime('%Y-%m-%d %H:%M')}: {match['homeParticipantName']} vs {match['awayParticipantName']}")
+    # Parse UTC time and convert to local time
+    utc_dt = parse_utc_datetime(match['fixtureStart'])
+    local_dt = convert_to_local_time(utc_dt) if utc_dt else None
+    time_str = format_datetime(local_dt) if local_dt else 'Unknown time'
+    print(f"{time_str}: {match['homeParticipantName']} vs {match['awayParticipantName']}")
 
 # Fetch today's matches
 todays_matches = fetch_todays_matches(tournament_id=1)

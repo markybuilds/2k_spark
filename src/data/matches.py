@@ -3,7 +3,8 @@ Module for fetching and processing match data from h2hggl.com.
 """
 import logging
 import requests
-from typing import Dict, List, Any, Optional
+import pytz
+from typing import Dict, List, Any, Optional, Union
 from datetime import datetime, timedelta
 
 from src.auth import get_bearer_token, AuthenticationError
@@ -14,6 +15,76 @@ logger = logging.getLogger(__name__)
 class MatchDataError(Exception):
     """Exception raised for errors in the match data module."""
     pass
+
+
+def parse_utc_datetime(date_str: str) -> Union[datetime, None]:
+    """
+    Parse a UTC datetime string into a datetime object.
+
+    Args:
+        date_str: UTC datetime string in format 'YYYY-MM-DDThh:mm:ssZ'
+
+    Returns:
+        datetime object or None if parsing fails
+    """
+    if not date_str:
+        return None
+
+    try:
+        # Parse the UTC datetime string
+        dt = datetime.strptime(date_str, '%Y-%m-%dT%H:%M:%SZ')
+        # Make it timezone-aware (UTC)
+        dt = pytz.utc.localize(dt)
+        return dt
+    except ValueError as e:
+        logger.warning(f"Failed to parse datetime string '{date_str}': {e}")
+        return None
+
+
+def convert_to_local_time(dt: datetime) -> datetime:
+    """
+    Convert a UTC datetime to local time.
+
+    Args:
+        dt: UTC datetime object (timezone-aware)
+
+    Returns:
+        Local datetime object
+    """
+    if dt is None:
+        return None
+
+    if dt.tzinfo is None:
+        # If datetime is naive, assume it's UTC
+        dt = pytz.utc.localize(dt)
+
+    # Get the local timezone
+    local_tz = pytz.timezone('America/New_York')  # Default to Eastern Time
+
+    # Convert to local time
+    local_dt = dt.astimezone(local_tz)
+    return local_dt
+
+
+def format_datetime(dt: datetime, format_str: str = '%Y-%m-%d %H:%M') -> str:
+    """
+    Format a datetime object as a string.
+
+    Args:
+        dt: datetime object
+        format_str: format string (default: '%Y-%m-%d %H:%M')
+
+    Returns:
+        Formatted datetime string
+    """
+    if dt is None:
+        return 'Unknown'
+
+    try:
+        return dt.strftime(format_str)
+    except Exception as e:
+        logger.warning(f"Failed to format datetime: {e}")
+        return 'Unknown'
 
 
 def fetch_matches(
