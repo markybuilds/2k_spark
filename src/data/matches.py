@@ -21,45 +21,67 @@ def fetch_matches(
     to_date: Optional[str] = None,
     tournament_id: int = 1,
     schedule_type: str = "match",
-    force_refresh_token: bool = False
+    force_refresh_token: bool = False,
+    include_time: bool = False,
+    order_asc: bool = False
 ) -> List[Dict[str, Any]]:
     """
     Fetch match data from h2hggl.com.
-    
+
     Args:
-        from_date: Start date in format 'YYYY-MM-DD' (default: 30 days ago)
-        to_date: End date in format 'YYYY-MM-DD' (default: today)
+        from_date: Start date in format 'YYYY-MM-DD' or 'YYYY-MM-DD HH:MM' if include_time=True (default: 30 days ago)
+        to_date: End date in format 'YYYY-MM-DD' or 'YYYY-MM-DD HH:MM' if include_time=True (default: today)
         tournament_id: The tournament ID to fetch matches for (default: 1)
         schedule_type: Type of schedule to fetch ('match' for past matches, 'fixture' for upcoming matches)
         force_refresh_token: If True, force a new token retrieval.
-        
+        include_time: If True, include time in the date parameters and use 'from'/'to' instead of 'from-date'/'to-date'
+        order_asc: If True, order results in ascending order by start time (useful for upcoming matches)
+
     Returns:
         List of match data dictionaries.
-        
+
     Raises:
         MatchDataError: If there is an error fetching match data.
     """
     try:
         # Set default dates if not provided
+        now = datetime.now()
         if from_date is None:
-            from_date = (datetime.now() - timedelta(days=30)).strftime('%Y-%m-%d')
+            if include_time:
+                from_date = now.strftime('%Y-%m-%d %H:%M')
+            else:
+                from_date = (now - timedelta(days=30)).strftime('%Y-%m-%d')
+
         if to_date is None:
-            to_date = datetime.now().strftime('%Y-%m-%d')
-        
+            if include_time:
+                to_date = (now + timedelta(days=1)).strftime('%Y-%m-%d %H:%M')
+            else:
+                to_date = now.strftime('%Y-%m-%d')
+
         # Get authentication token
         token = get_bearer_token(force_refresh=force_refresh_token)
-        
+
         # API endpoint
         url = 'https://api-sis-stats.hudstats.com/v1/schedule'
-        
+
         # Query parameters
         params = {
             'schedule-type': schedule_type,
-            'from-date': from_date,
-            'to-date': to_date,
             'tournament-id': tournament_id
         }
-        
+
+        # Add date parameters based on whether time is included
+        if include_time:
+            params['from'] = from_date
+            params['to'] = to_date
+        else:
+            params['from-date'] = from_date
+            params['to-date'] = to_date
+
+        # Add order parameter if specified
+        if order_asc:
+            params['order'] = 'asc'
+
         # Headers
         headers = {
             'accept': 'application/json, text/plain, */*',
@@ -69,19 +91,19 @@ def fetch_matches(
             'referer': 'https://h2hggl.com/',
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36'
         }
-        
+
         logger.info(f"Fetching {schedule_type} data from {from_date} to {to_date} for tournament ID {tournament_id}")
         response = requests.get(url, params=params, headers=headers)
-        
+
         # Check if the request was successful
         response.raise_for_status()
-        
+
         # Parse the JSON response
         data = response.json()
         logger.info(f"Successfully retrieved {len(data)} matches")
-        
+
         return data
-        
+
     except AuthenticationError as e:
         logger.error(f"Authentication error while fetching match data: {e}")
         raise MatchDataError(f"Failed to authenticate: {e}") from e
@@ -103,34 +125,70 @@ def fetch_matches(
 
 
 def fetch_upcoming_matches(
-    days_ahead: int = 7,
+    hours_ahead: int = 24,
+    days_ahead: int = 0,
     tournament_id: int = 1,
     force_refresh_token: bool = False
 ) -> List[Dict[str, Any]]:
     """
     Fetch upcoming matches from h2hggl.com.
-    
+
     Args:
-        days_ahead: Number of days ahead to fetch matches for (default: 7)
+        hours_ahead: Number of hours ahead to fetch matches for (default: 24)
+        days_ahead: Additional number of days ahead to fetch matches for (default: 0)
         tournament_id: The tournament ID to fetch matches for (default: 1)
         force_refresh_token: If True, force a new token retrieval.
-        
+
     Returns:
         List of upcoming match data dictionaries.
-        
+
     Raises:
         MatchDataError: If there is an error fetching match data.
     """
-    today = datetime.now()
-    from_date = today.strftime('%Y-%m-%d')
-    to_date = (today + timedelta(days=days_ahead)).strftime('%Y-%m-%d')
-    
+    now = datetime.now()
+    from_datetime = now.strftime('%Y-%m-%d %H:%M')
+    to_datetime = (now + timedelta(days=days_ahead, hours=hours_ahead)).strftime('%Y-%m-%d %H:%M')
+
     return fetch_matches(
-        from_date=from_date,
-        to_date=to_date,
+        from_date=from_datetime,
+        to_date=to_datetime,
         tournament_id=tournament_id,
         schedule_type='fixture',
-        force_refresh_token=force_refresh_token
+        force_refresh_token=force_refresh_token,
+        include_time=True,
+        order_asc=True
+    )
+
+
+def fetch_todays_matches(
+    tournament_id: int = 1,
+    force_refresh_token: bool = False
+) -> List[Dict[str, Any]]:
+    """
+    Fetch today's matches from h2hggl.com.
+
+    Args:
+        tournament_id: The tournament ID to fetch matches for (default: 1)
+        force_refresh_token: If True, force a new token retrieval.
+
+    Returns:
+        List of today's match data dictionaries.
+
+    Raises:
+        MatchDataError: If there is an error fetching match data.
+    """
+    now = datetime.now()
+    today_start = now.replace(hour=0, minute=0, second=0, microsecond=0).strftime('%Y-%m-%d %H:%M')
+    today_end = now.replace(hour=23, minute=59, second=59, microsecond=999999).strftime('%Y-%m-%d %H:%M')
+
+    return fetch_matches(
+        from_date=today_start,
+        to_date=today_end,
+        tournament_id=tournament_id,
+        schedule_type='fixture',
+        force_refresh_token=force_refresh_token,
+        include_time=True,
+        order_asc=True
     )
 
 
@@ -142,23 +200,23 @@ def fetch_player_match_history(
 ) -> List[Dict[str, Any]]:
     """
     Fetch match history for a specific player.
-    
+
     Args:
         player_id: The player ID to fetch match history for
         days_back: Number of days back to fetch matches for (default: 90)
         tournament_id: The tournament ID to fetch matches for (default: 1)
         force_refresh_token: If True, force a new token retrieval.
-        
+
     Returns:
         List of match data dictionaries for the player.
-        
+
     Raises:
         MatchDataError: If there is an error fetching match data.
     """
     today = datetime.now()
     from_date = (today - timedelta(days=days_back)).strftime('%Y-%m-%d')
     to_date = today.strftime('%Y-%m-%d')
-    
+
     try:
         # Fetch all matches for the period
         matches = fetch_matches(
@@ -168,16 +226,16 @@ def fetch_player_match_history(
             schedule_type='match',
             force_refresh_token=force_refresh_token
         )
-        
+
         # Filter matches for the specific player
         player_matches = [
             match for match in matches
             if match.get('homeParticipantId') == player_id or match.get('awayParticipantId') == player_id
         ]
-        
+
         logger.info(f"Found {len(player_matches)} matches for player ID {player_id}")
         return player_matches
-        
+
     except Exception as e:
         logger.error(f"Error fetching match history for player ID {player_id}: {e}")
         raise MatchDataError(f"Error fetching match history: {e}") from e
@@ -192,24 +250,24 @@ def get_head_to_head_matches(
 ) -> List[Dict[str, Any]]:
     """
     Fetch head-to-head matches between two players.
-    
+
     Args:
         player1_id: The first player ID
         player2_id: The second player ID
         days_back: Number of days back to fetch matches for (default: 365)
         tournament_id: The tournament ID to fetch matches for (default: 1)
         force_refresh_token: If True, force a new token retrieval.
-        
+
     Returns:
         List of head-to-head match data dictionaries.
-        
+
     Raises:
         MatchDataError: If there is an error fetching match data.
     """
     today = datetime.now()
     from_date = (today - timedelta(days=days_back)).strftime('%Y-%m-%d')
     to_date = today.strftime('%Y-%m-%d')
-    
+
     try:
         # Fetch all matches for the period
         matches = fetch_matches(
@@ -219,17 +277,17 @@ def get_head_to_head_matches(
             schedule_type='match',
             force_refresh_token=force_refresh_token
         )
-        
+
         # Filter matches for head-to-head between the two players
         h2h_matches = [
             match for match in matches
             if (match.get('homeParticipantId') == player1_id and match.get('awayParticipantId') == player2_id) or
                (match.get('homeParticipantId') == player2_id and match.get('awayParticipantId') == player1_id)
         ]
-        
+
         logger.info(f"Found {len(h2h_matches)} head-to-head matches between player IDs {player1_id} and {player2_id}")
         return h2h_matches
-        
+
     except Exception as e:
         logger.error(f"Error fetching head-to-head matches between player IDs {player1_id} and {player2_id}: {e}")
         raise MatchDataError(f"Error fetching head-to-head matches: {e}") from e
@@ -238,20 +296,20 @@ def get_head_to_head_matches(
 def calculate_player_win_rate(matches: List[Dict[str, Any]], player_id: int) -> float:
     """
     Calculate the win rate for a player based on their match history.
-    
+
     Args:
         matches: List of match data dictionaries
         player_id: The player ID to calculate win rate for
-        
+
     Returns:
         Win rate as a percentage (0-100)
     """
     if not matches:
         return 0.0
-    
+
     wins = 0
     total_matches = 0
-    
+
     for match in matches:
         if match.get('homeParticipantId') == player_id:
             # Player was home
@@ -263,30 +321,30 @@ def calculate_player_win_rate(matches: List[Dict[str, Any]], player_id: int) -> 
             if match.get('result') == 'away_win':
                 wins += 1
             total_matches += 1
-    
+
     if total_matches == 0:
         return 0.0
-    
+
     return (wins / total_matches) * 100
 
 
 def calculate_player_average_score(matches: List[Dict[str, Any]], player_id: int) -> float:
     """
     Calculate the average score for a player based on their match history.
-    
+
     Args:
         matches: List of match data dictionaries
         player_id: The player ID to calculate average score for
-        
+
     Returns:
         Average score
     """
     if not matches:
         return 0.0
-    
+
     total_score = 0
     total_matches = 0
-    
+
     for match in matches:
         if match.get('homeParticipantId') == player_id:
             # Player was home
@@ -296,22 +354,22 @@ def calculate_player_average_score(matches: List[Dict[str, Any]], player_id: int
             # Player was away
             total_score += match.get('awayScore', 0)
             total_matches += 1
-    
+
     if total_matches == 0:
         return 0.0
-    
+
     return total_score / total_matches
 
 
 def get_player_form(matches: List[Dict[str, Any]], player_id: int, num_matches: int = 5) -> List[str]:
     """
     Get the recent form of a player based on their match history.
-    
+
     Args:
         matches: List of match data dictionaries
         player_id: The player ID to get form for
         num_matches: Number of recent matches to consider (default: 5)
-        
+
     Returns:
         List of results ('win', 'loss', 'draw')
     """
@@ -320,13 +378,13 @@ def get_player_form(matches: List[Dict[str, Any]], player_id: int, num_matches: 
         match for match in matches
         if match.get('homeParticipantId') == player_id or match.get('awayParticipantId') == player_id
     ]
-    
+
     # Sort matches by date (most recent first)
     player_matches.sort(key=lambda x: x.get('startDate', ''), reverse=True)
-    
+
     # Get the most recent matches
     recent_matches = player_matches[:num_matches]
-    
+
     # Determine results
     form = []
     for match in recent_matches:
@@ -346,5 +404,106 @@ def get_player_form(matches: List[Dict[str, Any]], player_id: int, num_matches: 
                 form.append('loss')
             else:
                 form.append('draw')
-    
+
     return form
+
+
+def fetch_player_upcoming_matches(
+    player_id: int,
+    hours_ahead: int = 24,
+    days_ahead: int = 0,
+    tournament_id: int = 1,
+    force_refresh_token: bool = False
+) -> List[Dict[str, Any]]:
+    """
+    Fetch upcoming matches for a specific player.
+
+    Args:
+        player_id: The player ID to fetch upcoming matches for
+        hours_ahead: Number of hours ahead to fetch matches for (default: 24)
+        days_ahead: Additional number of days ahead to fetch matches for (default: 0)
+        tournament_id: The tournament ID to fetch matches for (default: 1)
+        force_refresh_token: If True, force a new token retrieval.
+
+    Returns:
+        List of upcoming match data dictionaries for the player.
+
+    Raises:
+        MatchDataError: If there is an error fetching match data.
+    """
+    try:
+        # Fetch all upcoming matches
+        upcoming_matches = fetch_upcoming_matches(
+            hours_ahead=hours_ahead,
+            days_ahead=days_ahead,
+            tournament_id=tournament_id,
+            force_refresh_token=force_refresh_token
+        )
+
+        # Filter matches for the specific player
+        player_matches = [
+            match for match in upcoming_matches
+            if match.get('homeParticipantId') == player_id or match.get('awayParticipantId') == player_id
+        ]
+
+        logger.info(f"Found {len(player_matches)} upcoming matches for player ID {player_id}")
+        return player_matches
+
+    except Exception as e:
+        logger.error(f"Error fetching upcoming matches for player ID {player_id}: {e}")
+        raise MatchDataError(f"Error fetching upcoming matches: {e}") from e
+
+
+def get_player_matches_for_date(
+    player_id: int,
+    date: Optional[datetime] = None,
+    tournament_id: int = 1,
+    force_refresh_token: bool = False
+) -> List[Dict[str, Any]]:
+    """
+    Get matches for a specific player on a specific date.
+
+    Args:
+        player_id: The player ID to fetch matches for
+        date: The date to fetch matches for (default: today)
+        tournament_id: The tournament ID to fetch matches for (default: 1)
+        force_refresh_token: If True, force a new token retrieval.
+
+    Returns:
+        List of match data dictionaries for the player on the specified date.
+
+    Raises:
+        MatchDataError: If there is an error fetching match data.
+    """
+    try:
+        # Set default date if not provided
+        if date is None:
+            date = datetime.now()
+
+        # Format date range for the entire day
+        date_start = date.replace(hour=0, minute=0, second=0, microsecond=0).strftime('%Y-%m-%d %H:%M')
+        date_end = date.replace(hour=23, minute=59, second=59, microsecond=999999).strftime('%Y-%m-%d %H:%M')
+
+        # Fetch matches for the date
+        matches = fetch_matches(
+            from_date=date_start,
+            to_date=date_end,
+            tournament_id=tournament_id,
+            schedule_type='fixture',  # Use fixture to get scheduled matches
+            force_refresh_token=force_refresh_token,
+            include_time=True,
+            order_asc=True
+        )
+
+        # Filter matches for the specific player
+        player_matches = [
+            match for match in matches
+            if match.get('homeParticipantId') == player_id or match.get('awayParticipantId') == player_id
+        ]
+
+        logger.info(f"Found {len(player_matches)} matches for player ID {player_id} on {date.strftime('%Y-%m-%d')}")
+        return player_matches
+
+    except Exception as e:
+        logger.error(f"Error fetching matches for player ID {player_id} on {date.strftime('%Y-%m-%d')}: {e}")
+        raise MatchDataError(f"Error fetching matches for date: {e}") from e

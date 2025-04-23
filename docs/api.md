@@ -46,10 +46,12 @@ Example response:
 
 #### Match Schedule
 
+##### Past Matches
+
 - **URL**: `https://api-sis-stats.hudstats.com/v1/schedule`
 - **Method**: GET
 - **Query Parameters**:
-  - `schedule-type`: Type of schedule to fetch (`match` for past matches, `fixture` for upcoming matches)
+  - `schedule-type`: `match` (for past matches)
   - `from-date`: Start date in format 'YYYY-MM-DD'
   - `to-date`: End date in format 'YYYY-MM-DD'
   - `tournament-id`: The tournament ID (default: 1)
@@ -59,7 +61,7 @@ Example response:
   - `referer`: https://h2hggl.com/
 - **Response**: Array of match data
 
-Example response:
+Example response for past matches:
 ```json
 [
   {
@@ -79,6 +81,66 @@ Example response:
   ...
 ]
 ```
+
+##### Upcoming Matches
+
+- **URL**: `https://api-sis-stats.hudstats.com/v1/schedule`
+- **Method**: GET
+- **Query Parameters**:
+  - `schedule-type`: `fixture` (for upcoming matches)
+  - `from`: Start date and time in format 'YYYY-MM-DD HH:MM'
+  - `to`: End date and time in format 'YYYY-MM-DD HH:MM'
+  - `order`: `asc` (to sort by start time)
+  - `tournament-id`: The tournament ID (default: 1)
+- **Headers**:
+  - `authorization`: Bearer token
+  - `origin`: https://h2hggl.com
+  - `referer`: https://h2hggl.com/
+- **Response**: Array of upcoming match data
+
+Example response for upcoming matches:
+```json
+[
+  {
+    "sport": "NBA",
+    "avaStreamId": "sis-nba-3",
+    "awayParticipantId": 957,
+    "tournamentName": "Ebasketball H2H GG League",
+    "homeParticipantExternalId": "1078",
+    "fixtureStart": "2025-04-23T09:55:00Z",
+    "homeTeamId": 20,
+    "awayTeamName": "Minnesota Timberwolves",
+    "homeParticipantId": 105,
+    "homeTeamLogo": "teams/NYK.png",
+    "homeTeamName": "New York Knicks",
+    "awayParticipantLogo": "participants/EXO.png",
+    "homeParticipantName": "KJMR",
+    "awayTeamAbbreviation": "MIN",
+    "tournamentId": 1,
+    "fixtureId": 206252,
+    "awayParticipantName": "EXO",
+    "awayParticipantExternalId": "4286",
+    "homeTeamAbbreviation": "NYK",
+    "awayTeamId": 18,
+    "awayTeamLogo": "teams/MT.png",
+    "streamName": "Ebasketball 3",
+    "homeParticipantLogo": "participants/KJMR.png"
+  },
+  ...
+]
+```
+
+**Key Differences Between Past and Upcoming Matches:**
+
+1. **API Parameters**:
+   - Past matches use `from-date` and `to-date` with date only
+   - Upcoming matches use `from` and `to` with date and time
+   - Upcoming matches use `order=asc` to sort by start time
+
+2. **Response Fields**:
+   - Past matches have `startDate`, `homeScore`, `awayScore`, and `result`
+   - Upcoming matches have `fixtureStart` instead of `startDate`
+   - Upcoming matches don't have score or result fields
 
 #### Other Endpoints
 
@@ -121,13 +183,24 @@ print(f"\nRecent matches: {len(matches_data)}")
 for match in matches_data[:3]:  # First 3 matches
     print(f"{match['homeParticipantName']} {match['homeScore']} - {match['awayScore']} {match['awayParticipantName']}")
 
-# Fetch upcoming matches
-upcoming_matches = fetch_upcoming_matches(days_ahead=7, tournament_id=1)
+# Fetch upcoming matches for the next 24 hours
+upcoming_matches = fetch_upcoming_matches(hours_ahead=24, tournament_id=1)
 
 # Process upcoming matches
 print(f"\nUpcoming matches: {len(upcoming_matches)}")
 for match in upcoming_matches[:3]:  # First 3 upcoming matches
-    print(f"{match['homeParticipantName']} vs {match['awayParticipantName']}")
+    fixture_time = datetime.strptime(match['fixtureStart'], '%Y-%m-%dT%H:%M:%SZ')
+    print(f"{fixture_time.strftime('%Y-%m-%d %H:%M')}: {match['homeParticipantName']} vs {match['awayParticipantName']}")
+
+# Fetch today's matches
+todays_matches = fetch_todays_matches(tournament_id=1)
+print(f"\nToday's matches: {len(todays_matches)}")
+
+# Fetch upcoming matches for a specific player
+player = get_player_by_name(standings_data, "HOGGY")
+if player:
+    player_matches = fetch_player_upcoming_matches(player['participantId'], hours_ahead=48)
+    print(f"\nUpcoming matches for {player['participantName']}: {len(player_matches)}")
 ```
 
 ## Error Handling
