@@ -18,7 +18,9 @@ from src.data.matches import (
     get_player_matches_for_date,
     parse_utc_datetime,
     convert_to_local_time,
-    format_datetime
+    format_datetime,
+    format_date_for_display,
+    format_time_for_display
 )
 from src.data.standings import (
     fetch_standings,
@@ -63,8 +65,8 @@ def display_upcoming_matches(matches_data, limit=10):
         date_str = match.get('fixtureStart', '')
         utc_dt = parse_utc_datetime(date_str)
         local_dt = convert_to_local_time(utc_dt) if utc_dt else None
-        date_formatted = format_datetime(local_dt, '%Y-%m-%d') if local_dt else 'Unknown'
-        time_formatted = format_datetime(local_dt, '%H:%M') if local_dt else 'Unknown'
+        date_formatted = format_date_for_display(local_dt) if local_dt else 'Unknown'
+        time_formatted = format_time_for_display(local_dt, use_12h=True) if local_dt else 'Unknown'
 
         # Format teams
         teams = f"{match.get('homeTeamName', 'Unknown')} vs {match.get('awayTeamName', 'Unknown')}"
@@ -112,8 +114,8 @@ def display_player_upcoming_matches(player_name, standings_data):
         date_str = match.get('fixtureStart', '')
         utc_dt = parse_utc_datetime(date_str)
         local_dt = convert_to_local_time(utc_dt) if utc_dt else None
-        date_formatted = format_datetime(local_dt, '%Y-%m-%d') if local_dt else 'Unknown'
-        time_formatted = format_datetime(local_dt, '%H:%M') if local_dt else 'Unknown'
+        date_formatted = format_date_for_display(local_dt) if local_dt else 'Unknown'
+        time_formatted = format_time_for_display(local_dt, use_12h=True) if local_dt else 'Unknown'
 
         # Determine opponent and home/away status
         if match.get('homeParticipantId') == player_id:
@@ -145,8 +147,12 @@ def display_todays_matches():
     # Get today's matches
     todays_matches = fetch_todays_matches()
 
+    # Get current date in the official format
+    now = datetime.now()
+    today_formatted = format_date_for_display(now)
+
     # Display today's matches
-    print(f"\nToday's Matches ({datetime.now().strftime('%Y-%m-%d')}):")
+    print(f"\nToday's Matches ({today_formatted}):")
 
     if not todays_matches:
         print("No matches scheduled for today.")
@@ -191,11 +197,15 @@ def main():
         tomorrow = datetime.now() + timedelta(days=1)
         player = get_player_by_name(standings_data, 'SPARKZ')
         if player:
-            logger.info(f"Fetching matches for SPARKZ on {tomorrow.strftime('%Y-%m-%d')}...")
+            # Format tomorrow's date in the official format for logging
+            tomorrow_date = tomorrow.strftime('%Y-%m-%d')
+            logger.info(f"Fetching matches for SPARKZ on {tomorrow_date}...")
             tomorrow_matches = get_player_matches_for_date(player.get('participantId'), date=tomorrow)
 
             if tomorrow_matches:
-                print(f"\nMatches for SPARKZ on {tomorrow.strftime('%Y-%m-%d')}:")
+                # Format tomorrow's date in the official format
+                tomorrow_formatted = format_date_for_display(tomorrow)
+                print(f"\nMatches for SPARKZ on {tomorrow_formatted}:")
                 # Prepare data for tabulate
                 headers = ['Time', 'Opponent', 'Home/Away', 'Teams']
                 table_data = []
@@ -205,7 +215,7 @@ def main():
                     date_str = match.get('fixtureStart', '')
                     utc_dt = parse_utc_datetime(date_str)
                     local_dt = convert_to_local_time(utc_dt) if utc_dt else None
-                    time_formatted = format_datetime(local_dt, '%H:%M') if local_dt else 'Unknown'
+                    time_formatted = format_time_for_display(local_dt, use_12h=True) if local_dt else 'Unknown'
 
                     # Determine opponent and home/away status
                     if match.get('homeParticipantId') == player.get('participantId'):
@@ -230,7 +240,9 @@ def main():
                 # Display the table
                 print(tabulate(table_data, headers=headers, tablefmt='grid'))
             else:
-                print(f"\nNo matches found for SPARKZ on {tomorrow.strftime('%Y-%m-%d')}")
+                # Format tomorrow's date in the official format
+                tomorrow_formatted = format_date_for_display(tomorrow)
+                print(f"\nNo matches found for SPARKZ on {tomorrow_formatted}")
 
     except Exception as e:
         logger.error(f"Error: {e}")

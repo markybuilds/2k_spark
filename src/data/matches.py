@@ -66,13 +66,14 @@ def convert_to_local_time(dt: datetime) -> datetime:
     return local_dt
 
 
-def format_datetime(dt: datetime, format_str: str = '%Y-%m-%d %H:%M') -> str:
+def format_datetime(dt: datetime, format_str: str = '%Y-%m-%d %H:%M', use_12h: bool = False) -> str:
     """
     Format a datetime object as a string.
 
     Args:
         dt: datetime object
         format_str: format string (default: '%Y-%m-%d %H:%M')
+        use_12h: If True, use 12-hour format with AM/PM
 
     Returns:
         Formatted datetime string
@@ -81,9 +82,63 @@ def format_datetime(dt: datetime, format_str: str = '%Y-%m-%d %H:%M') -> str:
         return 'Unknown'
 
     try:
-        return dt.strftime(format_str)
+        if use_12h:
+            # Use 12-hour format with AM/PM
+            if format_str == '%Y-%m-%d %H:%M':
+                # Default format, convert to 12-hour with AM/PM
+                return dt.strftime('%Y-%m-%d %I:%M %p')
+            else:
+                # Custom format, use as is
+                return dt.strftime(format_str)
+        else:
+            # Use the specified format
+            return dt.strftime(format_str)
     except Exception as e:
         logger.warning(f"Failed to format datetime: {e}")
+        return 'Unknown'
+
+
+def format_date_for_display(dt: datetime) -> str:
+    """
+    Format a date for display in the official schedule format.
+
+    Args:
+        dt: datetime object
+
+    Returns:
+        Formatted date string (e.g., 'Wed, Apr 23, 2025')
+    """
+    if dt is None:
+        return 'Unknown'
+
+    try:
+        return dt.strftime('%a, %b %d, %Y')
+    except Exception as e:
+        logger.warning(f"Failed to format date for display: {e}")
+        return 'Unknown'
+
+
+def format_time_for_display(dt: datetime, use_12h: bool = True) -> str:
+    """
+    Format a time for display in the official schedule format.
+
+    Args:
+        dt: datetime object
+        use_12h: If True, use 12-hour format with AM/PM
+
+    Returns:
+        Formatted time string (e.g., '06:11 AM' or '06:11')
+    """
+    if dt is None:
+        return 'Unknown'
+
+    try:
+        if use_12h:
+            return dt.strftime('%I:%M %p')  # 12-hour format with AM/PM
+        else:
+            return dt.strftime('%H:%M')  # 24-hour format
+    except Exception as e:
+        logger.warning(f"Failed to format time for display: {e}")
         return 'Unknown'
 
 
