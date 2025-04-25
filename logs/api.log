@@ -183,3 +183,24 @@
 2025-04-25 13:21:55,613 - api - INFO - get_prediction_history executed in 0.01 seconds
 2025-04-25 13:22:01,678 - api - INFO - get_stats executed in 0.01 seconds
 2025-04-25 13:22:01,727 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 13:23:59,715 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:23:59,720 - api - INFO - Returning 30 matches
+2025-04-25 13:23:59,722 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-25 13:24:03,284 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:24:03,286 - api - INFO - Returning 30 matches
+2025-04-25 13:24:03,291 - api - INFO - get_upcoming_matches executed in 0.01 seconds
+2025-04-25 13:24:03,588 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:24:03,589 - api - INFO - Returning 30 matches
+2025-04-25 13:24:03,590 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 13:24:05,888 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:24:05,888 - api - INFO - Returning 30 matches
+2025-04-25 13:24:05,889 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:24:05,944 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:24:05,944 - api - INFO - Returning 30 matches
+2025-04-25 13:24:05,945 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:24:57,110 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:24:57,112 - api - INFO - Returning 30 matches
+2025-04-25 13:24:57,116 - api - INFO - get_upcoming_matches executed in 0.01 seconds
+2025-04-25 13:25:20,506 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:25:20,507 - api - INFO - Returning 30 matches
+2025-04-25 13:25:20,507 - api - INFO - get_upcoming_matches executed in 0.00 seconds

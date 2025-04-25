@@ -45,7 +45,7 @@ export function MatchList() {
   return (
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {upcomingMatches.map((match) => (
-        <MatchCard key={match.fixtureId} match={match} />
+        <MatchCard key={match.id || `${match.homePlayer?.id}-${match.awayPlayer?.id}-${match.fixtureStart}`} match={match} />
       ))}
     </div>
   );
