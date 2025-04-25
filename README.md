@@ -1,15 +1,17 @@
 # 2K Flash - NBA 2K25 eSports Match Prediction System
 
-2K Flash is a comprehensive prediction system for NBA 2K25 eSports matches in the H2H GG League. The system collects data from the H2H GG League API, processes player statistics, and uses machine learning models to predict match winners and scores.
+2K Flash is a comprehensive prediction system for NBA 2K25 eSports matches in the H2H GG League. The system collects real data from the H2H GG League API, processes player statistics, and uses advanced machine learning models to predict match winners and scores with high accuracy.
 
 ## Features
 
-- Data collection from H2H GG League API
-- Comprehensive player statistics calculation
-- Machine learning models for winner and score predictions
+- Real-time data collection from H2H GG League API
+- Comprehensive player statistics calculation with advanced metrics
+- Machine learning models with Bayesian optimization for accurate predictions
+- Cross-validated winner prediction model with feature selection
+- Score prediction model with low MAE (Mean Absolute Error)
 - RESTful API for frontend-backend communication
-- Modern Next.js frontend with Shadcn UI components
-- Automated model training and optimization
+- Modern Next.js frontend with Shadcn UI components in dark mode
+- Automated model training, validation, and optimization
 
 ## Project Structure
 
@@ -17,12 +19,21 @@
 2k_spark/
 ├── backend/                   # Backend code
 │   ├── app/                   # Application entry points
+│   │   ├── api.py             # API server implementation
+│   │   ├── cli.py             # Command-line interface
+│   │   ├── optimize_score_model.py  # Score model optimization
+│   │   ├── optimize_winner_model.py # Winner model optimization
+│   │   └── clean_model_registry.py  # Model registry maintenance
 │   ├── config/                # Configuration management
 │   ├── core/                  # Core business logic
 │   │   ├── data/              # Data access and processing
 │   │   ├── models/            # Prediction models
+│   │   │   ├── base.py        # Base model class
+│   │   │   ├── winner_prediction.py # Winner prediction model
+│   │   │   ├── score_prediction.py  # Score prediction model
+│   │   │   ├── registry.py    # Model registry
+│   │   │   └── feature_engineering.py # Feature engineering
 │   │   └── optimization/      # Model optimization
-│   ├── api/                   # API endpoints
 │   ├── services/              # Service layer
 │   ├── utils/                 # Utility functions
 │   └── tests/                 # Tests
@@ -62,16 +73,26 @@
 
 ### CLI Usage
 
-The CLI provides various commands for data fetching, model training, and more:
+The CLI provides various commands for data fetching, model training, optimization, and maintenance:
 
 ```
+# Data Collection
 python app/cli.py fetch-token        # Fetch authentication token
 python app/cli.py fetch-history      # Fetch match history
 python app/cli.py fetch-upcoming     # Fetch upcoming matches
 python app/cli.py calculate-stats    # Calculate player statistics
+
+# Model Training
 python app/cli.py train-winner-model # Train winner prediction model
 python app/cli.py train-score-model  # Train score prediction model
 python app/cli.py list-models        # List trained models
+
+# Model Optimization
+python app/cli.py optimize-score-model    # Optimize score prediction model with Bayesian optimization
+python app/cli.py optimize-winner-model   # Optimize winner prediction model with Bayesian optimization
+
+# Model Maintenance
+python app/cli.py clean-model-registry    # Clean model registry by removing problematic models
 ```
 
 ### Frontend Setup

@@ -70,7 +70,10 @@
 backend/
 ├── app/                      # Application entry points
 │   ├── api.py                # API server
-│   └── cli.py                # Command-line interface
+│   ├── cli.py                # Command-line interface
+│   ├── optimize_score_model.py  # Score model optimization
+│   ├── optimize_winner_model.py # Winner model optimization
+│   └── clean_model_registry.py  # Model registry maintenance
 ├── config/                   # Configuration management
 │   ├── settings.py           # Application settings
 │   └── logging_config.py     # Logging configuration
@@ -83,12 +86,10 @@ backend/
 │   │   ├── base.py           # Base model class
 │   │   ├── winner_prediction.py # Winner prediction model
 │   │   ├── score_prediction.py # Score prediction model
-│   │   └── registry.py       # Model registry
+│   │   ├── registry.py       # Model registry
+│   │   └── feature_engineering.py # Feature engineering
 │   └── optimization/         # Model optimization
-├── api/                      # API endpoints
-│   ├── routes/               # API route definitions
-│   ├── middleware/           # API middleware
-│   └── schemas/              # API request/response schemas
+│       └── bayesian_optimizer.py # Bayesian optimization
 ├── services/                 # Service layer
 ├── utils/                    # Utility functions
 └── tests/                    # Tests
