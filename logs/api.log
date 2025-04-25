@@ -416,3 +416,41 @@
 2025-04-25 13:50:09,814 - api - INFO - get_stats executed in 0.00 seconds
 2025-04-25 13:50:10,129 - api - INFO - get_stats executed in 0.00 seconds
 2025-04-25 13:50:11,688 - api - INFO - refresh_data executed in 0.00 seconds
+2025-04-25 13:50:58,027 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:50:58,030 - api - INFO - Returning 30 matches
+2025-04-25 13:50:58,032 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-25 13:50:58,328 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:50:58,328 - api - INFO - Returning 30 matches
+2025-04-25 13:50:58,329 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:51:42,261 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:51:42,262 - api - INFO - Returning 30 matches
+2025-04-25 13:51:42,263 - api - INFO - Retrieved score model accuracy: 4.075830549721303
+2025-04-25 13:51:42,265 - api - INFO - get_score_predictions executed in 0.00 seconds
+2025-04-25 13:51:42,317 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:51:42,317 - api - INFO - Returning 30 matches
+2025-04-25 13:51:42,318 - api - INFO - Retrieved score model accuracy: 4.075830549721303
+2025-04-25 13:51:42,319 - api - INFO - get_score_predictions executed in 0.00 seconds
+2025-04-25 14:18:14,149 - api - INFO - Starting scheduled prediction refresh
+2025-04-25 14:18:14,149 - api - INFO - Scheduled prediction refresh completed
+2025-04-25 15:18:14,151 - api - INFO - Starting scheduled prediction refresh
+2025-04-25 15:18:14,152 - api - INFO - Scheduled prediction refresh completed
+2025-04-25 16:18:14,155 - api - INFO - Starting scheduled prediction refresh
+2025-04-25 16:18:14,156 - api - INFO - Scheduled prediction refresh completed
+2025-04-25 17:18:14,159 - api - INFO - Starting scheduled prediction refresh
+2025-04-25 17:18:14,160 - api - INFO - Scheduled prediction refresh completed
+2025-04-25 17:28:13,172 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 17:28:13,175 - api - INFO - Returning 30 matches
+2025-04-25 17:28:13,179 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-25 17:28:13,229 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 17:28:13,229 - api - INFO - Returning 30 matches
+2025-04-25 17:28:13,230 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 17:28:20,130 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 17:28:20,135 - api - INFO - Returning 30 matches
+2025-04-25 17:28:20,140 - api - INFO - Retrieved score model accuracy: 4.075830549721303
+2025-04-25 17:28:20,143 - api - INFO - get_score_predictions executed in 0.02 seconds
+2025-04-25 17:28:20,378 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 17:28:20,379 - api - INFO - Returning 30 matches
+2025-04-25 17:28:20,385 - api - INFO - Retrieved score model accuracy: 4.075830549721303
+2025-04-25 17:28:20,389 - api - INFO - get_score_predictions executed in 0.01 seconds
+2025-04-25 18:18:14,163 - api - INFO - Starting scheduled prediction refresh
+2025-04-25 18:18:14,165 - api - INFO - Scheduled prediction refresh completed

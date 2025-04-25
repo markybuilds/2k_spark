@@ -16,3 +16,383 @@
 2025-04-25 12:55:51,542 - score_model_training - ERROR - Exception in predict: Pipeline is not fitted yet.
 2025-04-25 12:57:25,311 - score_model_training - ERROR - Exception in predict: Pipeline is not fitted yet.
 2025-04-25 13:28:31,501 - score_model_training - ERROR - Exception in predict: Pipeline is not fitted yet.
+2025-04-25 13:51:09,604 - score_model_training - ERROR - Exception in predict: Pipeline is not fitted yet.
+2025-04-25 14:05:28,589 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:05:28,677 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:05:28,680 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:05:40,885 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:06:01,279 - score_model_training - INFO - Evaluating models
+2025-04-25 14:06:01,373 - score_model_training - INFO - Models trained with total score MAE: 9.8152
+2025-04-25 14:06:01,374 - score_model_training - INFO - train executed in 32.79 seconds
+2025-04-25 14:06:01,381 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:06:01,504 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:06:01,506 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:06:22,631 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:06:45,045 - score_model_training - INFO - Evaluating models
+2025-04-25 14:06:45,171 - score_model_training - INFO - Models trained with total score MAE: 9.7871
+2025-04-25 14:06:45,172 - score_model_training - INFO - train executed in 43.79 seconds
+2025-04-25 14:06:45,192 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:06:45,290 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:06:45,292 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:07:13,355 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:07:20,633 - score_model_training - INFO - Evaluating models
+2025-04-25 14:07:20,710 - score_model_training - INFO - Models trained with total score MAE: 9.8160
+2025-04-25 14:07:20,710 - score_model_training - INFO - train executed in 35.52 seconds
+2025-04-25 14:07:20,723 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:07:20,874 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:07:20,877 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:08:12,788 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:08:39,872 - score_model_training - INFO - Evaluating models
+2025-04-25 14:08:40,038 - score_model_training - INFO - Models trained with total score MAE: 9.8508
+2025-04-25 14:08:40,038 - score_model_training - INFO - train executed in 79.31 seconds
+2025-04-25 14:08:40,057 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:08:40,172 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:08:40,175 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:09:00,557 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:09:14,313 - score_model_training - INFO - Evaluating models
+2025-04-25 14:09:14,420 - score_model_training - INFO - Models trained with total score MAE: 9.8238
+2025-04-25 14:09:14,421 - score_model_training - INFO - train executed in 34.36 seconds
+2025-04-25 14:09:14,432 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:09:14,547 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:09:14,550 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:09:18,659 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:09:30,521 - score_model_training - INFO - Evaluating models
+2025-04-25 14:09:30,595 - score_model_training - INFO - Models trained with total score MAE: 9.8461
+2025-04-25 14:09:30,596 - score_model_training - INFO - train executed in 16.16 seconds
+2025-04-25 14:09:30,604 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:09:30,726 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:09:30,729 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:09:55,837 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:10:52,284 - score_model_training - INFO - Evaluating models
+2025-04-25 14:10:52,426 - score_model_training - INFO - Models trained with total score MAE: 9.8351
+2025-04-25 14:10:52,427 - score_model_training - INFO - train executed in 81.82 seconds
+2025-04-25 14:10:52,448 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:10:52,540 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:10:52,542 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:11:16,969 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:11:27,971 - score_model_training - INFO - Evaluating models
+2025-04-25 14:11:28,096 - score_model_training - INFO - Models trained with total score MAE: 9.8001
+2025-04-25 14:11:28,097 - score_model_training - INFO - train executed in 35.65 seconds
+2025-04-25 14:11:28,112 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:11:28,272 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:11:28,274 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:12:21,918 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:12:40,533 - score_model_training - INFO - Evaluating models
+2025-04-25 14:12:40,704 - score_model_training - INFO - Models trained with total score MAE: 9.8037
+2025-04-25 14:12:40,705 - score_model_training - INFO - train executed in 72.59 seconds
+2025-04-25 14:12:40,723 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:12:40,829 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:12:40,831 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:13:00,343 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:13:29,764 - score_model_training - INFO - Evaluating models
+2025-04-25 14:13:29,919 - score_model_training - INFO - Models trained with total score MAE: 9.8049
+2025-04-25 14:13:29,920 - score_model_training - INFO - train executed in 49.20 seconds
+2025-04-25 14:14:15,075 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:14:15,160 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:14:15,163 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:14:27,150 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:14:47,087 - score_model_training - INFO - Evaluating models
+2025-04-25 14:14:47,156 - score_model_training - INFO - Models trained with total score MAE: 9.8152
+2025-04-25 14:14:47,157 - score_model_training - INFO - train executed in 32.08 seconds
+2025-04-25 14:14:47,164 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:14:47,285 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:14:47,287 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:15:07,530 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:15:29,808 - score_model_training - INFO - Evaluating models
+2025-04-25 14:15:29,941 - score_model_training - INFO - Models trained with total score MAE: 9.7871
+2025-04-25 14:15:29,942 - score_model_training - INFO - train executed in 42.78 seconds
+2025-04-25 14:15:29,962 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:15:30,072 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:15:30,074 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:15:57,841 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:16:04,865 - score_model_training - INFO - Evaluating models
+2025-04-25 14:16:05,007 - score_model_training - INFO - Models trained with total score MAE: 9.8160
+2025-04-25 14:16:05,008 - score_model_training - INFO - train executed in 35.05 seconds
+2025-04-25 14:16:05,021 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:16:05,182 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:16:05,184 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:16:57,029 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:17:21,624 - score_model_training - INFO - Evaluating models
+2025-04-25 14:17:21,758 - score_model_training - INFO - Models trained with total score MAE: 9.8508
+2025-04-25 14:17:21,758 - score_model_training - INFO - train executed in 76.74 seconds
+2025-04-25 14:17:21,816 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:17:21,920 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:17:21,923 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:17:40,886 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:17:53,478 - score_model_training - INFO - Evaluating models
+2025-04-25 14:17:53,566 - score_model_training - INFO - Models trained with total score MAE: 9.8238
+2025-04-25 14:17:53,567 - score_model_training - INFO - train executed in 31.75 seconds
+2025-04-25 14:17:53,577 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:17:53,696 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:17:53,699 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:17:57,429 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:18:08,481 - score_model_training - INFO - Evaluating models
+2025-04-25 14:18:08,529 - score_model_training - INFO - Models trained with total score MAE: 9.8461
+2025-04-25 14:18:08,530 - score_model_training - INFO - train executed in 14.95 seconds
+2025-04-25 14:18:08,539 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:18:08,654 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:18:08,656 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:18:30,870 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:19:24,045 - score_model_training - INFO - Evaluating models
+2025-04-25 14:19:24,216 - score_model_training - INFO - Models trained with total score MAE: 9.8351
+2025-04-25 14:19:24,217 - score_model_training - INFO - train executed in 75.68 seconds
+2025-04-25 14:19:24,234 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:19:24,314 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:19:24,316 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:19:47,207 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:19:56,854 - score_model_training - INFO - Evaluating models
+2025-04-25 14:19:56,970 - score_model_training - INFO - Models trained with total score MAE: 9.8001
+2025-04-25 14:19:56,970 - score_model_training - INFO - train executed in 32.74 seconds
+2025-04-25 14:19:56,985 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:19:57,148 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:19:57,151 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:20:45,939 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:21:04,212 - score_model_training - INFO - Evaluating models
+2025-04-25 14:21:04,383 - score_model_training - INFO - Models trained with total score MAE: 9.8037
+2025-04-25 14:21:04,384 - score_model_training - INFO - train executed in 67.40 seconds
+2025-04-25 14:21:04,404 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:21:04,514 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:21:04,516 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:21:23,690 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:21:52,785 - score_model_training - INFO - Evaluating models
+2025-04-25 14:21:52,896 - score_model_training - INFO - Models trained with total score MAE: 9.8049
+2025-04-25 14:21:52,897 - score_model_training - INFO - train executed in 48.49 seconds
+2025-04-25 14:22:39,724 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:22:39,820 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:22:39,823 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:22:51,447 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:23:11,482 - score_model_training - INFO - Evaluating models
+2025-04-25 14:23:11,610 - score_model_training - INFO - Models trained with total score MAE: 9.8152
+2025-04-25 14:23:11,610 - score_model_training - INFO - train executed in 31.89 seconds
+2025-04-25 14:23:11,617 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:23:11,747 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:23:11,750 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:23:32,081 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:23:54,441 - score_model_training - INFO - Evaluating models
+2025-04-25 14:23:54,599 - score_model_training - INFO - Models trained with total score MAE: 9.7871
+2025-04-25 14:23:54,600 - score_model_training - INFO - train executed in 42.98 seconds
+2025-04-25 14:23:54,618 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:23:54,728 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:23:54,731 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:24:22,578 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:24:29,796 - score_model_training - INFO - Evaluating models
+2025-04-25 14:24:29,928 - score_model_training - INFO - Models trained with total score MAE: 9.8160
+2025-04-25 14:24:29,929 - score_model_training - INFO - train executed in 35.31 seconds
+2025-04-25 14:24:29,941 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:24:30,100 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:24:30,102 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:25:21,773 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:25:46,013 - score_model_training - INFO - Evaluating models
+2025-04-25 14:25:46,147 - score_model_training - INFO - Models trained with total score MAE: 9.8508
+2025-04-25 14:25:46,148 - score_model_training - INFO - train executed in 76.21 seconds
+2025-04-25 14:25:46,165 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:25:46,269 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:25:46,271 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:26:05,238 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:26:17,921 - score_model_training - INFO - Evaluating models
+2025-04-25 14:26:18,017 - score_model_training - INFO - Models trained with total score MAE: 9.8238
+2025-04-25 14:26:18,018 - score_model_training - INFO - train executed in 31.85 seconds
+2025-04-25 14:26:18,029 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:26:18,142 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:26:18,144 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:26:21,943 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:26:33,244 - score_model_training - INFO - Evaluating models
+2025-04-25 14:26:33,352 - score_model_training - INFO - Models trained with total score MAE: 9.8461
+2025-04-25 14:26:33,353 - score_model_training - INFO - train executed in 15.32 seconds
+2025-04-25 14:26:33,361 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:26:33,471 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:26:33,473 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:26:55,649 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:27:49,400 - score_model_training - INFO - Evaluating models
+2025-04-25 14:27:49,532 - score_model_training - INFO - Models trained with total score MAE: 9.8351
+2025-04-25 14:27:49,533 - score_model_training - INFO - train executed in 76.17 seconds
+2025-04-25 14:27:49,553 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:27:49,643 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:27:49,646 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:28:12,728 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:28:22,394 - score_model_training - INFO - Evaluating models
+2025-04-25 14:28:22,532 - score_model_training - INFO - Models trained with total score MAE: 9.8001
+2025-04-25 14:28:22,533 - score_model_training - INFO - train executed in 32.98 seconds
+2025-04-25 14:28:22,547 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:28:22,705 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:28:22,707 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:29:11,265 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:29:29,458 - score_model_training - INFO - Evaluating models
+2025-04-25 14:29:29,579 - score_model_training - INFO - Models trained with total score MAE: 9.8037
+2025-04-25 14:29:29,580 - score_model_training - INFO - train executed in 67.03 seconds
+2025-04-25 14:29:29,601 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:29:29,719 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:29:29,722 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:29:49,025 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:30:17,907 - score_model_training - INFO - Evaluating models
+2025-04-25 14:30:18,045 - score_model_training - INFO - Models trained with total score MAE: 9.8049
+2025-04-25 14:30:18,046 - score_model_training - INFO - train executed in 48.45 seconds
+2025-04-25 14:31:05,926 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:31:06,033 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:31:06,035 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:31:17,680 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:31:37,236 - score_model_training - INFO - Evaluating models
+2025-04-25 14:31:37,364 - score_model_training - INFO - Models trained with total score MAE: 9.8152
+2025-04-25 14:31:37,365 - score_model_training - INFO - train executed in 31.44 seconds
+2025-04-25 14:31:37,373 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:31:37,498 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:31:37,501 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:31:57,469 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:32:19,445 - score_model_training - INFO - Evaluating models
+2025-04-25 14:32:19,552 - score_model_training - INFO - Models trained with total score MAE: 9.7871
+2025-04-25 14:32:19,553 - score_model_training - INFO - train executed in 42.18 seconds
+2025-04-25 14:32:19,571 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:32:19,668 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:32:19,670 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:32:46,719 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:32:53,787 - score_model_training - INFO - Evaluating models
+2025-04-25 14:32:53,922 - score_model_training - INFO - Models trained with total score MAE: 9.8160
+2025-04-25 14:32:53,923 - score_model_training - INFO - train executed in 34.35 seconds
+2025-04-25 14:32:53,934 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:32:54,103 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:32:54,106 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:33:44,720 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:34:08,799 - score_model_training - INFO - Evaluating models
+2025-04-25 14:34:08,937 - score_model_training - INFO - Models trained with total score MAE: 9.8508
+2025-04-25 14:34:08,938 - score_model_training - INFO - train executed in 75.00 seconds
+2025-04-25 14:34:08,955 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:34:09,066 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:34:09,068 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:34:27,747 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:34:39,952 - score_model_training - INFO - Evaluating models
+2025-04-25 14:34:40,102 - score_model_training - INFO - Models trained with total score MAE: 9.8238
+2025-04-25 14:34:40,103 - score_model_training - INFO - train executed in 31.15 seconds
+2025-04-25 14:34:40,116 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:34:40,231 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:34:40,233 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:34:43,847 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:34:54,724 - score_model_training - INFO - Evaluating models
+2025-04-25 14:34:54,826 - score_model_training - INFO - Models trained with total score MAE: 9.8461
+2025-04-25 14:34:54,827 - score_model_training - INFO - train executed in 14.71 seconds
+2025-04-25 14:34:54,836 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:34:54,942 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:34:54,944 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:35:16,579 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:36:09,573 - score_model_training - INFO - Evaluating models
+2025-04-25 14:36:09,725 - score_model_training - INFO - Models trained with total score MAE: 9.8351
+2025-04-25 14:36:09,726 - score_model_training - INFO - train executed in 74.89 seconds
+2025-04-25 14:36:09,746 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:36:09,833 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:36:09,835 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:36:32,490 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:36:41,944 - score_model_training - INFO - Evaluating models
+2025-04-25 14:36:42,089 - score_model_training - INFO - Models trained with total score MAE: 9.8001
+2025-04-25 14:36:42,089 - score_model_training - INFO - train executed in 32.34 seconds
+2025-04-25 14:36:42,104 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:36:42,251 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:36:42,253 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:37:30,229 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:37:48,555 - score_model_training - INFO - Evaluating models
+2025-04-25 14:37:48,717 - score_model_training - INFO - Models trained with total score MAE: 9.8037
+2025-04-25 14:37:48,718 - score_model_training - INFO - train executed in 66.61 seconds
+2025-04-25 14:37:48,738 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 14:37:48,846 - score_model_training - INFO - Extracted 12889 samples with 18 features
+2025-04-25 14:37:48,848 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 14:38:07,763 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 14:38:36,756 - score_model_training - INFO - Evaluating models
+2025-04-25 14:38:36,924 - score_model_training - INFO - Models trained with total score MAE: 9.8049
+2025-04-25 14:38:36,925 - score_model_training - INFO - train executed in 48.19 seconds
+2025-04-25 17:36:15,783 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 17:38:56,125 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 17:38:56,128 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 17:38:56,563 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 17:38:56,899 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 17:39:13,847 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 17:39:50,308 - score_model_training - INFO - Evaluating models
+2025-04-25 17:39:50,421 - score_model_training - INFO - Models trained with total score MAE: 9.8248
+2025-04-25 17:39:50,423 - score_model_training - INFO - train executed in 214.64 seconds
+2025-04-25 17:39:50,430 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 17:42:09,377 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 17:42:09,379 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 17:42:09,722 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 17:42:10,049 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 17:42:45,244 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 17:43:24,538 - score_model_training - INFO - Evaluating models
+2025-04-25 17:43:24,696 - score_model_training - INFO - Models trained with total score MAE: 9.8209
+2025-04-25 17:43:24,697 - score_model_training - INFO - train executed in 214.27 seconds
+2025-04-25 17:43:24,717 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 17:45:41,827 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 17:45:41,830 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 17:45:42,179 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 17:45:42,525 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 17:46:32,188 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 17:46:44,639 - score_model_training - INFO - Evaluating models
+2025-04-25 17:46:44,759 - score_model_training - INFO - Models trained with total score MAE: 9.8341
+2025-04-25 17:46:44,760 - score_model_training - INFO - train executed in 200.04 seconds
+2025-04-25 17:46:44,772 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 17:49:00,566 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 17:49:00,569 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 17:49:00,918 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 17:49:01,253 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 17:50:31,871 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 17:51:15,915 - score_model_training - INFO - Evaluating models
+2025-04-25 17:51:16,082 - score_model_training - INFO - Models trained with total score MAE: 9.8459
+2025-04-25 17:51:16,084 - score_model_training - INFO - train executed in 271.31 seconds
+2025-04-25 17:51:16,101 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 17:53:40,149 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 17:53:40,153 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 17:53:40,578 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 17:53:40,938 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 17:54:13,602 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 17:54:35,406 - score_model_training - INFO - Evaluating models
+2025-04-25 17:54:35,560 - score_model_training - INFO - Models trained with total score MAE: 9.8325
+2025-04-25 17:54:35,563 - score_model_training - INFO - train executed in 199.46 seconds
+2025-04-25 17:54:35,578 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 17:56:50,966 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 17:56:50,969 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 17:56:51,319 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 17:56:51,659 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 17:56:57,793 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 17:57:17,046 - score_model_training - INFO - Evaluating models
+2025-04-25 17:57:17,144 - score_model_training - INFO - Models trained with total score MAE: 9.8599
+2025-04-25 17:57:17,146 - score_model_training - INFO - train executed in 161.57 seconds
+2025-04-25 17:57:17,154 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 17:59:32,232 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 17:59:32,239 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 17:59:32,590 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 17:59:32,922 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 18:00:10,886 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 18:01:46,232 - score_model_training - INFO - Evaluating models
+2025-04-25 18:01:46,371 - score_model_training - INFO - Models trained with total score MAE: 9.8351
+2025-04-25 18:01:46,374 - score_model_training - INFO - train executed in 269.22 seconds
+2025-04-25 18:01:46,395 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 18:04:08,003 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:04:08,006 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 18:04:08,432 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 18:04:08,788 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 18:04:47,216 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 18:05:03,896 - score_model_training - INFO - Evaluating models
+2025-04-25 18:05:04,050 - score_model_training - INFO - Models trained with total score MAE: 9.8058
+2025-04-25 18:05:04,053 - score_model_training - INFO - train executed in 197.66 seconds
+2025-04-25 18:05:04,065 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 18:07:18,543 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:07:18,547 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 18:07:18,890 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 18:07:19,228 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 18:08:45,521 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 18:09:18,191 - score_model_training - INFO - Evaluating models
+2025-04-25 18:09:18,330 - score_model_training - INFO - Models trained with total score MAE: 9.8137
+2025-04-25 18:09:18,332 - score_model_training - INFO - train executed in 254.27 seconds
+2025-04-25 18:09:18,351 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 18:11:29,214 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:11:29,216 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 18:11:29,565 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 18:11:29,902 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 18:12:03,298 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 18:12:54,863 - score_model_training - INFO - Evaluating models
+2025-04-25 18:12:55,035 - score_model_training - INFO - Models trained with total score MAE: 9.8186
+2025-04-25 18:12:55,037 - score_model_training - INFO - train executed in 216.69 seconds
+2025-04-25 18:43:53,257 - score_model_training - INFO - Training score prediction model with 12889 matches
+2025-04-25 18:46:10,715 - score_model_training - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:46:10,718 - score_model_training - INFO - Performing feature selection for home model
+2025-04-25 18:46:11,121 - score_model_training - INFO - Performing feature selection for away model
+2025-04-25 18:46:11,465 - score_model_training - INFO - Training home score model with 10311 samples
+2025-04-25 18:46:27,238 - score_model_training - INFO - Training away score model with 10311 samples
+2025-04-25 18:46:39,558 - score_model_training - INFO - Evaluating models
+2025-04-25 18:46:39,639 - score_model_training - INFO - Models trained with total score MAE: 9.8214
+2025-04-25 18:46:39,641 - score_model_training - INFO - train executed in 166.38 seconds

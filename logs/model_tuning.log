@@ -119,3 +119,259 @@
 2025-04-25 13:50:10,127 - model_tuning - INFO - Loaded registry with 2 models
 2025-04-25 13:50:13,466 - model_tuning - INFO - Loaded registry with 2 models
 2025-04-25 13:50:13,466 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:51:09,493 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745600056.pkl
+2025-04-25 13:51:09,503 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745600056.json
+2025-04-25 13:51:09,504 - model_tuning - INFO - Successfully loaded model 1745600056
+2025-04-25 13:51:09,504 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\scorepredictionmodel_1745600066.pkl
+2025-04-25 13:51:09,590 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\scorepredictionmodel_info_1745600066.json
+2025-04-25 13:51:09,591 - model_tuning - INFO - Successfully loaded model 1745600066
+2025-04-25 13:51:42,263 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:51:42,318 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 14:04:54,189 - model_tuning - INFO - Loading player stats from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 14:04:54,195 - model_tuning - INFO - Loading match history from C:\Projects\2k_spark\output\match_history.json
+2025-04-25 14:04:54,262 - model_tuning - INFO - load_data executed in 0.07 seconds
+2025-04-25 14:04:54,274 - model_tuning - INFO - Starting Bayesian optimization with 5 trials
+2025-04-25 14:04:54,307 - model_tuning - ERROR - Exception in optimize: Expected `n_calls` >= 10, got 5
+2025-04-25 14:04:54,309 - model_tuning - ERROR - Exception in optimize_score_model: Expected `n_calls` >= 10, got 5
+2025-04-25 14:05:28,456 - model_tuning - INFO - Loading player stats from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 14:05:28,461 - model_tuning - INFO - Loading match history from C:\Projects\2k_spark\output\match_history.json
+2025-04-25 14:05:28,516 - model_tuning - INFO - load_data executed in 0.06 seconds
+2025-04-25 14:05:28,529 - model_tuning - INFO - Starting Bayesian optimization with 10 trials
+2025-04-25 14:06:01,375 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 408, 'xgb_home_learning_rate': 0.018661881481387678, 'xgb_home_max_depth': 8, 'xgb_home_subsample': 0.7984250789732436, 'xgb_home_colsample_bytree': 0.7229163764267956, 'gb_home_n_estimators': 95, 'gb_home_learning_rate': 0.04768329952832196, 'gb_home_max_depth': 5, 'gb_home_subsample': 0.5714334089609704, 'ridge_home_alpha': 0.8967376801947966, 'lasso_home_alpha': 0.0014765043713594345, 'final_home_alpha': 1.4655354118727715, 'xgb_away_n_estimators': 472, 'xgb_away_learning_rate': 0.010026522473407047, 'xgb_away_max_depth': 10, 'xgb_away_subsample': 0.8087407548138583, 'xgb_away_colsample_bytree': 0.8058265802441404, 'gb_away_n_estimators': 53, 'gb_away_learning_rate': 0.01081598305522509, 'gb_away_max_depth': 7, 'gb_away_subsample': 0.6999304858576278, 'ridge_away_alpha': 0.013803746963532808, 'lasso_away_alpha': 0.8341930294140788, 'final_away_alpha': 0.04992453416923983, 'random_state': 42}
+2025-04-25 14:06:01,376 - model_tuning - INFO - New best score: -9.815151883908394
+2025-04-25 14:06:45,185 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 91, 'xgb_home_learning_rate': 0.08192776699882923, 'xgb_home_max_depth': 6, 'xgb_home_subsample': 0.9916154429033942, 'xgb_home_colsample_bytree': 0.7333814466239901, 'gb_home_n_estimators': 437, 'gb_home_learning_rate': 0.10113389297817886, 'gb_home_max_depth': 6, 'gb_home_subsample': 0.5066324805799333, 'ridge_home_alpha': 6.708188643346291, 'lasso_home_alpha': 0.04896262051737685, 'final_home_alpha': 0.143301094556357, 'xgb_away_n_estimators': 57, 'xgb_away_learning_rate': 0.021930986997479973, 'xgb_away_max_depth': 5, 'xgb_away_subsample': 0.8416317594127292, 'xgb_away_colsample_bytree': 0.8049983288913105, 'gb_away_n_estimators': 425, 'gb_away_learning_rate': 0.018033524512802657, 'gb_away_max_depth': 6, 'gb_away_subsample': 0.5911180438940312, 'ridge_away_alpha': 1.845373292661596, 'lasso_away_alpha': 0.018856783874794995, 'final_away_alpha': 0.04205571187007208, 'random_state': 42}
+2025-04-25 14:06:45,186 - model_tuning - INFO - New best score: -9.787062982075268
+2025-04-25 14:13:30,383 - model_tuning - INFO - Bayesian optimization completed
+2025-04-25 14:13:30,383 - model_tuning - INFO - Best parameters: {'xgb_home_n_estimators': 91, 'xgb_home_learning_rate': 0.08192776699882923, 'xgb_home_max_depth': 6, 'xgb_home_subsample': 0.9916154429033942, 'xgb_home_colsample_bytree': 0.7333814466239901, 'gb_home_n_estimators': 437, 'gb_home_learning_rate': 0.10113389297817886, 'gb_home_max_depth': 6, 'gb_home_subsample': 0.5066324805799333, 'ridge_home_alpha': 6.708188643346291, 'lasso_home_alpha': 0.04896262051737685, 'final_home_alpha': 0.143301094556357, 'xgb_away_n_estimators': 57, 'xgb_away_learning_rate': 0.021930986997479973, 'xgb_away_max_depth': 5, 'xgb_away_subsample': 0.8416317594127292, 'xgb_away_colsample_bytree': 0.8049983288913105, 'gb_away_n_estimators': 425, 'gb_away_learning_rate': 0.018033524512802657, 'gb_away_max_depth': 6, 'gb_away_subsample': 0.5911180438940312, 'ridge_away_alpha': 1.845373292661596, 'lasso_away_alpha': 0.018856783874794995, 'final_away_alpha': 0.04205571187007208, 'random_state': 42}
+2025-04-25 14:13:30,384 - model_tuning - INFO - Best score: -9.787062982075268
+2025-04-25 14:13:30,384 - model_tuning - INFO - optimize executed in 481.85 seconds
+2025-04-25 14:13:30,384 - model_tuning - ERROR - Exception in save: BaseModel.save() takes from 1 to 2 positional arguments but 3 were given
+2025-04-25 14:13:30,385 - model_tuning - ERROR - Exception in optimize_score_model: BaseModel.save() takes from 1 to 2 positional arguments but 3 were given
+2025-04-25 14:14:14,952 - model_tuning - INFO - Loading player stats from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 14:14:14,957 - model_tuning - INFO - Loading match history from C:\Projects\2k_spark\output\match_history.json
+2025-04-25 14:14:15,012 - model_tuning - INFO - load_data executed in 0.06 seconds
+2025-04-25 14:14:15,024 - model_tuning - INFO - Starting Bayesian optimization with 10 trials
+2025-04-25 14:14:47,157 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 408, 'xgb_home_learning_rate': 0.018661881481387678, 'xgb_home_max_depth': 8, 'xgb_home_subsample': 0.7984250789732436, 'xgb_home_colsample_bytree': 0.7229163764267956, 'gb_home_n_estimators': 95, 'gb_home_learning_rate': 0.04768329952832196, 'gb_home_max_depth': 5, 'gb_home_subsample': 0.5714334089609704, 'ridge_home_alpha': 0.8967376801947966, 'lasso_home_alpha': 0.0014765043713594345, 'final_home_alpha': 1.4655354118727715, 'xgb_away_n_estimators': 472, 'xgb_away_learning_rate': 0.010026522473407047, 'xgb_away_max_depth': 10, 'xgb_away_subsample': 0.8087407548138583, 'xgb_away_colsample_bytree': 0.8058265802441404, 'gb_away_n_estimators': 53, 'gb_away_learning_rate': 0.01081598305522509, 'gb_away_max_depth': 7, 'gb_away_subsample': 0.6999304858576278, 'ridge_away_alpha': 0.013803746963532808, 'lasso_away_alpha': 0.8341930294140788, 'final_away_alpha': 0.04992453416923983, 'random_state': 42}
+2025-04-25 14:14:47,158 - model_tuning - INFO - New best score: -9.815151883908394
+2025-04-25 14:15:29,955 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 91, 'xgb_home_learning_rate': 0.08192776699882923, 'xgb_home_max_depth': 6, 'xgb_home_subsample': 0.9916154429033942, 'xgb_home_colsample_bytree': 0.7333814466239901, 'gb_home_n_estimators': 437, 'gb_home_learning_rate': 0.10113389297817886, 'gb_home_max_depth': 6, 'gb_home_subsample': 0.5066324805799333, 'ridge_home_alpha': 6.708188643346291, 'lasso_home_alpha': 0.04896262051737685, 'final_home_alpha': 0.143301094556357, 'xgb_away_n_estimators': 57, 'xgb_away_learning_rate': 0.021930986997479973, 'xgb_away_max_depth': 5, 'xgb_away_subsample': 0.8416317594127292, 'xgb_away_colsample_bytree': 0.8049983288913105, 'gb_away_n_estimators': 425, 'gb_away_learning_rate': 0.018033524512802657, 'gb_away_max_depth': 6, 'gb_away_subsample': 0.5911180438940312, 'ridge_away_alpha': 1.845373292661596, 'lasso_away_alpha': 0.018856783874794995, 'final_away_alpha': 0.04205571187007208, 'random_state': 42}
+2025-04-25 14:15:29,956 - model_tuning - INFO - New best score: -9.787062982075268
+2025-04-25 14:21:53,365 - model_tuning - INFO - Bayesian optimization completed
+2025-04-25 14:21:53,365 - model_tuning - INFO - Best parameters: {'xgb_home_n_estimators': 91, 'xgb_home_learning_rate': 0.08192776699882923, 'xgb_home_max_depth': 6, 'xgb_home_subsample': 0.9916154429033942, 'xgb_home_colsample_bytree': 0.7333814466239901, 'gb_home_n_estimators': 437, 'gb_home_learning_rate': 0.10113389297817886, 'gb_home_max_depth': 6, 'gb_home_subsample': 0.5066324805799333, 'ridge_home_alpha': 6.708188643346291, 'lasso_home_alpha': 0.04896262051737685, 'final_home_alpha': 0.143301094556357, 'xgb_away_n_estimators': 57, 'xgb_away_learning_rate': 0.021930986997479973, 'xgb_away_max_depth': 5, 'xgb_away_subsample': 0.8416317594127292, 'xgb_away_colsample_bytree': 0.8049983288913105, 'gb_away_n_estimators': 425, 'gb_away_learning_rate': 0.018033524512802657, 'gb_away_max_depth': 6, 'gb_away_subsample': 0.5911180438940312, 'ridge_away_alpha': 1.845373292661596, 'lasso_away_alpha': 0.018856783874794995, 'final_away_alpha': 0.04205571187007208, 'random_state': 42}
+2025-04-25 14:21:53,366 - model_tuning - INFO - Best score: -9.787062982075268
+2025-04-25 14:21:53,366 - model_tuning - INFO - optimize executed in 458.34 seconds
+2025-04-25 14:21:53,367 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\optimized_score_model_1745604887.pkl
+2025-04-25 14:21:53,416 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\optimized_score_model_info_1745604887.json
+2025-04-25 14:21:53,417 - model_tuning - ERROR - Exception in save: Object of type int64 is not JSON serializable
+2025-04-25 14:21:53,459 - model_tuning - ERROR - Exception in optimize_score_model: Object of type int64 is not JSON serializable
+2025-04-25 14:22:39,547 - model_tuning - INFO - Loading player stats from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 14:22:39,552 - model_tuning - INFO - Loading match history from C:\Projects\2k_spark\output\match_history.json
+2025-04-25 14:22:39,608 - model_tuning - INFO - load_data executed in 0.06 seconds
+2025-04-25 14:22:39,621 - model_tuning - INFO - Starting Bayesian optimization with 10 trials
+2025-04-25 14:23:11,611 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 408, 'xgb_home_learning_rate': 0.018661881481387678, 'xgb_home_max_depth': 8, 'xgb_home_subsample': 0.7984250789732436, 'xgb_home_colsample_bytree': 0.7229163764267956, 'gb_home_n_estimators': 95, 'gb_home_learning_rate': 0.04768329952832196, 'gb_home_max_depth': 5, 'gb_home_subsample': 0.5714334089609704, 'ridge_home_alpha': 0.8967376801947966, 'lasso_home_alpha': 0.0014765043713594345, 'final_home_alpha': 1.4655354118727715, 'xgb_away_n_estimators': 472, 'xgb_away_learning_rate': 0.010026522473407047, 'xgb_away_max_depth': 10, 'xgb_away_subsample': 0.8087407548138583, 'xgb_away_colsample_bytree': 0.8058265802441404, 'gb_away_n_estimators': 53, 'gb_away_learning_rate': 0.01081598305522509, 'gb_away_max_depth': 7, 'gb_away_subsample': 0.6999304858576278, 'ridge_away_alpha': 0.013803746963532808, 'lasso_away_alpha': 0.8341930294140788, 'final_away_alpha': 0.04992453416923983, 'random_state': 42}
+2025-04-25 14:23:11,612 - model_tuning - INFO - New best score: -9.815151883908394
+2025-04-25 14:23:54,611 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 91, 'xgb_home_learning_rate': 0.08192776699882923, 'xgb_home_max_depth': 6, 'xgb_home_subsample': 0.9916154429033942, 'xgb_home_colsample_bytree': 0.7333814466239901, 'gb_home_n_estimators': 437, 'gb_home_learning_rate': 0.10113389297817886, 'gb_home_max_depth': 6, 'gb_home_subsample': 0.5066324805799333, 'ridge_home_alpha': 6.708188643346291, 'lasso_home_alpha': 0.04896262051737685, 'final_home_alpha': 0.143301094556357, 'xgb_away_n_estimators': 57, 'xgb_away_learning_rate': 0.021930986997479973, 'xgb_away_max_depth': 5, 'xgb_away_subsample': 0.8416317594127292, 'xgb_away_colsample_bytree': 0.8049983288913105, 'gb_away_n_estimators': 425, 'gb_away_learning_rate': 0.018033524512802657, 'gb_away_max_depth': 6, 'gb_away_subsample': 0.5911180438940312, 'ridge_away_alpha': 1.845373292661596, 'lasso_away_alpha': 0.018856783874794995, 'final_away_alpha': 0.04205571187007208, 'random_state': 42}
+2025-04-25 14:23:54,613 - model_tuning - INFO - New best score: -9.787062982075268
+2025-04-25 14:30:18,487 - model_tuning - INFO - Bayesian optimization completed
+2025-04-25 14:30:18,487 - model_tuning - INFO - Best parameters: {'xgb_home_n_estimators': 91, 'xgb_home_learning_rate': 0.08192776699882923, 'xgb_home_max_depth': 6, 'xgb_home_subsample': 0.9916154429033942, 'xgb_home_colsample_bytree': 0.7333814466239901, 'gb_home_n_estimators': 437, 'gb_home_learning_rate': 0.10113389297817886, 'gb_home_max_depth': 6, 'gb_home_subsample': 0.5066324805799333, 'ridge_home_alpha': 6.708188643346291, 'lasso_home_alpha': 0.04896262051737685, 'final_home_alpha': 0.143301094556357, 'xgb_away_n_estimators': 57, 'xgb_away_learning_rate': 0.021930986997479973, 'xgb_away_max_depth': 5, 'xgb_away_subsample': 0.8416317594127292, 'xgb_away_colsample_bytree': 0.8049983288913105, 'gb_away_n_estimators': 425, 'gb_away_learning_rate': 0.018033524512802657, 'gb_away_max_depth': 6, 'gb_away_subsample': 0.5911180438940312, 'ridge_away_alpha': 1.845373292661596, 'lasso_away_alpha': 0.018856783874794995, 'final_away_alpha': 0.04205571187007208, 'random_state': 42}
+2025-04-25 14:30:18,488 - model_tuning - INFO - Best score: -9.787062982075268
+2025-04-25 14:30:18,488 - model_tuning - INFO - optimize executed in 458.87 seconds
+2025-04-25 14:30:18,489 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\optimized_score_model_1745605391.pkl
+2025-04-25 14:30:18,539 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\optimized_score_model_info_1745605391.json
+2025-04-25 14:30:18,540 - model_tuning - INFO - Successfully saved model 1745605391
+2025-04-25 14:30:18,541 - model_tuning - INFO - save executed in 0.05 seconds
+2025-04-25 14:30:18,542 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 14:30:18,542 - model_tuning - ERROR - Exception in optimize_score_model: 'ScoreModelRegistry' object has no attribute 'add_model'
+2025-04-25 14:31:05,790 - model_tuning - INFO - Loading player stats from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 14:31:05,795 - model_tuning - INFO - Loading match history from C:\Projects\2k_spark\output\match_history.json
+2025-04-25 14:31:05,854 - model_tuning - INFO - load_data executed in 0.06 seconds
+2025-04-25 14:31:05,867 - model_tuning - INFO - Starting Bayesian optimization with 10 trials
+2025-04-25 14:31:37,366 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 408, 'xgb_home_learning_rate': 0.018661881481387678, 'xgb_home_max_depth': 8, 'xgb_home_subsample': 0.7984250789732436, 'xgb_home_colsample_bytree': 0.7229163764267956, 'gb_home_n_estimators': 95, 'gb_home_learning_rate': 0.04768329952832196, 'gb_home_max_depth': 5, 'gb_home_subsample': 0.5714334089609704, 'ridge_home_alpha': 0.8967376801947966, 'lasso_home_alpha': 0.0014765043713594345, 'final_home_alpha': 1.4655354118727715, 'xgb_away_n_estimators': 472, 'xgb_away_learning_rate': 0.010026522473407047, 'xgb_away_max_depth': 10, 'xgb_away_subsample': 0.8087407548138583, 'xgb_away_colsample_bytree': 0.8058265802441404, 'gb_away_n_estimators': 53, 'gb_away_learning_rate': 0.01081598305522509, 'gb_away_max_depth': 7, 'gb_away_subsample': 0.6999304858576278, 'ridge_away_alpha': 0.013803746963532808, 'lasso_away_alpha': 0.8341930294140788, 'final_away_alpha': 0.04992453416923983, 'random_state': 42}
+2025-04-25 14:31:37,367 - model_tuning - INFO - New best score: -9.815151883908394
+2025-04-25 14:32:19,564 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 91, 'xgb_home_learning_rate': 0.08192776699882923, 'xgb_home_max_depth': 6, 'xgb_home_subsample': 0.9916154429033942, 'xgb_home_colsample_bytree': 0.7333814466239901, 'gb_home_n_estimators': 437, 'gb_home_learning_rate': 0.10113389297817886, 'gb_home_max_depth': 6, 'gb_home_subsample': 0.5066324805799333, 'ridge_home_alpha': 6.708188643346291, 'lasso_home_alpha': 0.04896262051737685, 'final_home_alpha': 0.143301094556357, 'xgb_away_n_estimators': 57, 'xgb_away_learning_rate': 0.021930986997479973, 'xgb_away_max_depth': 5, 'xgb_away_subsample': 0.8416317594127292, 'xgb_away_colsample_bytree': 0.8049983288913105, 'gb_away_n_estimators': 425, 'gb_away_learning_rate': 0.018033524512802657, 'gb_away_max_depth': 6, 'gb_away_subsample': 0.5911180438940312, 'ridge_away_alpha': 1.845373292661596, 'lasso_away_alpha': 0.018856783874794995, 'final_away_alpha': 0.04205571187007208, 'random_state': 42}
+2025-04-25 14:32:19,565 - model_tuning - INFO - New best score: -9.787062982075268
+2025-04-25 14:38:37,364 - model_tuning - INFO - Bayesian optimization completed
+2025-04-25 14:38:37,364 - model_tuning - INFO - Best parameters: {'xgb_home_n_estimators': 91, 'xgb_home_learning_rate': 0.08192776699882923, 'xgb_home_max_depth': 6, 'xgb_home_subsample': 0.9916154429033942, 'xgb_home_colsample_bytree': 0.7333814466239901, 'gb_home_n_estimators': 437, 'gb_home_learning_rate': 0.10113389297817886, 'gb_home_max_depth': 6, 'gb_home_subsample': 0.5066324805799333, 'ridge_home_alpha': 6.708188643346291, 'lasso_home_alpha': 0.04896262051737685, 'final_home_alpha': 0.143301094556357, 'xgb_away_n_estimators': 57, 'xgb_away_learning_rate': 0.021930986997479973, 'xgb_away_max_depth': 5, 'xgb_away_subsample': 0.8416317594127292, 'xgb_away_colsample_bytree': 0.8049983288913105, 'gb_away_n_estimators': 425, 'gb_away_learning_rate': 0.018033524512802657, 'gb_away_max_depth': 6, 'gb_away_subsample': 0.5911180438940312, 'ridge_away_alpha': 1.845373292661596, 'lasso_away_alpha': 0.018856783874794995, 'final_away_alpha': 0.04205571187007208, 'random_state': 42}
+2025-04-25 14:38:37,365 - model_tuning - INFO - Best score: -9.787062982075268
+2025-04-25 14:38:37,365 - model_tuning - INFO - optimize executed in 451.50 seconds
+2025-04-25 14:38:37,366 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\optimized_score_model_1745605897.pkl
+2025-04-25 14:38:37,417 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\optimized_score_model_info_1745605897.json
+2025-04-25 14:38:37,419 - model_tuning - INFO - Successfully saved model 1745605897
+2025-04-25 14:38:37,419 - model_tuning - INFO - save executed in 0.05 seconds
+2025-04-25 14:38:37,420 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 14:38:37,421 - model_tuning - INFO - Adding new model 1745605897 to registry
+2025-04-25 14:38:37,421 - model_tuning - INFO - Updated best model to 1745598830 with MAE 4.075830549721303
+2025-04-25 14:38:37,422 - model_tuning - INFO - Saving registry with 3 models to C:\Projects\2k_spark\models\score_model_registry.json
+2025-04-25 14:38:37,423 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\score_model_registry.json
+2025-04-25 14:38:37,424 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 14:38:37,435 - model_tuning - INFO - optimize_score_model executed in 451.64 seconds
+2025-04-25 14:38:58,186 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 17:28:20,138 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 17:28:20,383 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 17:36:15,591 - model_tuning - INFO - Loading player stats from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 17:36:15,599 - model_tuning - INFO - Loading match history from C:\Projects\2k_spark\output\match_history.json
+2025-04-25 17:36:15,703 - model_tuning - INFO - load_data executed in 0.11 seconds
+2025-04-25 17:36:15,718 - model_tuning - INFO - Starting Bayesian optimization with 10 trials
+2025-04-25 17:38:56,125 - model_tuning - INFO - extract_features executed in 160.34 seconds
+2025-04-25 17:39:50,424 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 408, 'xgb_home_learning_rate': 0.018661881481387678, 'xgb_home_max_depth': 8, 'xgb_home_subsample': 0.7984250789732436, 'xgb_home_colsample_bytree': 0.7229163764267956, 'gb_home_n_estimators': 95, 'gb_home_learning_rate': 0.04768329952832196, 'gb_home_max_depth': 5, 'gb_home_subsample': 0.5714334089609704, 'ridge_home_alpha': 0.8967376801947966, 'lasso_home_alpha': 0.0014765043713594345, 'final_home_alpha': 1.4655354118727715, 'xgb_away_n_estimators': 472, 'xgb_away_learning_rate': 0.010026522473407047, 'xgb_away_max_depth': 10, 'xgb_away_subsample': 0.8087407548138583, 'xgb_away_colsample_bytree': 0.8058265802441404, 'gb_away_n_estimators': 53, 'gb_away_learning_rate': 0.01081598305522509, 'gb_away_max_depth': 7, 'gb_away_subsample': 0.6999304858576278, 'ridge_away_alpha': 0.013803746963532808, 'lasso_away_alpha': 0.8341930294140788, 'final_away_alpha': 0.04992453416923983, 'random_state': 42}
+2025-04-25 17:39:50,425 - model_tuning - INFO - New best score: -9.824821746173335
+2025-04-25 17:42:09,376 - model_tuning - INFO - extract_features executed in 138.94 seconds
+2025-04-25 17:43:24,710 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 91, 'xgb_home_learning_rate': 0.08192776699882923, 'xgb_home_max_depth': 6, 'xgb_home_subsample': 0.9916154429033942, 'xgb_home_colsample_bytree': 0.7333814466239901, 'gb_home_n_estimators': 437, 'gb_home_learning_rate': 0.10113389297817886, 'gb_home_max_depth': 6, 'gb_home_subsample': 0.5066324805799333, 'ridge_home_alpha': 6.708188643346291, 'lasso_home_alpha': 0.04896262051737685, 'final_home_alpha': 0.143301094556357, 'xgb_away_n_estimators': 57, 'xgb_away_learning_rate': 0.021930986997479973, 'xgb_away_max_depth': 5, 'xgb_away_subsample': 0.8416317594127292, 'xgb_away_colsample_bytree': 0.8049983288913105, 'gb_away_n_estimators': 425, 'gb_away_learning_rate': 0.018033524512802657, 'gb_away_max_depth': 6, 'gb_away_subsample': 0.5911180438940312, 'ridge_away_alpha': 1.845373292661596, 'lasso_away_alpha': 0.018856783874794995, 'final_away_alpha': 0.04205571187007208, 'random_state': 42}
+2025-04-25 17:43:24,711 - model_tuning - INFO - New best score: -9.820886611682228
+2025-04-25 17:45:41,827 - model_tuning - INFO - extract_features executed in 137.11 seconds
+2025-04-25 17:49:00,566 - model_tuning - INFO - extract_features executed in 135.79 seconds
+2025-04-25 17:53:40,149 - model_tuning - INFO - extract_features executed in 144.05 seconds
+2025-04-25 17:56:50,966 - model_tuning - INFO - extract_features executed in 135.39 seconds
+2025-04-25 17:59:32,231 - model_tuning - INFO - extract_features executed in 135.08 seconds
+2025-04-25 18:04:08,003 - model_tuning - INFO - extract_features executed in 141.61 seconds
+2025-04-25 18:05:04,059 - model_tuning - INFO - New best parameters found: {'xgb_home_n_estimators': 436, 'xgb_home_learning_rate': 0.030302665165245407, 'xgb_home_max_depth': 5, 'xgb_home_subsample': 0.855574766219009, 'xgb_home_colsample_bytree': 0.9047505230698578, 'gb_home_n_estimators': 207, 'gb_home_learning_rate': 0.013869615701144236, 'gb_home_max_depth': 10, 'gb_home_subsample': 0.6987860105437612, 'ridge_home_alpha': 0.35748189510916684, 'lasso_home_alpha': 0.3259344887239374, 'final_home_alpha': 1.0643154121134486, 'xgb_away_n_estimators': 381, 'xgb_away_learning_rate': 0.02036217355302977, 'xgb_away_max_depth': 7, 'xgb_away_subsample': 0.8478921996725411, 'xgb_away_colsample_bytree': 0.6142750108986499, 'gb_away_n_estimators': 129, 'gb_away_learning_rate': 0.2823460625321134, 'gb_away_max_depth': 7, 'gb_away_subsample': 0.6304145874152045, 'ridge_away_alpha': 9.744534538859272, 'lasso_away_alpha': 0.7875135841747096, 'final_away_alpha': 0.47302093349336893, 'random_state': 42}
+2025-04-25 18:05:04,060 - model_tuning - INFO - New best score: -9.805778979334702
+2025-04-25 18:07:18,543 - model_tuning - INFO - extract_features executed in 134.48 seconds
+2025-04-25 18:11:29,213 - model_tuning - INFO - extract_features executed in 130.86 seconds
+2025-04-25 18:12:55,533 - model_tuning - INFO - Bayesian optimization completed
+2025-04-25 18:12:55,533 - model_tuning - INFO - Best parameters: {'xgb_home_n_estimators': 436, 'xgb_home_learning_rate': 0.030302665165245407, 'xgb_home_max_depth': 5, 'xgb_home_subsample': 0.855574766219009, 'xgb_home_colsample_bytree': 0.9047505230698578, 'gb_home_n_estimators': 207, 'gb_home_learning_rate': 0.013869615701144236, 'gb_home_max_depth': 10, 'gb_home_subsample': 0.6987860105437612, 'ridge_home_alpha': 0.35748189510916684, 'lasso_home_alpha': 0.3259344887239374, 'final_home_alpha': 1.0643154121134486, 'xgb_away_n_estimators': 381, 'xgb_away_learning_rate': 0.02036217355302977, 'xgb_away_max_depth': 7, 'xgb_away_subsample': 0.8478921996725411, 'xgb_away_colsample_bytree': 0.6142750108986499, 'gb_away_n_estimators': 129, 'gb_away_learning_rate': 0.2823460625321134, 'gb_away_max_depth': 7, 'gb_away_subsample': 0.6304145874152045, 'ridge_away_alpha': 9.744534538859272, 'lasso_away_alpha': 0.7875135841747096, 'final_away_alpha': 0.47302093349336893, 'random_state': 42}
+2025-04-25 18:12:55,534 - model_tuning - INFO - Best score: -9.805778979334702
+2025-04-25 18:12:55,534 - model_tuning - INFO - optimize executed in 2199.82 seconds
+2025-04-25 18:12:55,535 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\optimized_score_model_1745618506.pkl
+2025-04-25 18:12:55,611 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\optimized_score_model_info_1745618506.json
+2025-04-25 18:12:55,612 - model_tuning - INFO - Successfully saved model 1745618506
+2025-04-25 18:12:55,613 - model_tuning - INFO - save executed in 0.08 seconds
+2025-04-25 18:12:55,614 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 18:12:55,615 - model_tuning - INFO - Adding new model 1745618506 to registry
+2025-04-25 18:12:55,615 - model_tuning - INFO - Updated best model to 1745598830 with MAE 4.075830549721303
+2025-04-25 18:12:55,616 - model_tuning - INFO - Saving registry with 4 models to C:\Projects\2k_spark\models\score_model_registry.json
+2025-04-25 18:12:55,617 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\score_model_registry.json
+2025-04-25 18:12:55,618 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 18:12:55,631 - model_tuning - INFO - optimize_score_model executed in 2200.04 seconds
+2025-04-25 18:13:20,542 - model_tuning - INFO - Loaded registry with 4 models
+2025-04-25 18:16:35,250 - model_tuning - INFO - Loading player stats from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 18:16:35,255 - model_tuning - INFO - Loading match history from C:\Projects\2k_spark\output\match_history.json
+2025-04-25 18:16:35,311 - model_tuning - INFO - load_data executed in 0.06 seconds
+2025-04-25 18:16:35,316 - model_tuning - INFO - Starting Bayesian optimization with 10 trials
+2025-04-25 18:16:35,335 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:18:50,747 - model_tuning - INFO - extract_features executed in 135.41 seconds
+2025-04-25 18:18:50,748 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:18:50,756 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:18:51,157 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:18:56,259 - model_tuning - INFO - Evaluating model
+2025-04-25 18:18:56,434 - model_tuning - INFO - Model trained with accuracy: 0.6955
+2025-04-25 18:18:56,435 - model_tuning - INFO - train executed in 141.10 seconds
+2025-04-25 18:18:56,435 - model_tuning - INFO - New best parameters found: {'n_estimators': 408, 'max_depth': 6, 'min_samples_split': 16, 'min_samples_leaf': 6, 'max_features': 'log2', 'bootstrap': True, 'class_weight': 'balanced_subsample', 'random_state': 42}
+2025-04-25 18:18:56,436 - model_tuning - INFO - New best score: 0.695500387897595
+2025-04-25 18:18:56,437 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:21:11,436 - model_tuning - INFO - extract_features executed in 135.00 seconds
+2025-04-25 18:21:11,436 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:21:11,442 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:21:11,753 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:21:24,078 - model_tuning - INFO - Evaluating model
+2025-04-25 18:21:24,160 - model_tuning - INFO - Model trained with accuracy: 0.6843
+2025-04-25 18:21:24,162 - model_tuning - INFO - train executed in 147.73 seconds
+2025-04-25 18:21:24,164 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:23:38,342 - model_tuning - INFO - extract_features executed in 134.18 seconds
+2025-04-25 18:23:38,342 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:23:38,348 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:23:38,666 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:23:53,034 - model_tuning - INFO - Evaluating model
+2025-04-25 18:23:53,406 - model_tuning - INFO - Model trained with accuracy: 0.6730
+2025-04-25 18:23:53,407 - model_tuning - INFO - train executed in 149.24 seconds
+2025-04-25 18:23:53,416 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:26:11,911 - model_tuning - INFO - extract_features executed in 138.50 seconds
+2025-04-25 18:26:11,912 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:26:11,918 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:26:12,284 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:26:14,222 - model_tuning - INFO - Evaluating model
+2025-04-25 18:26:14,292 - model_tuning - INFO - Model trained with accuracy: 0.6664
+2025-04-25 18:26:14,293 - model_tuning - INFO - train executed in 140.88 seconds
+2025-04-25 18:26:14,297 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:28:52,939 - model_tuning - INFO - extract_features executed in 158.64 seconds
+2025-04-25 18:28:52,940 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:28:52,946 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:28:53,310 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:29:02,090 - model_tuning - INFO - Evaluating model
+2025-04-25 18:29:02,310 - model_tuning - INFO - Model trained with accuracy: 0.6715
+2025-04-25 18:29:02,311 - model_tuning - INFO - train executed in 168.01 seconds
+2025-04-25 18:29:02,318 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:31:32,635 - model_tuning - INFO - extract_features executed in 150.32 seconds
+2025-04-25 18:31:32,636 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:31:32,642 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:31:32,972 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:31:40,828 - model_tuning - INFO - Evaluating model
+2025-04-25 18:31:40,910 - model_tuning - INFO - Model trained with accuracy: 0.6621
+2025-04-25 18:31:40,911 - model_tuning - INFO - train executed in 158.59 seconds
+2025-04-25 18:31:40,914 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:34:07,703 - model_tuning - INFO - extract_features executed in 146.79 seconds
+2025-04-25 18:34:07,704 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:34:07,710 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:34:08,105 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:34:10,811 - model_tuning - INFO - Evaluating model
+2025-04-25 18:34:10,900 - model_tuning - INFO - Model trained with accuracy: 0.6885
+2025-04-25 18:34:10,901 - model_tuning - INFO - train executed in 149.99 seconds
+2025-04-25 18:34:10,904 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:36:37,879 - model_tuning - INFO - extract_features executed in 146.97 seconds
+2025-04-25 18:36:37,880 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:36:37,886 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:36:38,282 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:36:50,246 - model_tuning - INFO - Evaluating model
+2025-04-25 18:36:50,311 - model_tuning - INFO - Model trained with accuracy: 0.6381
+2025-04-25 18:36:50,313 - model_tuning - INFO - train executed in 159.41 seconds
+2025-04-25 18:36:50,317 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:39:02,669 - model_tuning - INFO - extract_features executed in 132.35 seconds
+2025-04-25 18:39:02,670 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:39:02,676 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:39:03,025 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:39:44,304 - model_tuning - INFO - Evaluating model
+2025-04-25 18:39:44,488 - model_tuning - INFO - Model trained with accuracy: 0.6455
+2025-04-25 18:39:44,490 - model_tuning - INFO - train executed in 174.17 seconds
+2025-04-25 18:39:44,494 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:41:55,601 - model_tuning - INFO - extract_features executed in 131.11 seconds
+2025-04-25 18:41:55,602 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:41:55,608 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:41:55,933 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:42:06,692 - model_tuning - INFO - Evaluating model
+2025-04-25 18:42:06,998 - model_tuning - INFO - Model trained with accuracy: 0.6815
+2025-04-25 18:42:06,999 - model_tuning - INFO - train executed in 142.50 seconds
+2025-04-25 18:42:11,474 - model_tuning - INFO - Bayesian optimization completed
+2025-04-25 18:42:11,474 - model_tuning - INFO - Best parameters: {'n_estimators': 408, 'max_depth': 6, 'min_samples_split': 16, 'min_samples_leaf': 6, 'max_features': 'log2', 'bootstrap': True, 'class_weight': 'balanced_subsample', 'random_state': 42}
+2025-04-25 18:42:11,475 - model_tuning - INFO - Best score: 0.695500387897595
+2025-04-25 18:42:11,475 - model_tuning - INFO - optimize executed in 1536.16 seconds
+2025-04-25 18:42:11,476 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\optimized_winner_model_1745619395.pkl
+2025-04-25 18:42:11,543 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\optimized_winner_model_info_1745619395.json
+2025-04-25 18:42:11,545 - model_tuning - INFO - Successfully saved model 1745619395
+2025-04-25 18:42:11,545 - model_tuning - INFO - save executed in 0.07 seconds
+2025-04-25 18:42:11,546 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 18:42:11,546 - model_tuning - INFO - Adding new model 1745619395 to registry
+2025-04-25 18:42:11,547 - model_tuning - INFO - Updated best model to 1745598821 with accuracy 1.0
+2025-04-25 18:42:11,547 - model_tuning - INFO - Saving registry with 3 models to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 18:42:11,548 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 18:42:11,548 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 18:42:11,556 - model_tuning - INFO - optimize_winner_model executed in 1536.31 seconds
+2025-04-25 18:42:36,198 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 18:46:10,714 - model_tuning - INFO - extract_features executed in 137.46 seconds
+2025-04-25 18:46:39,643 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\scorepredictionmodel_1745621033.pkl
+2025-04-25 18:46:39,659 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\scorepredictionmodel_info_1745621033.json
+2025-04-25 18:46:39,661 - model_tuning - INFO - Successfully saved model 1745621033
+2025-04-25 18:46:39,661 - model_tuning - INFO - save executed in 0.02 seconds
+2025-04-25 18:46:39,663 - model_tuning - INFO - Loaded registry with 4 models
+2025-04-25 18:46:39,664 - model_tuning - INFO - Adding new model 1745621033 to registry
+2025-04-25 18:46:39,664 - model_tuning - INFO - Updated best model to 1745598830 with MAE 4.075830549721303
+2025-04-25 18:46:39,664 - model_tuning - INFO - Saving registry with 5 models to C:\Projects\2k_spark\models\score_model_registry.json
+2025-04-25 18:46:39,666 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\score_model_registry.json
+2025-04-25 18:46:39,666 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 18:46:48,438 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 18:49:07,650 - model_tuning - INFO - extract_features executed in 139.21 seconds
+2025-04-25 18:49:07,650 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 18:49:07,656 - model_tuning - INFO - Performing feature selection
+2025-04-25 18:49:08,061 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 18:49:09,894 - model_tuning - INFO - Evaluating model
+2025-04-25 18:49:09,958 - model_tuning - INFO - Model trained with accuracy: 0.6784
+2025-04-25 18:49:09,960 - model_tuning - INFO - train executed in 141.52 seconds
+2025-04-25 18:49:09,961 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\winnerpredictionmodel_1745621208.pkl
+2025-04-25 18:49:09,970 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745621208.json
+2025-04-25 18:49:09,971 - model_tuning - INFO - Successfully saved model 1745621208
+2025-04-25 18:49:09,971 - model_tuning - INFO - save executed in 0.01 seconds
+2025-04-25 18:49:09,972 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 18:49:09,973 - model_tuning - INFO - Adding new model 1745621208 to registry
+2025-04-25 18:49:09,973 - model_tuning - INFO - Updated best model to 1745598821 with accuracy 1.0
+2025-04-25 18:49:09,973 - model_tuning - INFO - Saving registry with 4 models to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 18:49:09,975 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 18:49:09,975 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 18:49:19,432 - model_tuning - INFO - Loaded registry with 5 models

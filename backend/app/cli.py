@@ -5,6 +5,7 @@ Command-line interface for the 2K Flash application.
 import argparse
 import sys
 import os
+import subprocess
 from pathlib import Path
 
 # Add parent directory to path
@@ -13,6 +14,7 @@ backend_dir = current_dir.parent
 sys.path.append(str(backend_dir))
 
 from config.logging_config import get_data_fetcher_logger
+from config.settings import DEFAULT_RANDOM_STATE
 from utils.logging import log_execution_time, log_exceptions
 from core.data.fetchers.token import TokenFetcher
 from core.data.fetchers.match_history import MatchHistoryFetcher
@@ -202,6 +204,54 @@ def list_models(args):
             print(f"Best model: {best_model.get('model_id')} (MAE: {best_model.get('total_score_mae', 0):.4f})")
 
 
+@log_execution_time(logger)
+@log_exceptions(logger)
+def optimize_score_model(args):
+    """
+    Optimize score prediction model using Bayesian optimization.
+
+    Args:
+        args (argparse.Namespace): Command-line arguments
+    """
+    script_path = os.path.join(os.path.dirname(__file__), "optimize_score_model.py")
+
+    # Run the script as a subprocess
+    cmd = [
+        sys.executable,
+        script_path,
+        "--n-trials", str(args.n_trials),
+        "--test-size", str(args.test_size),
+        "--random-state", str(args.random_state)
+    ]
+
+    print(f"Running command: {' '.join(cmd)}")
+    subprocess.run(cmd)
+
+
+@log_execution_time(logger)
+@log_exceptions(logger)
+def optimize_winner_model(args):
+    """
+    Optimize winner prediction model using Bayesian optimization.
+
+    Args:
+        args (argparse.Namespace): Command-line arguments
+    """
+    script_path = os.path.join(os.path.dirname(__file__), "optimize_winner_model.py")
+
+    # Run the script as a subprocess
+    cmd = [
+        sys.executable,
+        script_path,
+        "--n-trials", str(args.n_trials),
+        "--test-size", str(args.test_size),
+        "--random-state", str(args.random_state)
+    ]
+
+    print(f"Running command: {' '.join(cmd)}")
+    subprocess.run(cmd)
+
+
 def main():
     """
     Main entry point for the CLI.
@@ -234,6 +284,18 @@ def main():
     list_models_parser = subparsers.add_parser('list-models', help='List trained models')
     list_models_parser.add_argument('--type', choices=['winner', 'score'], default='winner', help='Model type')
 
+    # Score model optimizer
+    optimize_score_parser = subparsers.add_parser('optimize-score-model', help='Optimize score prediction model')
+    optimize_score_parser.add_argument('--n-trials', type=int, default=20, help='Number of optimization trials (minimum 10)')
+    optimize_score_parser.add_argument('--test-size', type=float, default=0.2, help='Proportion of data to use for testing')
+    optimize_score_parser.add_argument('--random-state', type=int, default=DEFAULT_RANDOM_STATE, help='Random state for reproducibility')
+
+    # Winner model optimizer
+    optimize_winner_parser = subparsers.add_parser('optimize-winner-model', help='Optimize winner prediction model')
+    optimize_winner_parser.add_argument('--n-trials', type=int, default=20, help='Number of optimization trials (minimum 10)')
+    optimize_winner_parser.add_argument('--test-size', type=float, default=0.2, help='Proportion of data to use for testing')
+    optimize_winner_parser.add_argument('--random-state', type=int, default=DEFAULT_RANDOM_STATE, help='Random state for reproducibility')
+
     args = parser.parse_args()
 
     if args.command == 'fetch-token':
@@ -250,6 +312,10 @@ def main():
         train_score_model(args)
     elif args.command == 'list-models':
         list_models(args)
+    elif args.command == 'optimize-score-model':
+        optimize_score_model(args)
+    elif args.command == 'optimize-winner-model':
+        optimize_winner_model(args)
     else:
         parser.print_help()
 
