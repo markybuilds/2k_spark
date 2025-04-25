@@ -3,6 +3,7 @@
  */
 
 import { MatchList } from "@/components/matches/match-list";
+import { ContentLayout, PageHeader } from "@/components/layout/content-layout";
 
 export const metadata = {
   title: "Upcoming Matches - 2K Flash",
@@ -11,15 +12,13 @@ export const metadata = {
 
 export default function MatchesPage() {
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="text-3xl font-bold tracking-tight">Upcoming Matches</h1>
-        <p className="text-muted-foreground">
-          View upcoming NBA 2K25 eSports matches.
-        </p>
-      </div>
-      
+    <ContentLayout>
+      <PageHeader
+        title="Upcoming Matches"
+        description="View upcoming NBA 2K25 eSports matches."
+      />
+
       <MatchList />
-    </div>
+    </ContentLayout>
   );
 }

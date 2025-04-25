@@ -50,3 +50,19 @@
 2025-04-25 12:58:46,172 - prediction_refresh - INFO - Loaded 12884 matches from history
 2025-04-25 12:58:46,176 - prediction_refresh - INFO - Generated prediction history for 100 matches
 2025-04-25 12:58:46,185 - prediction_refresh - INFO - Saved 100 prediction history entries to C:\Projects\2k_spark\output\prediction_history.json
+2025-04-25 13:27:38,312 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 13:27:54,189 - prediction_refresh - INFO - Fetching match history
+2025-04-25 13:28:15,579 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 13:28:15,652 - prediction_refresh - INFO - Fetching upcoming matches
+2025-04-25 13:28:31,351 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 13:28:31,361 - prediction_refresh - INFO - refresh_data executed in 53.05 seconds
+2025-04-25 13:28:31,362 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 13:28:31,391 - prediction_refresh - INFO - Using winner prediction model 1745600056
+2025-04-25 13:28:31,403 - prediction_refresh - INFO - Using score prediction model 1745600066
+2025-04-25 13:28:31,489 - prediction_refresh - INFO - Generating predictions for 30 upcoming matches
+2025-04-25 13:28:31,508 - prediction_refresh - ERROR - Error during prediction refresh: Pipeline is not fitted yet.
+2025-04-25 13:28:31,509 - prediction_refresh - INFO - refresh_predictions executed in 0.15 seconds
+2025-04-25 13:28:31,509 - prediction_refresh - ERROR - Prediction refresh failed
+2025-04-25 13:28:31,509 - prediction_refresh - INFO - refresh_predictions executed in 53.20 seconds
+2025-04-25 13:50:13,467 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 13:50:27,508 - prediction_refresh - INFO - Fetching match history

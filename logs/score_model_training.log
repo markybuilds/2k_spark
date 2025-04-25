@@ -15,3 +15,4 @@
 2025-04-25 12:54:46,905 - score_model_training - INFO - train executed in 20.53 seconds
 2025-04-25 12:55:51,542 - score_model_training - ERROR - Exception in predict: Pipeline is not fitted yet.
 2025-04-25 12:57:25,311 - score_model_training - ERROR - Exception in predict: Pipeline is not fitted yet.
+2025-04-25 13:28:31,501 - score_model_training - ERROR - Exception in predict: Pipeline is not fitted yet.
