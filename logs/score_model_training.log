@@ -1,0 +1,17 @@
+2025-04-25 12:33:50,904 - score_model_training - INFO - Training score prediction model with 10 matches
+2025-04-25 12:33:50,905 - score_model_training - INFO - Extracted 10 samples with 18 features
+2025-04-25 12:33:50,906 - score_model_training - INFO - Training home score model with 8 samples
+2025-04-25 12:33:55,483 - score_model_training - INFO - Training away score model with 8 samples
+2025-04-25 12:33:56,029 - score_model_training - INFO - Evaluating models
+2025-04-25 12:33:56,046 - score_model_training - INFO - Models trained with total score MAE: 4.0758
+2025-04-25 12:33:56,047 - score_model_training - INFO - train executed in 5.14 seconds
+2025-04-25 12:35:50,935 - score_model_training - ERROR - Exception in predict: Pipeline is not fitted yet.
+2025-04-25 12:54:26,378 - score_model_training - INFO - Training score prediction model with 12885 matches
+2025-04-25 12:54:26,469 - score_model_training - INFO - Extracted 12885 samples with 18 features
+2025-04-25 12:54:26,472 - score_model_training - INFO - Training home score model with 10308 samples
+2025-04-25 12:54:38,771 - score_model_training - INFO - Training away score model with 10308 samples
+2025-04-25 12:54:46,843 - score_model_training - INFO - Evaluating models
+2025-04-25 12:54:46,903 - score_model_training - INFO - Models trained with total score MAE: 9.6230
+2025-04-25 12:54:46,905 - score_model_training - INFO - train executed in 20.53 seconds
+2025-04-25 12:55:51,542 - score_model_training - ERROR - Exception in predict: Pipeline is not fitted yet.
+2025-04-25 12:57:25,311 - score_model_training - ERROR - Exception in predict: Pipeline is not fitted yet.

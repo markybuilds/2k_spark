@@ -1,0 +1,52 @@
+2025-04-25 12:14:46,508 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 12:15:02,533 - prediction_refresh - INFO - Fetching match history
+2025-04-25 12:15:28,509 - prediction_refresh - ERROR - Failed to fetch match history
+2025-04-25 12:15:28,509 - prediction_refresh - INFO - refresh_data executed in 42.00 seconds
+2025-04-25 12:15:28,509 - prediction_refresh - ERROR - Data refresh failed
+2025-04-25 12:15:28,510 - prediction_refresh - INFO - refresh_predictions executed in 42.00 seconds
+2025-04-25 12:34:30,422 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 12:34:44,581 - prediction_refresh - INFO - Fetching match history
+2025-04-25 12:35:13,138 - prediction_refresh - ERROR - Failed to fetch match history
+2025-04-25 12:35:13,138 - prediction_refresh - INFO - refresh_data executed in 42.72 seconds
+2025-04-25 12:35:13,138 - prediction_refresh - ERROR - Data refresh failed
+2025-04-25 12:35:13,139 - prediction_refresh - INFO - refresh_predictions executed in 42.73 seconds
+2025-04-25 12:35:50,771 - prediction_refresh - INFO - Using existing data files instead of refreshing
+2025-04-25 12:35:50,771 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 12:35:50,922 - prediction_refresh - INFO - Generating predictions for 5 upcoming matches
+2025-04-25 12:35:51,038 - prediction_refresh - ERROR - Error during prediction refresh: Pipeline is not fitted yet.
+2025-04-25 12:35:51,038 - prediction_refresh - INFO - refresh_predictions executed in 0.27 seconds
+2025-04-25 12:35:51,039 - prediction_refresh - ERROR - Prediction refresh failed
+2025-04-25 12:35:51,039 - prediction_refresh - INFO - refresh_predictions executed in 0.27 seconds
+2025-04-25 12:54:55,735 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 12:55:09,867 - prediction_refresh - INFO - Fetching match history
+2025-04-25 12:55:35,504 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 12:55:35,584 - prediction_refresh - INFO - Fetching upcoming matches
+2025-04-25 12:55:51,382 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 12:55:51,392 - prediction_refresh - INFO - refresh_data executed in 55.66 seconds
+2025-04-25 12:55:51,393 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 12:55:51,528 - prediction_refresh - INFO - Generating predictions for 30 upcoming matches
+2025-04-25 12:55:51,551 - prediction_refresh - ERROR - Error during prediction refresh: Pipeline is not fitted yet.
+2025-04-25 12:55:51,552 - prediction_refresh - INFO - refresh_predictions executed in 0.16 seconds
+2025-04-25 12:55:51,553 - prediction_refresh - ERROR - Prediction refresh failed
+2025-04-25 12:55:51,554 - prediction_refresh - INFO - refresh_predictions executed in 55.84 seconds
+2025-04-25 12:56:30,243 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 12:56:44,326 - prediction_refresh - INFO - Fetching match history
+2025-04-25 12:57:09,235 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 12:57:09,324 - prediction_refresh - INFO - Fetching upcoming matches
+2025-04-25 12:57:25,064 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 12:57:25,072 - prediction_refresh - INFO - refresh_data executed in 54.83 seconds
+2025-04-25 12:57:25,072 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 12:57:25,097 - prediction_refresh - INFO - Using winner prediction model 1745600056
+2025-04-25 12:57:25,127 - prediction_refresh - INFO - Using score prediction model 1745600066
+2025-04-25 12:57:25,297 - prediction_refresh - INFO - Generating predictions for 30 upcoming matches
+2025-04-25 12:57:25,318 - prediction_refresh - ERROR - Error during prediction refresh: Pipeline is not fitted yet.
+2025-04-25 12:57:25,319 - prediction_refresh - INFO - refresh_predictions executed in 0.25 seconds
+2025-04-25 12:57:25,319 - prediction_refresh - ERROR - Prediction refresh failed
+2025-04-25 12:57:25,320 - prediction_refresh - INFO - refresh_predictions executed in 55.08 seconds
+2025-04-25 12:58:04,239 - prediction_refresh - INFO - Loaded statistics for 94 players
+2025-04-25 12:58:04,240 - prediction_refresh - INFO - Loaded 30 upcoming matches
+2025-04-25 12:58:04,240 - prediction_refresh - INFO - Generated predictions for 30 matches
+2025-04-25 12:58:04,242 - prediction_refresh - INFO - Saved 30 predictions to C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 12:58:46,172 - prediction_refresh - INFO - Loaded 12884 matches from history
+2025-04-25 12:58:46,176 - prediction_refresh - INFO - Generated prediction history for 100 matches
+2025-04-25 12:58:46,185 - prediction_refresh - INFO - Saved 100 prediction history entries to C:\Projects\2k_spark\output\prediction_history.json

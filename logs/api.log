@@ -1,0 +1,185 @@
+2025-04-25 12:13:27,744 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:27,745 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:27,797 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:27,798 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:29,760 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:29,761 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:30,129 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:30,132 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:34,070 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:34,071 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:34,321 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:34,321 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:52,865 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:52,866 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:53,169 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:53,170 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:54,873 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:54,873 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:55,478 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:55,478 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:59,182 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:59,183 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:13:59,482 - api - ERROR - Error retrieving stats: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:13:59,483 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:14:20,231 - api - ERROR - Error retrieving predictions: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:14:20,232 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:14:20,283 - api - ERROR - Error retrieving predictions: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:14:20,283 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:14:22,236 - api - ERROR - Error retrieving predictions: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:14:22,237 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:14:22,589 - api - ERROR - Error retrieving predictions: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:14:22,590 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:14:26,547 - api - ERROR - Error retrieving predictions: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:14:26,548 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:14:26,894 - api - ERROR - Error retrieving predictions: [Errno 2] No such file or directory: 'C:\\Projects\\2k_spark\\output\\upcoming_match_predictions.json'
+2025-04-25 12:14:26,895 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:14:44,272 - api - INFO - refresh_data executed in 0.02 seconds
+2025-04-25 12:29:09,406 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:29:09,459 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:36:58,940 - api - INFO - get_predictions executed in 0.08 seconds
+2025-04-25 12:36:58,940 - api - INFO - get_predictions executed in 0.04 seconds
+2025-04-25 12:37:11,781 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:37:15,535 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:37:20,769 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 12:37:24,827 - api - INFO - get_score_predictions executed in 0.00 seconds
+2025-04-25 12:37:39,818 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:37:40,117 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:58:57,109 - api - INFO - get_predictions executed in 0.17 seconds
+2025-04-25 12:59:04,935 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 12:59:14,946 - api - INFO - get_prediction_history executed in 0.01 seconds
+2025-04-25 12:59:20,715 - api - INFO - get_score_predictions executed in 0.00 seconds
+2025-04-25 12:59:46,339 - api - INFO - get_score_predictions executed in 0.00 seconds
+2025-04-25 12:59:50,410 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:59:50,716 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:59:54,104 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 12:59:54,158 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:01:10,139 - api - INFO - get_score_predictions executed in 0.00 seconds
+2025-04-25 13:01:10,191 - api - INFO - get_score_predictions executed in 0.00 seconds
+2025-04-25 13:01:11,574 - api - INFO - get_prediction_history executed in 0.01 seconds
+2025-04-25 13:01:11,873 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:02:05,037 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:02:11,215 - api - INFO - get_stats executed in 0.00 seconds
+2025-04-25 13:02:17,704 - api - INFO - get_prediction_history executed in 0.01 seconds
+2025-04-25 13:02:26,147 - api - INFO - get_score_predictions executed in 0.00 seconds
+2025-04-25 13:05:41,117 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:05:41,232 - api - INFO - Returning 0 future matches
+2025-04-25 13:05:41,233 - api - INFO - get_upcoming_matches executed in 0.12 seconds
+2025-04-25 13:05:46,722 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 13:05:46,723 - api - INFO - Returning statistics for 94 players
+2025-04-25 13:05:46,742 - api - INFO - get_player_stats executed in 0.05 seconds
+2025-04-25 13:05:54,609 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:05:54,610 - api - INFO - Returning 0 future matches
+2025-04-25 13:05:54,611 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:06:23,773 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:06:23,825 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:07:00,477 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:07:00,728 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:07:45,740 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:07:45,831 - api - INFO - Returning 0 future matches
+2025-04-25 13:07:45,832 - api - INFO - get_upcoming_matches executed in 0.09 seconds
+2025-04-25 13:07:51,569 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 13:07:51,570 - api - INFO - Returning statistics for 94 players
+2025-04-25 13:07:51,581 - api - INFO - get_player_stats executed in 0.02 seconds
+2025-04-25 13:08:02,472 - api - INFO - get_prediction_history executed in 0.01 seconds
+2025-04-25 13:08:35,019 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:09:00,348 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:09:14,535 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:09:21,411 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:09:27,601 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:09:41,415 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:10:22,173 - api - INFO - get_prediction_history executed in 0.01 seconds
+2025-04-25 13:11:02,957 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:11:25,563 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:11:25,563 - api - INFO - Returning 0 future matches
+2025-04-25 13:11:25,564 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 13:13:12,017 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 13:13:12,018 - api - INFO - Returning statistics for 94 players
+2025-04-25 13:13:12,026 - api - INFO - get_player_stats executed in 0.02 seconds
+2025-04-25 13:13:12,067 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:13:24,909 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 13:13:24,910 - api - INFO - Returning statistics for 94 players
+2025-04-25 13:13:24,917 - api - INFO - get_player_stats executed in 0.01 seconds
+2025-04-25 13:13:56,072 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:14:00,947 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 13:14:00,948 - api - INFO - Returning statistics for 94 players
+2025-04-25 13:14:00,959 - api - INFO - get_player_stats executed in 0.02 seconds
+2025-04-25 13:14:26,853 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:14:26,854 - api - INFO - Returning 0 future matches
+2025-04-25 13:14:26,857 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:14:27,166 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:14:27,167 - api - INFO - Returning 0 future matches
+2025-04-25 13:14:27,169 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:15:18,369 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:15:18,370 - api - INFO - Returning 0 future matches
+2025-04-25 13:15:18,371 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:15:25,263 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:15:25,264 - api - INFO - Returning 0 future matches
+2025-04-25 13:15:25,265 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 13:16:37,723 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:16:37,727 - api - INFO - Returning 0 future matches
+2025-04-25 13:16:37,728 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-25 13:18:18,134 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:18:18,137 - api - INFO - Returning 30 matches
+2025-04-25 13:18:18,142 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-25 13:18:25,065 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:18:25,066 - api - INFO - Returning 30 matches
+2025-04-25 13:18:25,067 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:18:48,956 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:18:48,956 - api - INFO - Returning 30 matches
+2025-04-25 13:18:48,957 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 13:18:49,258 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:18:49,259 - api - INFO - Returning 30 matches
+2025-04-25 13:18:49,260 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 13:18:55,959 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 13:18:55,961 - api - INFO - Returning statistics for 94 players
+2025-04-25 13:18:55,979 - api - INFO - get_player_stats executed in 0.04 seconds
+2025-04-25 13:18:56,007 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 13:18:56,008 - api - INFO - Returning statistics for 94 players
+2025-04-25 13:18:56,019 - api - INFO - get_player_stats executed in 0.02 seconds
+2025-04-25 13:19:07,317 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:19:07,318 - api - INFO - Returning 30 matches
+2025-04-25 13:19:07,323 - api - INFO - Retrieved score model accuracy: 4.075830549721303
+2025-04-25 13:19:07,326 - api - INFO - get_score_predictions executed in 0.01 seconds
+2025-04-25 13:19:07,636 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:19:07,636 - api - INFO - Returning 30 matches
+2025-04-25 13:19:07,638 - api - INFO - Retrieved score model accuracy: 4.075830549721303
+2025-04-25 13:19:07,639 - api - INFO - get_score_predictions executed in 0.00 seconds
+2025-04-25 13:19:35,815 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 13:19:35,816 - api - INFO - Returning statistics for 94 players
+2025-04-25 13:19:35,832 - api - INFO - get_player_stats executed in 0.03 seconds
+2025-04-25 13:19:35,879 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-25 13:19:35,880 - api - INFO - Returning statistics for 94 players
+2025-04-25 13:19:35,891 - api - INFO - get_player_stats executed in 0.03 seconds
+2025-04-25 13:19:46,697 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:19:46,997 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:20:20,180 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:20:20,238 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:21:06,087 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:21:21,846 - api - INFO - get_prediction_history executed in 0.01 seconds
+2025-04-25 13:21:22,094 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:21:32,931 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:21:35,028 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:21:35,028 - api - INFO - Returning 30 matches
+2025-04-25 13:21:35,030 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 13:21:35,332 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:21:35,333 - api - INFO - Returning 30 matches
+2025-04-25 13:21:35,338 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-25 13:21:42,063 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:21:42,064 - api - INFO - Returning 30 matches
+2025-04-25 13:21:42,065 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 13:21:42,115 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 13:21:42,115 - api - INFO - Returning 30 matches
+2025-04-25 13:21:42,116 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 13:21:47,254 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:21:47,254 - api - INFO - Returning 30 matches
+2025-04-25 13:21:47,256 - api - INFO - Retrieved score model accuracy: 4.075830549721303
+2025-04-25 13:21:47,257 - api - INFO - get_score_predictions executed in 0.00 seconds
+2025-04-25 13:21:47,563 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 13:21:47,564 - api - INFO - Returning 30 matches
+2025-04-25 13:21:47,567 - api - INFO - Retrieved score model accuracy: 4.075830549721303
+2025-04-25 13:21:47,568 - api - INFO - get_score_predictions executed in 0.01 seconds
+2025-04-25 13:21:55,303 - api - INFO - get_prediction_history executed in 0.00 seconds
+2025-04-25 13:21:55,613 - api - INFO - get_prediction_history executed in 0.01 seconds
+2025-04-25 13:22:01,678 - api - INFO - get_stats executed in 0.01 seconds
+2025-04-25 13:22:01,727 - api - INFO - get_stats executed in 0.00 seconds

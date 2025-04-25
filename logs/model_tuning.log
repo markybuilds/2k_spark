@@ -1,0 +1,95 @@
+2025-04-25 12:14:46,507 - model_tuning - INFO - Registry file C:\Projects\2k_spark\models\model_registry.json does not exist, creating new registry
+2025-04-25 12:14:46,508 - model_tuning - INFO - Registry file C:\Projects\2k_spark\models\score_model_registry.json does not exist, creating new registry
+2025-04-25 12:33:41,487 - model_tuning - INFO - Training winner prediction model with 10 matches
+2025-04-25 12:33:41,487 - model_tuning - INFO - Extracted 10 samples with 14 features
+2025-04-25 12:33:41,493 - model_tuning - INFO - Training model with 8 samples
+2025-04-25 12:33:41,604 - model_tuning - INFO - Evaluating model
+2025-04-25 12:33:41,640 - model_tuning - INFO - Model trained with accuracy: 1.0000
+2025-04-25 12:33:41,640 - model_tuning - INFO - train executed in 0.15 seconds
+2025-04-25 12:33:41,641 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\winnerpredictionmodel_1745598821.pkl
+2025-04-25 12:33:41,644 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745598821.json
+2025-04-25 12:33:41,645 - model_tuning - INFO - Successfully saved model 1745598821
+2025-04-25 12:33:41,646 - model_tuning - INFO - save executed in 0.01 seconds
+2025-04-25 12:33:41,646 - model_tuning - INFO - Registry file C:\Projects\2k_spark\models\model_registry.json does not exist, creating new registry
+2025-04-25 12:33:41,647 - model_tuning - INFO - Adding new model 1745598821 to registry
+2025-04-25 12:33:41,647 - model_tuning - INFO - Updated best model to 1745598821 with accuracy 1.0
+2025-04-25 12:33:41,647 - model_tuning - INFO - Saving registry with 1 models to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 12:33:41,648 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 12:33:41,649 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 12:33:56,049 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 12:33:56,065 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\scorepredictionmodel_info_1745598830.json
+2025-04-25 12:33:56,067 - model_tuning - INFO - Successfully saved model 1745598830
+2025-04-25 12:33:56,068 - model_tuning - INFO - save executed in 0.02 seconds
+2025-04-25 12:33:56,069 - model_tuning - INFO - Registry file C:\Projects\2k_spark\models\score_model_registry.json does not exist, creating new registry
+2025-04-25 12:33:56,069 - model_tuning - INFO - Adding new model 1745598830 to registry
+2025-04-25 12:33:56,070 - model_tuning - INFO - Updated best model to 1745598830 with MAE 4.075830549721303
+2025-04-25 12:33:56,070 - model_tuning - INFO - Saving registry with 1 models to C:\Projects\2k_spark\models\score_model_registry.json
+2025-04-25 12:33:56,071 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\score_model_registry.json
+2025-04-25 12:33:56,072 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 12:34:30,413 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-25 12:34:30,421 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-25 12:35:50,770 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-25 12:35:50,770 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-25 12:35:50,773 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745598821.pkl
+2025-04-25 12:35:50,778 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745598821.json
+2025-04-25 12:35:50,787 - model_tuning - INFO - Successfully loaded model 1745598821
+2025-04-25 12:35:50,788 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 12:35:50,909 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\scorepredictionmodel_info_1745598830.json
+2025-04-25 12:35:50,922 - model_tuning - INFO - Successfully loaded model 1745598830
+2025-04-25 12:37:15,534 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-25 12:37:24,827 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-25 12:54:16,154 - model_tuning - INFO - Training winner prediction model with 12885 matches
+2025-04-25 12:54:16,233 - model_tuning - INFO - Extracted 12885 samples with 14 features
+2025-04-25 12:54:16,235 - model_tuning - INFO - Training model with 10308 samples
+2025-04-25 12:54:17,372 - model_tuning - INFO - Evaluating model
+2025-04-25 12:54:17,441 - model_tuning - INFO - Model trained with accuracy: 0.6705
+2025-04-25 12:54:17,442 - model_tuning - INFO - train executed in 1.29 seconds
+2025-04-25 12:54:17,442 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\winnerpredictionmodel_1745600056.pkl
+2025-04-25 12:54:17,452 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745600056.json
+2025-04-25 12:54:17,453 - model_tuning - INFO - Successfully saved model 1745600056
+2025-04-25 12:54:17,456 - model_tuning - INFO - save executed in 0.01 seconds
+2025-04-25 12:54:17,457 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-25 12:54:17,457 - model_tuning - INFO - Adding new model 1745600056 to registry
+2025-04-25 12:54:17,457 - model_tuning - INFO - Updated best model to 1745598821 with accuracy 1.0
+2025-04-25 12:54:17,457 - model_tuning - INFO - Saving registry with 2 models to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 12:54:17,458 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 12:54:17,459 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 12:54:46,906 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\scorepredictionmodel_1745600066.pkl
+2025-04-25 12:54:46,926 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\scorepredictionmodel_info_1745600066.json
+2025-04-25 12:54:46,930 - model_tuning - INFO - Successfully saved model 1745600066
+2025-04-25 12:54:46,931 - model_tuning - INFO - save executed in 0.03 seconds
+2025-04-25 12:54:46,931 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-25 12:54:46,932 - model_tuning - INFO - Adding new model 1745600066 to registry
+2025-04-25 12:54:46,932 - model_tuning - INFO - Updated best model to 1745598830 with MAE 4.075830549721303
+2025-04-25 12:54:46,933 - model_tuning - INFO - Saving registry with 2 models to C:\Projects\2k_spark\models\score_model_registry.json
+2025-04-25 12:54:46,935 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\score_model_registry.json
+2025-04-25 12:54:46,935 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 12:54:55,725 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 12:54:55,735 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 12:55:51,422 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745598821.pkl
+2025-04-25 12:55:51,426 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745598821.json
+2025-04-25 12:55:51,427 - model_tuning - INFO - Successfully loaded model 1745598821
+2025-04-25 12:55:51,428 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 12:55:51,526 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\scorepredictionmodel_info_1745598830.json
+2025-04-25 12:55:51,527 - model_tuning - INFO - Successfully loaded model 1745598830
+2025-04-25 12:56:30,242 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 12:56:30,243 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 12:57:25,097 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745600056.pkl
+2025-04-25 12:57:25,118 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745600056.json
+2025-04-25 12:57:25,126 - model_tuning - INFO - Successfully loaded model 1745600056
+2025-04-25 12:57:25,127 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\scorepredictionmodel_1745600066.pkl
+2025-04-25 12:57:25,282 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\scorepredictionmodel_info_1745600066.json
+2025-04-25 12:57:25,296 - model_tuning - INFO - Successfully loaded model 1745600066
+2025-04-25 12:59:04,935 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 12:59:20,714 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 12:59:46,338 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:01:10,138 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:01:10,191 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:02:11,213 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:02:26,147 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:19:07,322 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:19:07,637 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:21:47,256 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:21:47,566 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:22:01,675 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 13:22:01,726 - model_tuning - INFO - Loaded registry with 2 models

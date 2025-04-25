@@ -1,0 +1,26 @@
+# Core libraries
+requests==2.31.0
+numpy==1.26.4
+pandas==2.2.1
+scikit-learn==1.4.1
+scipy==1.12.0
+xgboost==2.0.3
+
+# Web scraping
+selenium==4.18.1
+
+# Model optimization
+scikit-optimize==0.9.0
+
+# Visualization (for debugging and analysis)
+matplotlib==3.8.3
+seaborn==0.13.1
+
+# API Server
+flask==3.0.2
+flask-cors==4.0.0
+
+# Utilities
+python-dateutil==2.9.0
+tqdm==4.66.2
+pytz==2024.1
