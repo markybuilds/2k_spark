@@ -375,3 +375,53 @@
 2025-04-25 18:49:09,975 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\model_registry.json
 2025-04-25 18:49:09,975 - model_tuning - INFO - save_registry executed in 0.00 seconds
 2025-04-25 18:49:19,432 - model_tuning - INFO - Loaded registry with 5 models
+2025-04-25 19:04:17,345 - model_tuning - INFO - Cleaning model registry
+2025-04-25 19:04:17,346 - model_tuning - INFO - Loaded registry with 4 models
+2025-04-25 19:04:17,346 - model_tuning - INFO - Found 4 models in registry
+2025-04-25 19:04:17,347 - model_tuning - WARNING - Model 1745598821 is problematic: samples=10, accuracy=1.0
+2025-04-25 19:04:17,347 - model_tuning - WARNING - Model 1745619395 is problematic: samples=0, accuracy=0.695500387897595
+2025-04-25 19:04:17,348 - model_tuning - INFO - Found 2 problematic models and 2 valid models
+2025-04-25 19:04:17,348 - model_tuning - INFO - Removing model 1745598821 from registry
+2025-04-25 19:04:17,349 - model_tuning - INFO - Removed model 1745598821 from registry
+2025-04-25 19:04:17,349 - model_tuning - INFO - Updated best model to 1745619395 with accuracy 0.695500387897595
+2025-04-25 19:04:17,349 - model_tuning - INFO - Saving registry with 3 models to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 19:04:17,351 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 19:04:17,351 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 19:04:17,352 - model_tuning - INFO - Removing model file: C:\Projects\2k_spark\models\winnerpredictionmodel_1745598821.pkl
+2025-04-25 19:04:17,353 - model_tuning - INFO - Removing model info file: C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745598821.json
+2025-04-25 19:04:17,354 - model_tuning - INFO - Removing model 1745619395 from registry
+2025-04-25 19:04:17,355 - model_tuning - INFO - Removed model 1745619395 from registry
+2025-04-25 19:04:17,356 - model_tuning - INFO - Updated best model to 1745621208 with accuracy 0.678432893716059
+2025-04-25 19:04:17,356 - model_tuning - INFO - Saving registry with 2 models to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 19:04:17,357 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 19:04:17,358 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 19:04:17,358 - model_tuning - INFO - Removing model file: C:\Projects\2k_spark\models\optimized_winner_model_1745619395.pkl
+2025-04-25 19:04:17,360 - model_tuning - INFO - Removing model info file: C:\Projects\2k_spark\models\optimized_winner_model_info_1745619395.json
+2025-04-25 19:04:17,362 - model_tuning - INFO - Registry now contains 2 models
+2025-04-25 19:04:17,363 - model_tuning - INFO - Model 1745600056: samples=12885, accuracy=0.670547147846333
+2025-04-25 19:04:17,364 - model_tuning - INFO - Model 1745621208: samples=12889, accuracy=0.678432893716059
+2025-04-25 19:04:17,364 - model_tuning - INFO - Best model is now 1745621208 with accuracy 0.678432893716059
+2025-04-25 19:04:17,365 - model_tuning - INFO - clean_model_registry executed in 0.02 seconds
+2025-04-25 19:04:26,418 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 19:04:34,963 - model_tuning - INFO - Training winner prediction model with 12889 matches
+2025-04-25 19:07:09,584 - model_tuning - INFO - extract_features executed in 154.62 seconds
+2025-04-25 19:07:09,585 - model_tuning - INFO - Extracted 12889 samples with 46 features
+2025-04-25 19:07:09,585 - model_tuning - INFO - Performing feature selection
+2025-04-25 19:07:10,024 - model_tuning - INFO - Performing 5-fold cross-validation
+2025-04-25 19:07:19,229 - model_tuning - INFO - Cross-validation scores: [0.68696664 0.68114818 0.66718386 0.68502715 0.68684517]
+2025-04-25 19:07:19,229 - model_tuning - INFO - Mean CV accuracy: 0.6814 ± 0.0074
+2025-04-25 19:07:19,236 - model_tuning - INFO - Training model with 10311 samples and 23 selected features
+2025-04-25 19:07:21,117 - model_tuning - INFO - Evaluating model
+2025-04-25 19:07:21,182 - model_tuning - INFO - Model trained with accuracy: 0.6874
+2025-04-25 19:07:21,183 - model_tuning - INFO - train executed in 166.22 seconds
+2025-04-25 19:07:21,183 - model_tuning - INFO - Saving model to C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 19:07:21,193 - model_tuning - INFO - Saving model info to C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745622274.json
+2025-04-25 19:07:21,195 - model_tuning - INFO - Successfully saved model 1745622274
+2025-04-25 19:07:21,196 - model_tuning - INFO - save executed in 0.01 seconds
+2025-04-25 19:07:21,197 - model_tuning - INFO - Loaded registry with 2 models
+2025-04-25 19:07:21,197 - model_tuning - INFO - Adding new model 1745622274 to registry
+2025-04-25 19:07:21,198 - model_tuning - INFO - Updated best model to 1745622274 with accuracy 0.6873545384018619
+2025-04-25 19:07:21,198 - model_tuning - INFO - Saving registry with 3 models to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 19:07:21,199 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\model_registry.json
+2025-04-25 19:07:21,199 - model_tuning - INFO - save_registry executed in 0.00 seconds
+2025-04-25 19:07:30,869 - model_tuning - INFO - Loaded registry with 3 models

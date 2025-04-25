@@ -62,7 +62,7 @@ class WinnerPredictionModel(BaseModel):
 
     @log_execution_time(logger)
     @log_exceptions(logger)
-    def train(self, player_stats, matches, test_size=0.2):
+    def train(self, player_stats, matches, test_size=0.2, min_samples=100, cv_folds=5):
         """
         Train the model on match data.
 
@@ -70,6 +70,8 @@ class WinnerPredictionModel(BaseModel):
             player_stats (dict): Player statistics dictionary
             matches (list): List of match data dictionaries
             test_size (float): Proportion of data to use for testing
+            min_samples (int): Minimum number of samples required for training
+            cv_folds (int): Number of cross-validation folds
 
         Returns:
             self: The trained model
@@ -85,12 +87,12 @@ class WinnerPredictionModel(BaseModel):
             logger.error("No valid features extracted from matches")
             raise ValueError("No valid features extracted from matches")
 
-        logger.info(f"Extracted {len(X)} samples with {X.shape[1]} features")
+        # Check if we have enough samples
+        if len(X) < min_samples:
+            logger.error(f"Insufficient samples for training: {len(X)} < {min_samples}")
+            raise ValueError(f"Insufficient samples for training: {len(X)} < {min_samples}")
 
-        # Split data into training and testing sets
-        X_train, X_test, y_train, y_test = train_test_split(
-            X, y, test_size=test_size, random_state=self.random_state, stratify=y
-        )
+        logger.info(f"Extracted {len(X)} samples with {X.shape[1]} features")
 
         # Feature selection
         logger.info("Performing feature selection")
@@ -98,20 +100,38 @@ class WinnerPredictionModel(BaseModel):
             XGBClassifier(n_estimators=100, random_state=self.random_state),
             threshold="median"
         )
-        X_train_selected = self.feature_selector.fit_transform(X_train, y_train)
-        X_test_selected = self.feature_selector.transform(X_test)
+        X_selected = self.feature_selector.fit_transform(X, y)
+
+        # Perform cross-validation
+        logger.info(f"Performing {cv_folds}-fold cross-validation")
+        cv = StratifiedKFold(n_splits=cv_folds, shuffle=True, random_state=self.random_state)
+        cv_scores = cross_val_score(self.model, X_selected, y, cv=cv, scoring='accuracy')
+
+        logger.info(f"Cross-validation scores: {cv_scores}")
+        logger.info(f"Mean CV accuracy: {cv_scores.mean():.4f} ± {cv_scores.std():.4f}")
+
+        # Split data into training and testing sets
+        X_train, X_test, y_train, y_test = train_test_split(
+            X_selected, y, test_size=test_size, random_state=self.random_state, stratify=y
+        )
 
         # Train model with selected features
-        logger.info(f"Training model with {len(X_train_selected)} samples and {X_train_selected.shape[1]} selected features")
-        self.model.fit(X_train_selected, y_train)
+        logger.info(f"Training model with {len(X_train)} samples and {X_selected.shape[1]} selected features")
+        self.model.fit(X_train, y_train)
 
         # Evaluate model
         logger.info("Evaluating model")
-        metrics = self._evaluate_model(X_test_selected, y_test)
+        metrics = self._evaluate_model(X_test, y_test)
+
+        # Add cross-validation results to metrics
+        metrics["cv_scores"] = cv_scores.tolist()
+        metrics["cv_mean_accuracy"] = float(cv_scores.mean())
+        metrics["cv_std_accuracy"] = float(cv_scores.std())
 
         # Update model info
         self.model_info["metrics"] = metrics
         self.model_info["accuracy"] = metrics["accuracy"]
+        self.model_info["cv_accuracy"] = metrics["cv_mean_accuracy"]
         self.model_info["data_files"] = {
             "player_stats": "player_stats.json",
             "match_history": "match_history.json"
@@ -119,8 +139,9 @@ class WinnerPredictionModel(BaseModel):
         self.model_info["num_samples"] = len(X)
         self.model_info["num_features"] = {
             "original": X.shape[1],
-            "selected": X_train_selected.shape[1]
+            "selected": X_selected.shape[1]
         }
+        self.model_info["validation_method"] = f"{cv_folds}-fold cross-validation"
 
         logger.info(f"Model trained with accuracy: {metrics['accuracy']:.4f}")
         return self
@@ -184,7 +205,8 @@ class WinnerPredictionModel(BaseModel):
                 "home_win_probability": 0.5,
                 "away_win_probability": 0.5,
                 "predicted_winner": "home" if np.random.random() > 0.5 else "away",
-                "confidence": 0.5
+                "confidence": 0.5,
+                "prediction_method": "fallback_random"
             }
 
         # Create a single-match list for feature extraction
@@ -202,8 +224,11 @@ class WinnerPredictionModel(BaseModel):
             # Apply feature selection if available
             if self.feature_selector is not None:
                 X_selected = self.feature_selector.transform(X)
+                prediction_method = "model_with_feature_selection"
             else:
+                logger.warning("Feature selector not available, using raw features")
                 X_selected = X
+                prediction_method = "model_without_feature_selection"
 
             # Make prediction
             probabilities = self.model.predict_proba(X_selected)[0]
@@ -228,6 +253,7 @@ class WinnerPredictionModel(BaseModel):
                 away_prob = 0.5
 
             probabilities = [away_prob, home_prob]
+            prediction_method = "fallback_win_rates"
 
         home_win_probability = probabilities[1]
         away_win_probability = probabilities[0]
@@ -239,17 +265,20 @@ class WinnerPredictionModel(BaseModel):
             "home_win_probability": float(home_win_probability),
             "away_win_probability": float(away_win_probability),
             "predicted_winner": predicted_winner,
-            "confidence": float(confidence)
+            "confidence": float(confidence),
+            "prediction_method": prediction_method
         }
 
     @log_exceptions(logger)
-    def evaluate(self, player_stats, matches):
+    def evaluate(self, player_stats, matches, min_samples=100, cv_folds=5):
         """
         Evaluate the model on match data.
 
         Args:
             player_stats (dict): Player statistics dictionary
             matches (list): List of match data dictionaries
+            min_samples (int): Minimum number of samples required for evaluation
+            cv_folds (int): Number of cross-validation folds
 
         Returns:
             dict: Evaluation metrics
@@ -263,11 +292,37 @@ class WinnerPredictionModel(BaseModel):
             logger.error("No valid features extracted from matches")
             raise ValueError("No valid features extracted from matches")
 
+        # Check if we have enough samples
+        if len(X) < min_samples:
+            logger.warning(f"Insufficient samples for reliable evaluation: {len(X)} < {min_samples}")
+            logger.warning("Evaluation results may not be statistically significant")
+
         # Apply feature selection if available
         if self.feature_selector is not None:
             X_selected = self.feature_selector.transform(X)
         else:
+            logger.warning("Feature selector not available, using raw features")
             X_selected = X
 
-        # Evaluate model
-        return self._evaluate_model(X_selected, y)
+        # Perform cross-validation if we have enough samples
+        if len(X) >= cv_folds * 2:  # Ensure at least 2 samples per fold
+            logger.info(f"Performing {cv_folds}-fold cross-validation")
+            cv = StratifiedKFold(n_splits=cv_folds, shuffle=True, random_state=self.random_state)
+            cv_scores = cross_val_score(self.model, X_selected, y, cv=cv, scoring='accuracy')
+
+            logger.info(f"Cross-validation scores: {cv_scores}")
+            logger.info(f"Mean CV accuracy: {cv_scores.mean():.4f} ± {cv_scores.std():.4f}")
+
+            # Get standard metrics
+            metrics = self._evaluate_model(X_selected, y)
+
+            # Add cross-validation results
+            metrics["cv_scores"] = cv_scores.tolist()
+            metrics["cv_mean_accuracy"] = float(cv_scores.mean())
+            metrics["cv_std_accuracy"] = float(cv_scores.std())
+            metrics["validation_method"] = f"{cv_folds}-fold cross-validation"
+
+            return metrics
+        else:
+            logger.warning(f"Insufficient samples for {cv_folds}-fold cross-validation, using standard evaluation")
+            return self._evaluate_model(X_selected, y)

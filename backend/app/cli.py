@@ -252,6 +252,31 @@ def optimize_winner_model(args):
     subprocess.run(cmd)
 
 
+@log_execution_time(logger)
+@log_exceptions(logger)
+def clean_model_registry(args):
+    """
+    Clean model registry by removing problematic models.
+
+    Args:
+        args (argparse.Namespace): Command-line arguments
+    """
+    script_path = os.path.join(os.path.dirname(__file__), "clean_model_registry.py")
+
+    # Run the script as a subprocess
+    cmd = [
+        sys.executable,
+        script_path,
+        "--min-samples", str(args.min_samples)
+    ]
+
+    if args.keep_files:
+        cmd.append("--keep-files")
+
+    print(f"Running command: {' '.join(cmd)}")
+    subprocess.run(cmd)
+
+
 def main():
     """
     Main entry point for the CLI.
@@ -296,6 +321,11 @@ def main():
     optimize_winner_parser.add_argument('--test-size', type=float, default=0.2, help='Proportion of data to use for testing')
     optimize_winner_parser.add_argument('--random-state', type=int, default=DEFAULT_RANDOM_STATE, help='Random state for reproducibility')
 
+    # Model registry cleaner
+    clean_registry_parser = subparsers.add_parser('clean-model-registry', help='Clean model registry by removing problematic models')
+    clean_registry_parser.add_argument('--min-samples', type=int, default=100, help='Minimum number of samples required for a model to be considered valid')
+    clean_registry_parser.add_argument('--keep-files', action='store_true', help='Keep model files on disk')
+
     args = parser.parse_args()
 
     if args.command == 'fetch-token':
@@ -316,6 +346,8 @@ def main():
         optimize_score_model(args)
     elif args.command == 'optimize-winner-model':
         optimize_winner_model(args)
+    elif args.command == 'clean-model-registry':
+        clean_model_registry(args)
     else:
         parser.print_help()
 
