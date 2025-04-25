@@ -454,3 +454,27 @@
 2025-04-25 17:28:20,389 - api - INFO - get_score_predictions executed in 0.01 seconds
 2025-04-25 18:18:14,163 - api - INFO - Starting scheduled prediction refresh
 2025-04-25 18:18:14,165 - api - INFO - Scheduled prediction refresh completed
+2025-04-25 19:10:19,015 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 19:10:19,016 - api - INFO - Returning 30 matches
+2025-04-25 19:10:19,019 - api - INFO - Retrieved score model accuracy: 4.075830549721303
+2025-04-25 19:10:19,021 - api - INFO - get_score_predictions executed in 0.01 seconds
+2025-04-25 19:10:24,300 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 19:10:24,301 - api - INFO - Returning 30 matches
+2025-04-25 19:10:24,303 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 19:10:24,613 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 19:10:24,615 - api - INFO - Returning 30 matches
+2025-04-25 19:10:24,618 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-25 19:10:39,141 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 19:10:39,142 - api - INFO - Returning 30 matches
+2025-04-25 19:10:39,148 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-25 19:10:39,204 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 19:10:39,204 - api - INFO - Returning 30 matches
+2025-04-25 19:10:39,206 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 19:10:41,940 - api - INFO - Loaded 28 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 19:10:41,941 - api - INFO - Returning 28 matches
+2025-04-25 19:10:41,943 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 19:10:42,239 - api - INFO - Loaded 28 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 19:10:42,242 - api - INFO - Returning 28 matches
+2025-04-25 19:10:42,243 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 19:18:14,166 - api - INFO - Starting scheduled prediction refresh
+2025-04-25 19:18:14,168 - api - INFO - Scheduled prediction refresh completed
