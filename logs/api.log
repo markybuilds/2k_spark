@@ -34311,3 +34311,5 @@
 2025-04-26 02:31:02,253 - api - INFO - Returning 32 matches
 2025-04-26 02:31:02,261 - api - INFO - Retrieved score model accuracy: 4.075830549721303
 2025-04-26 02:31:02,264 - api - INFO - get_score_predictions executed in 0.02 seconds
+2025-04-26 03:08:20,542 - api - INFO - Starting scheduled prediction refresh
+2025-04-26 03:08:20,543 - api - INFO - Scheduled prediction refresh completed

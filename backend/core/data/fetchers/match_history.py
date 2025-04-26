@@ -12,7 +12,7 @@ from config.logging_config import get_data_fetcher_logger
 from utils.time import format_api_date_range
 from utils.logging import log_execution_time, log_exceptions
 from utils.validation import validate_match_data
-from core.data.fetchers.token import TokenFetcher
+from core.data.fetchers import TokenFetcher
 
 logger = get_data_fetcher_logger()
 

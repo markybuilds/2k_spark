@@ -16,7 +16,7 @@ sys.path.append(str(backend_dir))
 from config.logging_config import get_data_fetcher_logger
 from config.settings import DEFAULT_RANDOM_STATE
 from utils.logging import log_execution_time, log_exceptions
-from core.data.fetchers.token import TokenFetcher
+from core.data.fetchers import TokenFetcher
 from core.data.fetchers.match_history import MatchHistoryFetcher
 from core.data.fetchers.upcoming_matches import UpcomingMatchesFetcher
 from core.data.processors.player_stats import PlayerStatsProcessor

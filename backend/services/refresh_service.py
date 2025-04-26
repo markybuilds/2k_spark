@@ -21,7 +21,7 @@ from config.settings import (
 from config.logging_config import get_prediction_refresh_logger
 from utils.logging import log_execution_time, log_exceptions
 from utils.time import get_current_time, format_datetime
-from core.data.fetchers.token import TokenFetcher
+from core.data.fetchers import TokenFetcher
 from core.data.fetchers.match_history import MatchHistoryFetcher
 from core.data.fetchers.upcoming_matches import UpcomingMatchesFetcher
 from core.data.processors.player_stats import PlayerStatsProcessor

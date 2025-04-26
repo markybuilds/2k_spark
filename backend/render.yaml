@@ -6,4 +6,12 @@ services:
     startCommand: python app/api.py
     envVars:
       - key: CORS_ORIGINS
-        value: "https://2k-spark.vercel.app"
+        value: "*"
+      - key: PYTHONUNBUFFERED
+        value: "true"
+      - key: RENDER
+        value: "1"
+      - key: H2H_TOKEN
+        value: "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyLWlkIjo5LCJuYW1lIjoiZ3Vlc3QiLCJyb2xlIjoidmlld2VyIiwidGVhbS1pZCI6bnVsbCwiZXhwIjoxNzQ1NzEzMzY4fQ.KrrapVSa6hGnU--WM0Ks40ELNTvvzydd2clTb4EgFqw"
+    plan: free
+    runtime: python3.9
