@@ -25,13 +25,23 @@ export function LiveMatchList() {
           apiClient.getScorePredictions()
         ]);
 
+        console.log('Raw predictions data sample:', predictionsData.length > 0 ? predictionsData[0] : 'No predictions');
+        console.log('Raw score predictions data:',
+          scorePredictionsData && scorePredictionsData.predictions ?
+          scorePredictionsData.predictions[0] : 'No score predictions');
+
         // Create a map of fixture IDs to score predictions
         const scorePredictionsMap = new Map();
         if (scorePredictionsData && scorePredictionsData.predictions) {
           scorePredictionsData.predictions.forEach(prediction => {
+            // Log each prediction to see its structure
+            console.log(`Prediction for fixture ${prediction.fixtureId}:`, prediction);
+
             scorePredictionsMap.set(prediction.fixtureId, {
-              homeScorePrediction: prediction.homeScorePrediction,
-              awayScorePrediction: prediction.awayScorePrediction
+              homeScorePrediction: prediction.score_prediction ? prediction.score_prediction.home_score : null,
+              awayScorePrediction: prediction.score_prediction ? prediction.score_prediction.away_score : null,
+              totalScore: prediction.score_prediction ? prediction.score_prediction.total_score : null,
+              scoreDiff: prediction.score_prediction ? Math.abs(prediction.score_prediction.score_diff) : null
             });
           });
         }
@@ -44,6 +54,11 @@ export function LiveMatchList() {
           // Find corresponding score prediction
           const scorePrediction = scorePredictionsMap.get(match.id);
 
+          console.log(`Processing match ${match.id}:`, {
+            prediction: prediction ? 'found' : 'not found',
+            scorePrediction: scorePrediction ? 'found' : 'not found'
+          });
+
           // Extract the probability values from the prediction
           let homeProbability = 0.5;
           let awayProbability = 0.5;
@@ -54,24 +69,48 @@ export function LiveMatchList() {
           }
 
           // Extract score predictions
-          let homeScorePrediction = "N/A";
-          let awayScorePrediction = "N/A";
+          let homeScorePrediction = null;
+          let awayScorePrediction = null;
+          let totalScore = null;
+          let scoreDiff = null;
 
-          if (scorePrediction) {
-            homeScorePrediction = scorePrediction.homeScorePrediction;
-            awayScorePrediction = scorePrediction.awayScorePrediction;
-          } else if (prediction && prediction.score_prediction) {
+          // Try to get score predictions from the prediction object first
+          if (prediction && prediction.score_prediction) {
+            console.log(`Found score prediction in prediction object for match ${match.id}:`, prediction.score_prediction);
             homeScorePrediction = prediction.score_prediction.home_score;
             awayScorePrediction = prediction.score_prediction.away_score;
+            totalScore = prediction.score_prediction.total_score;
+            scoreDiff = Math.abs(prediction.score_prediction.score_diff);
           }
+          // If not found, try the score prediction map
+          else if (scorePrediction) {
+            console.log(`Found score prediction in map for match ${match.id}:`, scorePrediction);
+            homeScorePrediction = scorePrediction.homeScorePrediction;
+            awayScorePrediction = scorePrediction.awayScorePrediction;
+            totalScore = scorePrediction.totalScore;
+            scoreDiff = scorePrediction.scoreDiff;
+          }
+
+          // Convert to strings for display
+          const homeScorePredictionStr = homeScorePrediction !== null ? String(homeScorePrediction) : "N/A";
+          const awayScorePredictionStr = awayScorePrediction !== null ? String(awayScorePrediction) : "N/A";
+          const totalScoreStr = totalScore !== null ? String(totalScore) : "N/A";
+          const scoreDiffStr = scoreDiff !== null ? String(scoreDiff) : "N/A";
 
           return {
             ...match,
             fixtureId: match.id,
             homeProbability: homeProbability,
             awayProbability: awayProbability,
-            homeScorePrediction: homeScorePrediction,
-            awayScorePrediction: awayScorePrediction
+            homeScorePrediction: homeScorePredictionStr,
+            awayScorePrediction: awayScorePredictionStr,
+            totalScore: totalScoreStr,
+            scoreDiff: scoreDiffStr,
+            // Keep the raw values for debugging
+            rawHomeScore: homeScorePrediction,
+            rawAwayScore: awayScorePrediction,
+            rawTotalScore: totalScore,
+            rawScoreDiff: scoreDiff
           };
         });
 
@@ -86,6 +125,13 @@ export function LiveMatchList() {
           // Only include matches that have started within the last 30 minutes
           return fixtureStart <= now && fixtureStart >= thirtyMinutesAgo;
         });
+
+        // Debug: Log the first match data to see what we have
+        if (filteredMatches.length > 0) {
+          console.log('First live match data:', JSON.stringify(filteredMatches[0], null, 2));
+        } else {
+          console.log('No live matches found');
+        }
 
         // Sort by most recently started first
         filteredMatches.sort((a, b) => {

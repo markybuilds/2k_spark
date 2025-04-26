@@ -30,6 +30,21 @@ export function LiveMatchCard({ match }: LiveMatchCardProps) {
   // Get score predictions if available
   const homeScorePrediction = match.homeScorePrediction || "N/A";
   const awayScorePrediction = match.awayScorePrediction || "N/A";
+  const totalScore = match.totalScore || "N/A";
+  const scoreDiff = match.scoreDiff || "N/A";
+
+  // Debug the score predictions
+  console.log('Match score predictions:', {
+    matchId: match.fixtureId,
+    homeScorePrediction,
+    awayScorePrediction,
+    totalScore,
+    scoreDiff,
+    rawHomeScore: match.rawHomeScore,
+    rawAwayScore: match.rawAwayScore,
+    rawTotalScore: match.rawTotalScore,
+    rawScoreDiff: match.rawScoreDiff
+  });
 
   return (
     <Card className="overflow-hidden">
@@ -92,11 +107,10 @@ export function LiveMatchCard({ match }: LiveMatchCardProps) {
             </div>
           </div>
 
-          {/* Score Prediction */}
-          {(homeScorePrediction !== "N/A" && awayScorePrediction !== "N/A") && (
+          {/* Score Prediction - Always show this section for debugging */}
             <div className="bg-muted p-3 rounded-md">
               <p className="text-sm font-medium mb-1">Predicted Score</p>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center mb-2">
                 <div className="flex items-center space-x-4">
                   <div className="text-center">
                     <p className="text-lg font-bold">{homeScorePrediction}</p>
@@ -109,8 +123,21 @@ export function LiveMatchCard({ match }: LiveMatchCardProps) {
                   </div>
                 </div>
               </div>
+
+              {/* Total Score */}
+              <div className="flex justify-center items-center mt-2 pt-2 border-t border-border/30">
+                <div className="flex items-center space-x-6">
+                  <div className="text-center">
+                    <p className="text-sm font-medium">Total</p>
+                    <p className="text-base font-bold">{totalScore}</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm font-medium">Spread</p>
+                    <p className="text-base font-bold">{scoreDiff}</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          )}
         </div>
       </CardContent>
     </Card>
