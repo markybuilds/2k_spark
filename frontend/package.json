@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "NODE_OPTIONS='--max-old-space-size=4096' next build"
+    "prebuild": "node build-script.js",
+    "vercel-build": "node build-script.js && next build"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.7",
