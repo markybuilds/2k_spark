@@ -39,6 +39,9 @@ export function Header() {
             <Link href="/predictions" className={`nav-link ${isActive('/predictions') ? 'active' : ''}`}>
               Predictions
             </Link>
+            <Link href="/live" className={`nav-link ${isActive('/live') ? 'active' : ''}`}>
+              Live
+            </Link>
             <Link href="/matches" className={`nav-link ${isActive('/matches') ? 'active' : ''}`}>
               Matches
             </Link>
