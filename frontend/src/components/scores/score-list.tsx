@@ -18,14 +18,11 @@ export function ScoreList() {
     const fetchScorePredictions = async () => {
       try {
         setLoading(true);
-        console.log('ScoreList: Fetching score predictions...');
 
         const data = await apiClient.getScorePredictions();
-        console.log(`ScoreList: Fetched ${data.predictions.length} score predictions`);
 
         // Filter out matches that have already started
         const now = new Date();
-        console.log('Current time:', now.toISOString());
 
         const upcomingMatches = data.predictions.filter(match => {
           // Parse the fixture start time
@@ -33,12 +30,9 @@ export function ScoreList() {
 
           // Only include matches that haven't started yet
           const isUpcoming = fixtureStart > now;
-          console.log(`Match ${match.fixtureId} start time: ${fixtureStart.toISOString()}, is upcoming: ${isUpcoming}`);
 
           return isUpcoming;
         });
-
-        console.log(`Showing ${upcomingMatches.length} upcoming score predictions after filtering out ${data.predictions.length - upcomingMatches.length} matches that have already started`);
 
         // Sort by start time (earliest first)
         upcomingMatches.sort((a, b) => {
@@ -49,7 +43,6 @@ export function ScoreList() {
         setModelAccuracy(data.summary.model_accuracy);
         setError(null);
       } catch (err) {
-        console.error('ScoreList: Error fetching score predictions:', err);
         setError('Failed to fetch score predictions. Please try again later.');
       } finally {
         setLoading(false);

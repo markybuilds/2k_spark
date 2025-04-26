@@ -1200,3 +1200,65 @@
 2025-04-25 22:56:06,254 - prediction_refresh - INFO - refresh_predictions executed in 0.56 seconds
 2025-04-25 22:56:06,254 - prediction_refresh - INFO - refresh_predictions executed in 59.33 seconds
 2025-04-25 22:56:06,254 - prediction_refresh - INFO - Refresh completed successfully in 59.33 seconds
+2025-04-25 23:05:43,530 - prediction_refresh - INFO - Refresh script started with PID: 3248
+2025-04-25 23:05:43,531 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 23:05:57,665 - prediction_refresh - INFO - Fetching match history
+2025-04-25 23:06:25,422 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 23:06:25,917 - prediction_refresh - INFO - Fetching upcoming matches for the next 30 days
+2025-04-25 23:06:41,435 - prediction_refresh - INFO - Successfully fetched 176 upcoming matches
+2025-04-25 23:06:41,436 - prediction_refresh - INFO - Match 1: ID=206561, Start=2025-04-25T04:03:00Z, Home=OREZ, Away=FIVESTAR
+2025-04-25 23:06:41,436 - prediction_refresh - INFO - Match 2: ID=206569, Start=2025-04-25T04:11:00Z, Home=DISCORD, Away=RAIN
+2025-04-25 23:06:41,436 - prediction_refresh - INFO - Match 3: ID=206537, Start=2025-04-25T04:19:00Z, Home=SABRE, Away=AIRFORCE
+2025-04-25 23:06:41,436 - prediction_refresh - INFO - Match 4: ID=206552, Start=2025-04-25T04:27:00Z, Home=ARCHER, Away=OCEAN
+2025-04-25 23:06:41,436 - prediction_refresh - INFO - Match 5: ID=206562, Start=2025-04-25T04:35:00Z, Home=GRANDMASTER, Away=CHIEF
+2025-04-25 23:06:41,436 - prediction_refresh - INFO - Match 6: ID=206572, Start=2025-04-25T04:43:00Z, Home=ARCHITECT, Away=AVATAR
+2025-04-25 23:06:41,437 - prediction_refresh - INFO - Match 7: ID=206540, Start=2025-04-25T04:51:00Z, Home=HERMES, Away=SABRE
+2025-04-25 23:06:41,437 - prediction_refresh - INFO - Match 8: ID=206549, Start=2025-04-25T04:59:00Z, Home=ANOMALY, Away=GUARD
+2025-04-25 23:06:41,437 - prediction_refresh - INFO - Match 9: ID=206560, Start=2025-04-25T05:07:00Z, Home=FIVESTAR, Away=CHIEF
+2025-04-25 23:06:41,437 - prediction_refresh - INFO - Match 10: ID=206576, Start=2025-04-25T05:15:00Z, Home=RAIN, Away=AVATAR
+2025-04-25 23:06:41,437 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 23:06:41,451 - prediction_refresh - INFO - refresh_data executed in 57.92 seconds
+2025-04-25 23:06:41,451 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 23:06:41,525 - prediction_refresh - INFO - Using winner prediction model 1745622274 with accuracy 0.6873545384018619
+2025-04-25 23:06:41,539 - prediction_refresh - INFO - Successfully loaded winner prediction model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 23:06:41,539 - prediction_refresh - INFO - Using score prediction model 1745598830 with MAE 4.075830549721303
+2025-04-25 23:06:41,660 - prediction_refresh - INFO - Successfully loaded score prediction model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 23:06:41,660 - prediction_refresh - INFO - Generating predictions for 176 upcoming matches
+2025-04-25 23:06:41,840 - prediction_refresh - INFO - Saving 176 predictions
+2025-04-25 23:06:41,849 - prediction_refresh - INFO - Updating prediction history
+2025-04-25 23:06:42,024 - prediction_refresh - INFO - Prediction history updated with 176 new predictions
+2025-04-25 23:06:42,027 - prediction_refresh - INFO - Prediction refresh completed successfully
+2025-04-25 23:06:42,031 - prediction_refresh - INFO - refresh_predictions executed in 0.58 seconds
+2025-04-25 23:06:42,031 - prediction_refresh - INFO - refresh_predictions executed in 58.50 seconds
+2025-04-25 23:06:42,031 - prediction_refresh - INFO - Refresh completed successfully in 58.50 seconds
+2025-04-25 23:07:26,706 - prediction_refresh - INFO - Refresh script started with PID: 5716
+2025-04-25 23:07:26,708 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 23:07:40,976 - prediction_refresh - INFO - Fetching match history
+2025-04-25 23:08:09,862 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 23:08:10,303 - prediction_refresh - INFO - Fetching upcoming matches for the next 30 days
+2025-04-25 23:08:26,225 - prediction_refresh - INFO - Successfully fetched 176 upcoming matches
+2025-04-25 23:08:26,225 - prediction_refresh - INFO - Match 1: ID=206561, Start=2025-04-25T04:03:00Z, Home=OREZ, Away=FIVESTAR
+2025-04-25 23:08:26,226 - prediction_refresh - INFO - Match 2: ID=206569, Start=2025-04-25T04:11:00Z, Home=DISCORD, Away=RAIN
+2025-04-25 23:08:26,226 - prediction_refresh - INFO - Match 3: ID=206537, Start=2025-04-25T04:19:00Z, Home=SABRE, Away=AIRFORCE
+2025-04-25 23:08:26,226 - prediction_refresh - INFO - Match 4: ID=206552, Start=2025-04-25T04:27:00Z, Home=ARCHER, Away=OCEAN
+2025-04-25 23:08:26,226 - prediction_refresh - INFO - Match 5: ID=206562, Start=2025-04-25T04:35:00Z, Home=GRANDMASTER, Away=CHIEF
+2025-04-25 23:08:26,226 - prediction_refresh - INFO - Match 6: ID=206572, Start=2025-04-25T04:43:00Z, Home=ARCHITECT, Away=AVATAR
+2025-04-25 23:08:26,227 - prediction_refresh - INFO - Match 7: ID=206540, Start=2025-04-25T04:51:00Z, Home=HERMES, Away=SABRE
+2025-04-25 23:08:26,227 - prediction_refresh - INFO - Match 8: ID=206549, Start=2025-04-25T04:59:00Z, Home=ANOMALY, Away=GUARD
+2025-04-25 23:08:26,227 - prediction_refresh - INFO - Match 9: ID=206560, Start=2025-04-25T05:07:00Z, Home=FIVESTAR, Away=CHIEF
+2025-04-25 23:08:26,227 - prediction_refresh - INFO - Match 10: ID=206576, Start=2025-04-25T05:15:00Z, Home=RAIN, Away=AVATAR
+2025-04-25 23:08:26,227 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 23:08:26,241 - prediction_refresh - INFO - refresh_data executed in 59.53 seconds
+2025-04-25 23:08:26,241 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 23:08:26,313 - prediction_refresh - INFO - Using winner prediction model 1745622274 with accuracy 0.6873545384018619
+2025-04-25 23:08:26,327 - prediction_refresh - INFO - Successfully loaded winner prediction model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 23:08:26,327 - prediction_refresh - INFO - Using score prediction model 1745598830 with MAE 4.075830549721303
+2025-04-25 23:08:26,417 - prediction_refresh - INFO - Successfully loaded score prediction model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 23:08:26,417 - prediction_refresh - INFO - Generating predictions for 176 upcoming matches
+2025-04-25 23:08:26,587 - prediction_refresh - INFO - Saving 176 predictions
+2025-04-25 23:08:26,594 - prediction_refresh - INFO - Updating prediction history
+2025-04-25 23:08:26,770 - prediction_refresh - INFO - Prediction history updated with 176 new predictions
+2025-04-25 23:08:26,772 - prediction_refresh - INFO - Prediction refresh completed successfully
+2025-04-25 23:08:26,775 - prediction_refresh - INFO - refresh_predictions executed in 0.53 seconds
+2025-04-25 23:08:26,775 - prediction_refresh - INFO - refresh_predictions executed in 60.07 seconds
+2025-04-25 23:08:26,775 - prediction_refresh - INFO - Refresh completed successfully in 60.07 seconds

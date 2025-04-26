@@ -17,14 +17,11 @@ export function MatchList() {
     const fetchUpcomingMatches = async () => {
       try {
         setLoading(true);
-        console.log('MatchList: Fetching upcoming matches...');
 
         const data = await apiClient.getUpcomingMatches();
-        console.log(`MatchList: Fetched ${data.length} matches`);
 
         // Filter out matches that have already started
         const now = new Date();
-        console.log('Current time:', now.toISOString());
 
         const filteredMatches = data.filter(match => {
           // Parse the fixture start time
@@ -32,12 +29,9 @@ export function MatchList() {
 
           // Only include matches that haven't started yet
           const isUpcoming = fixtureStart > now;
-          console.log(`Match ${match.fixtureId || match.id} start time: ${fixtureStart.toISOString()}, is upcoming: ${isUpcoming}`);
 
           return isUpcoming;
         });
-
-        console.log(`Showing ${filteredMatches.length} upcoming matches after filtering out ${data.length - filteredMatches.length} matches that have already started`);
 
         // Sort by start time (earliest first)
         filteredMatches.sort((a, b) => {
@@ -47,7 +41,6 @@ export function MatchList() {
         setUpcomingMatches(filteredMatches);
         setError(null);
       } catch (err) {
-        console.error('MatchList: Error fetching upcoming matches:', err);
         setError('Failed to fetch upcoming matches. Please try again later.');
       } finally {
         setLoading(false);

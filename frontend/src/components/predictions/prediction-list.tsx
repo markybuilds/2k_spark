@@ -17,7 +17,6 @@ export function PredictionList() {
     const fetchPredictions = async () => {
       try {
         setLoading(true);
-        console.log('PredictionList: Fetching predictions directly...');
 
         // Make the API request with fetch directly
         const response = await fetch(`http://localhost:5000/api/predictions?timestamp=${Date.now()}`);
@@ -27,18 +26,13 @@ export function PredictionList() {
         }
 
         const data = await response.json();
-        console.log(`PredictionList: Fetched predictions directly, response:`, data);
-
         let predictionsData = [];
 
         if (Array.isArray(data)) {
-          console.log(`PredictionList: Fetched ${data.length} predictions directly (array format)`);
           predictionsData = data;
         } else if (data && typeof data === 'object' && Array.isArray(data.predictions)) {
-          console.log(`PredictionList: Fetched ${data.predictions.length} predictions directly (object format)`);
           predictionsData = data.predictions;
         } else {
-          console.error('PredictionList: Unexpected API response format:', data);
           setError('Unexpected API response format');
           setPredictions([]);
           return;
@@ -46,7 +40,6 @@ export function PredictionList() {
 
         // Filter out matches that have already started
         const now = new Date();
-        console.log('Current time:', now.toISOString());
 
         const upcomingMatches = predictionsData.filter(match => {
           // Parse the fixture start time
@@ -54,12 +47,9 @@ export function PredictionList() {
 
           // Only include matches that haven't started yet
           const isUpcoming = fixtureStart > now;
-          console.log(`Match ${match.fixtureId} start time: ${fixtureStart.toISOString()}, is upcoming: ${isUpcoming}`);
 
           return isUpcoming;
         });
-
-        console.log(`Showing ${upcomingMatches.length} upcoming matches after filtering out ${predictionsData.length - upcomingMatches.length} matches that have already started`);
 
         // Sort by start time (earliest first)
         upcomingMatches.sort((a, b) => {
@@ -70,8 +60,7 @@ export function PredictionList() {
 
         setError(null);
       } catch (err) {
-        console.error('PredictionList: Error fetching predictions:', err);
-        setError(`Failed to fetch predictions: ${err.message}`);
+        setError(`Failed to fetch predictions. Please try again later.`);
       } finally {
         setLoading(false);
       }
@@ -80,8 +69,7 @@ export function PredictionList() {
     fetchPredictions();
   }, []);
 
-  // Debug information
-  console.log('PredictionList - predictions:', predictions);
+
 
   if (loading) {
     return (
