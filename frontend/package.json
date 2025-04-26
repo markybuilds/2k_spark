@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prebuild": "node build-script.js",
-    "vercel-build": "node build-script.js && next build"
+    "vercel-build": "npm install glob && node resolve-imports.js && next build"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.7",
