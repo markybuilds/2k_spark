@@ -1,0 +1,18 @@
+{
+  "models": [
+    {
+      "id": "optimized_score_model_1745618506",
+      "type": "score_prediction",
+      "path": "models/optimized_score_model_1745618506.pkl",
+      "created_at": "2025-04-26T12:39:00Z",
+      "metrics": {
+        "mae": 5.2,
+        "mse": 42.3,
+        "rmse": 6.5,
+        "r2": 0.58
+      },
+      "is_active": true
+    }
+  ],
+  "active_model_id": "optimized_score_model_1745618506"
+}

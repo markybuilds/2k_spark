@@ -140,9 +140,17 @@ def main():
     # Generate predictions
     predictions = generate_predictions(player_stats, upcoming_matches)
     logger.info(f"Generated predictions for {len(predictions)} matches")
-    
-    # Save predictions
-    save_predictions(predictions)
+
+    # Deduplicate predictions by fixtureId
+    unique = {}
+    for p in predictions:
+        unique[p['fixtureId']] = p
+    deduped_predictions = list(unique.values())
+    if len(deduped_predictions) != len(predictions):
+        logger.info(f"Removed {len(predictions) - len(deduped_predictions)} duplicate predictions based on fixtureId.")
+
+    # Save only unique predictions
+    save_predictions(deduped_predictions)
 
 if __name__ == "__main__":
     main()

@@ -13657,3 +13657,26 @@
 2025-04-26 01:36:29,356 - model_tuning - INFO - Loaded registry with 5 models
 2025-04-26 01:36:40,379 - model_tuning - INFO - Loaded registry with 5 models
 2025-04-26 01:36:40,430 - model_tuning - INFO - Loaded registry with 5 models
+2025-04-26 14:44:21,885 - model_tuning - INFO - Registry file C:\Projects\2k_spark\models\model_registry.json does not exist, creating new registry
+2025-04-26 14:44:21,886 - model_tuning - INFO - Registry file C:\Projects\2k_spark\models\score_model_registry.json does not exist, creating new registry
+2025-04-26 14:45:55,873 - model_tuning - INFO - Loading player stats from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:45:55,939 - model_tuning - INFO - Loading match history from C:\Projects\2k_spark\output\match_history.json
+2025-04-26 14:45:56,001 - model_tuning - INFO - load_data executed in 0.13 seconds
+2025-04-26 14:45:56,008 - model_tuning - INFO - Starting Bayesian optimization with 50 trials
+2025-04-26 14:45:56,030 - model_tuning - INFO - Training winner prediction model with 12949 matches
+2025-04-26 14:49:00,526 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-26 14:49:00,527 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-26 14:49:58,292 - model_tuning - WARNING - No best model set in registry
+2025-04-26 14:49:58,293 - model_tuning - ERROR - Exception in load: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'
+2025-04-26 15:12:38,123 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-26 15:12:38,124 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-26 15:13:35,784 - model_tuning - WARNING - No best model set in registry
+2025-04-26 15:13:35,785 - model_tuning - ERROR - Exception in load: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'
+2025-04-26 15:21:47,500 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-26 15:21:47,500 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-26 15:22:43,841 - model_tuning - WARNING - No best model set in registry
+2025-04-26 15:22:43,841 - model_tuning - ERROR - Exception in load: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'
+2025-04-26 15:26:32,926 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-26 15:26:32,926 - model_tuning - INFO - Loaded registry with 1 models
+2025-04-26 15:27:30,653 - model_tuning - WARNING - No best model set in registry
+2025-04-26 15:27:30,653 - model_tuning - ERROR - Exception in load: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'

@@ -32782,3 +32782,688 @@
 2025-04-26 01:48:50,767 - api - INFO - get_prediction_history executed in 0.08 seconds
 2025-04-26 01:51:19,141 - api - INFO - get_prediction_history executed in 0.09 seconds
 2025-04-26 01:53:26,489 - api - INFO - get_prediction_history executed in 0.09 seconds
+2025-04-26 14:25:18,089 - api - WARNING - Predictions file not found: C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:25:18,092 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-26 14:25:18,336 - api - WARNING - Predictions file not found: C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:25:18,337 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-26 14:29:21,610 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:29:21,611 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:29:21,683 - api - INFO - get_player_stats executed in 0.21 seconds
+2025-04-26 14:30:45,351 - api - WARNING - Predictions file not found: C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:30:45,392 - api - INFO - get_predictions executed in 0.04 seconds
+2025-04-26 14:30:45,469 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:30:45,472 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:30:45,543 - api - INFO - get_player_stats executed in 0.19 seconds
+2025-04-26 14:30:45,598 - api - WARNING - Predictions file not found: C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:30:45,598 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-26 14:31:59,248 - api - WARNING - Predictions file not found: C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:31:59,250 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-26 14:31:59,335 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:31:59,335 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:31:59,421 - api - INFO - get_player_stats executed in 0.17 seconds
+2025-04-26 14:31:59,490 - api - WARNING - Predictions file not found: C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:31:59,490 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-26 14:52:29,725 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:52:29,726 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 14:52:29,727 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 14:52:29,729 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 14:52:29,731 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 14:52:29,829 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:52:29,830 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 14:52:29,831 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:52:29,831 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 14:52:29,915 - api - INFO - get_player_stats executed in 0.19 seconds
+2025-04-26 14:52:29,915 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 14:52:29,916 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 14:52:29,917 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 14:52:29,917 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 14:52:29,918 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 14:52:29,918 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 14:52:29,919 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 14:52:29,919 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 14:52:29,920 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 14:52:29,921 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 14:52:29,922 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 14:52:29,922 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 14:52:29,923 - api - INFO - Returning 18 matches
+2025-04-26 14:52:29,923 - api - INFO - get_predictions executed in 0.20 seconds
+2025-04-26 14:52:29,968 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:52:29,969 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 14:52:29,969 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 14:52:29,970 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 14:52:29,970 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 14:52:29,970 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 14:52:29,971 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 14:52:29,971 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 14:52:29,972 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 14:52:29,972 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 14:52:29,972 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 14:52:29,973 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 14:52:29,973 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 14:52:29,973 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 14:52:29,974 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 14:52:29,974 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 14:52:29,974 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 14:52:29,975 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 14:52:29,975 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 14:52:29,975 - api - INFO - Returning 18 matches
+2025-04-26 14:52:29,976 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-26 14:54:07,237 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:54:07,238 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:54:07,298 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 14:54:07,484 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:54:07,484 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:54:07,548 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 14:54:07,665 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:54:07,665 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:54:07,749 - api - INFO - get_player_stats executed in 0.15 seconds
+2025-04-26 14:54:28,492 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:54:28,493 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 14:54:28,495 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 14:54:28,496 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 14:54:28,497 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 14:54:28,498 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 14:54:28,578 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:54:28,579 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 14:54:28,580 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:54:28,580 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 14:54:28,641 - api - INFO - get_player_stats executed in 0.15 seconds
+2025-04-26 14:54:28,641 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 14:54:28,642 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 14:54:28,642 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 14:54:28,643 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 14:54:28,643 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 14:54:28,644 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 14:54:28,645 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 14:54:28,645 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 14:54:28,645 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 14:54:28,646 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 14:54:28,646 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 14:54:28,646 - api - INFO - Returning 18 matches
+2025-04-26 14:54:28,647 - api - INFO - get_predictions executed in 0.16 seconds
+2025-04-26 14:54:29,012 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:54:29,013 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:54:29,013 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:54:29,014 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 14:54:29,084 - api - INFO - get_player_stats executed in 0.14 seconds
+2025-04-26 14:54:29,084 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 14:54:29,085 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 14:54:29,086 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 14:54:29,086 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 14:54:29,087 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 14:54:29,087 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 14:54:29,088 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 14:54:29,088 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 14:54:29,089 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 14:54:29,089 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 14:54:29,090 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 14:54:29,091 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 14:54:29,092 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 14:54:29,092 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 14:54:29,093 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 14:54:29,094 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 14:54:29,095 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 14:54:29,095 - api - INFO - Returning 18 matches
+2025-04-26 14:54:29,096 - api - INFO - get_predictions executed in 0.08 seconds
+2025-04-26 14:54:29,401 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:54:29,402 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 14:54:29,402 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 14:54:29,403 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 14:54:29,403 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 14:54:29,404 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 14:54:29,404 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 14:54:29,405 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 14:54:29,405 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 14:54:29,406 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 14:54:29,406 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 14:54:29,407 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 14:54:29,407 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 14:54:29,408 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 14:54:29,409 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 14:54:29,409 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 14:54:29,409 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 14:54:29,410 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 14:54:29,410 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 14:54:29,411 - api - INFO - Returning 18 matches
+2025-04-26 14:54:29,412 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-26 14:54:29,715 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:54:29,716 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 14:54:29,716 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 14:54:29,717 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 14:54:29,717 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 14:54:29,718 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 14:54:29,718 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 14:54:29,719 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 14:54:29,719 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 14:54:29,719 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 14:54:29,720 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 14:54:29,721 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 14:54:29,721 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 14:54:29,722 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 14:54:29,722 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 14:54:29,723 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 14:54:29,723 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 14:54:29,723 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 14:54:29,724 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 14:54:29,724 - api - INFO - Returning 18 matches
+2025-04-26 14:54:29,725 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-26 14:55:49,011 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:55:49,011 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:55:49,086 - api - INFO - get_player_stats executed in 0.20 seconds
+2025-04-26 14:55:49,214 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:55:49,214 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:55:49,290 - api - INFO - get_player_stats executed in 0.15 seconds
+2025-04-26 14:55:51,307 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:55:51,308 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:55:51,374 - api - INFO - get_player_stats executed in 0.14 seconds
+2025-04-26 14:55:51,754 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:55:51,755 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:55:51,836 - api - INFO - get_player_stats executed in 0.16 seconds
+2025-04-26 14:56:47,609 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:56:47,610 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:56:47,673 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 14:56:47,857 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:56:47,858 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:56:47,932 - api - INFO - get_player_stats executed in 0.14 seconds
+2025-04-26 14:57:04,810 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:57:04,811 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 14:57:04,812 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 14:57:04,813 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 14:57:04,813 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 14:57:04,814 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 14:57:04,814 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 14:57:04,816 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 14:57:04,874 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:57:04,874 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 14:57:04,875 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:57:04,875 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 14:57:04,939 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 14:57:04,940 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 14:57:04,940 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 14:57:04,941 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 14:57:04,942 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 14:57:04,942 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 14:57:04,943 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 14:57:04,943 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 14:57:04,944 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 14:57:04,944 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 14:57:04,945 - api - INFO - Returning 18 matches
+2025-04-26 14:57:04,945 - api - INFO - get_predictions executed in 0.13 seconds
+2025-04-26 14:57:05,250 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:57:05,250 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 14:57:05,272 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 14:57:05,317 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 14:57:05,318 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 14:57:05,318 - api - INFO - Returning statistics for 94 players
+2025-04-26 14:57:05,318 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 14:57:05,381 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 14:57:05,381 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 14:57:05,382 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 14:57:05,382 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 14:57:05,383 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 14:57:05,383 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 14:57:05,384 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 14:57:05,384 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 14:57:05,384 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 14:57:05,385 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 14:57:05,385 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 14:57:05,386 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 14:57:05,387 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 14:57:05,387 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 14:57:05,387 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 14:57:05,388 - api - INFO - Returning 18 matches
+2025-04-26 14:57:05,388 - api - INFO - get_predictions executed in 0.14 seconds
+2025-04-26 14:57:05,696 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:57:05,698 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 14:57:05,700 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 14:57:05,701 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 14:57:05,703 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 14:57:05,704 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 14:57:05,707 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 14:57:05,708 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 14:57:05,709 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 14:57:05,711 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 14:57:05,712 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 14:57:05,713 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 14:57:05,714 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 14:57:05,715 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 14:57:05,715 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 14:57:05,716 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 14:57:05,717 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 14:57:05,718 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 14:57:05,718 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 14:57:05,719 - api - INFO - Returning 18 matches
+2025-04-26 14:57:05,720 - api - INFO - get_predictions executed in 0.03 seconds
+2025-04-26 14:57:06,027 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 14:57:06,028 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 14:57:06,029 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 14:57:06,029 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 14:57:06,029 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 14:57:06,029 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 14:57:06,030 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 14:57:06,030 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 14:57:06,030 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 14:57:06,030 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 14:57:06,031 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 14:57:06,031 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 14:57:06,031 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 14:57:06,031 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 14:57:06,032 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 14:57:06,032 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 14:57:06,032 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 14:57:06,032 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 14:57:06,033 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 14:57:06,033 - api - INFO - Returning 18 matches
+2025-04-26 14:57:06,033 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-26 15:08:53,084 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:08:53,085 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 15:08:53,086 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 15:08:53,086 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:08:53,087 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:08:53,088 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:08:53,088 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:08:53,174 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:08:53,174 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:08:53,174 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:08:53,174 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:08:53,242 - api - INFO - get_player_stats executed in 0.16 seconds
+2025-04-26 15:08:53,242 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:08:53,243 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:08:53,243 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:08:53,243 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:08:53,243 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:08:53,244 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:08:53,244 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:08:53,244 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:08:53,244 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:08:53,245 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:08:53,245 - api - INFO - Returning 18 matches
+2025-04-26 15:08:53,246 - api - INFO - get_predictions executed in 0.16 seconds
+2025-04-26 15:08:53,334 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:08:53,334 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 15:08:53,334 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 15:08:53,334 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:08:53,335 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:08:53,335 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:08:53,335 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:08:53,335 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:08:53,335 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:08:53,336 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:08:53,336 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:08:53,336 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:08:53,336 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:08:53,337 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:08:53,337 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:08:53,337 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:08:53,338 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:08:53,338 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:08:53,338 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:08:53,338 - api - INFO - Returning 18 matches
+2025-04-26 15:08:53,339 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-26 15:11:08,297 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:11:08,297 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:11:08,361 - api - INFO - get_player_stats executed in 0.18 seconds
+2025-04-26 15:11:08,495 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:11:08,496 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:11:08,559 - api - INFO - get_player_stats executed in 0.12 seconds
+2025-04-26 15:11:13,348 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:11:13,349 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:11:13,416 - api - INFO - get_player_stats executed in 0.15 seconds
+2025-04-26 15:11:13,784 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:11:13,784 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:11:13,854 - api - INFO - get_player_stats executed in 0.14 seconds
+2025-04-26 15:11:17,571 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:11:17,571 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:11:17,639 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 15:11:32,247 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:11:32,248 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:11:32,321 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 15:11:58,257 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:11:58,257 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:11:58,320 - api - INFO - get_player_stats executed in 0.15 seconds
+2025-04-26 15:12:15,215 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:12:15,216 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:12:15,280 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 15:12:15,640 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:12:15,641 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:12:15,698 - api - INFO - get_player_stats executed in 0.11 seconds
+2025-04-26 15:12:20,473 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:12:20,474 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 15:12:20,474 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 15:12:20,475 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:12:20,476 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:12:20,477 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:12:20,546 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:12:20,546 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:12:20,546 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:12:20,547 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:12:20,607 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 15:12:20,607 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:12:20,608 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:12:20,608 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:12:20,609 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:12:20,609 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:12:20,609 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:12:20,609 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:12:20,610 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:12:20,610 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:12:20,610 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:12:20,610 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:12:20,610 - api - INFO - Returning 18 matches
+2025-04-26 15:12:20,611 - api - INFO - get_predictions executed in 0.14 seconds
+2025-04-26 15:12:20,846 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:12:20,846 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:12:20,907 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 15:12:20,911 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:12:20,912 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 15:12:20,912 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 15:12:20,912 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:12:20,913 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:12:20,913 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:12:20,913 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:12:20,914 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:12:20,914 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:12:20,914 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:12:20,915 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:12:20,915 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:12:20,915 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:12:20,915 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:12:20,915 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:12:20,916 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:12:20,916 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:12:20,916 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:12:20,916 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:12:20,916 - api - INFO - Returning 18 matches
+2025-04-26 15:12:20,917 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-26 15:12:20,921 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:12:20,922 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 15:12:20,922 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 15:12:20,923 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:12:20,923 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:12:20,923 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:12:20,924 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:12:20,924 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:12:20,924 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:12:20,924 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:12:20,924 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:12:20,925 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:12:20,925 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:12:20,925 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:12:20,926 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:12:20,926 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:12:20,926 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:12:20,926 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:12:20,927 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:12:20,927 - api - INFO - Returning 18 matches
+2025-04-26 15:12:20,927 - api - INFO - get_predictions executed in 0.01 seconds
+2025-04-26 15:12:21,234 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:12:21,235 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 15:12:21,237 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 15:12:21,238 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:12:21,239 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:12:21,240 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:12:21,241 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:12:21,242 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:12:21,243 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:12:21,244 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:12:21,245 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:12:21,246 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:12:21,247 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:12:21,247 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:12:21,247 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:12:21,247 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:12:21,247 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:12:21,248 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:12:21,248 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:12:21,248 - api - INFO - Returning 18 matches
+2025-04-26 15:12:21,248 - api - INFO - get_predictions executed in 0.02 seconds
+2025-04-26 15:12:36,283 - api - INFO - Started refresh process with PID: 2172
+2025-04-26 15:12:36,284 - api - INFO - refresh_data executed in 0.01 seconds
+2025-04-26 15:12:41,285 - api - INFO - Refresh process 2172 is still running (expected)
+2025-04-26 15:12:41,286 - api - INFO - Refresh process 2172 is running in the background
+2025-04-26 15:15:00,295 - api - INFO - Loaded 17 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-26 15:15:00,296 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:15:00,299 - api - INFO - Returning 17 matches
+2025-04-26 15:15:00,299 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 15:15:00,301 - api - INFO - get_upcoming_matches executed in 0.01 seconds
+2025-04-26 15:15:00,302 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 15:15:00,374 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:15:00,374 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:15:00,374 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:15:00,375 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:15:00,446 - api - INFO - get_player_stats executed in 0.15 seconds
+2025-04-26 15:15:00,447 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:15:00,448 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:15:00,448 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:15:00,448 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:15:00,448 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:15:00,449 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:15:00,449 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:15:00,449 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:15:00,450 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:15:00,450 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:15:00,450 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:15:00,450 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:15:00,450 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:15:00,451 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:15:00,451 - api - INFO - Returning 18 matches
+2025-04-26 15:15:00,451 - api - INFO - get_predictions executed in 0.16 seconds
+2025-04-26 15:17:24,637 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:17:24,637 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:17:24,696 - api - INFO - get_player_stats executed in 0.15 seconds
+2025-04-26 15:17:24,872 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:17:24,872 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:17:24,957 - api - INFO - get_player_stats executed in 0.16 seconds
+2025-04-26 15:17:27,019 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:17:27,020 - api - INFO - Loaded 17 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-26 15:17:27,021 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 15:17:27,022 - api - INFO - Returning 17 matches
+2025-04-26 15:17:27,024 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 15:17:27,026 - api - INFO - get_upcoming_matches executed in 0.01 seconds
+2025-04-26 15:17:27,113 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:17:27,114 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:17:27,115 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:17:27,115 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:17:27,186 - api - INFO - get_player_stats executed in 0.17 seconds
+2025-04-26 15:17:27,186 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:17:27,187 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:17:27,187 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:17:27,187 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:17:27,188 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:17:27,188 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:17:27,188 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:17:27,188 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:17:27,188 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:17:27,188 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:17:27,188 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:17:27,189 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:17:27,189 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:17:27,190 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:17:27,190 - api - INFO - Returning 18 matches
+2025-04-26 15:17:27,191 - api - INFO - get_predictions executed in 0.18 seconds
+2025-04-26 15:17:27,420 - api - INFO - Loaded 17 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-26 15:17:27,421 - api - INFO - Returning 17 matches
+2025-04-26 15:17:27,424 - api - INFO - get_upcoming_matches executed in 0.01 seconds
+2025-04-26 15:17:27,548 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:17:27,549 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:17:27,549 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:17:27,607 - api - INFO - get_player_stats executed in 0.12 seconds
+2025-04-26 15:17:27,608 - api - INFO - Match 207758: 2025-04-26T14:59:00Z
+2025-04-26 15:17:27,608 - api - INFO - Match 207783: 2025-04-26T15:07:00Z
+2025-04-26 15:17:27,608 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:17:27,609 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:17:27,609 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:17:27,609 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:17:27,609 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:17:27,610 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:17:27,610 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:17:27,610 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:17:27,610 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:17:27,611 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:17:27,611 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:17:27,611 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:17:27,611 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:17:27,612 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:17:27,612 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:17:27,612 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:17:27,612 - api - INFO - Returning 18 matches
+2025-04-26 15:17:27,613 - api - INFO - get_predictions executed in 0.06 seconds
+2025-04-26 15:20:02,377 - api - INFO - Loaded 17 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-26 15:20:02,378 - api - INFO - Loaded 17 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:20:02,378 - api - INFO - Returning 17 matches
+2025-04-26 15:20:02,381 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:20:02,382 - api - INFO - get_upcoming_matches executed in 0.01 seconds
+2025-04-26 15:20:02,383 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:20:02,476 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:20:02,476 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:20:02,478 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:20:02,479 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:20:02,554 - api - INFO - get_player_stats executed in 0.18 seconds
+2025-04-26 15:20:02,554 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:20:02,555 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:20:02,555 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:20:02,555 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:20:02,556 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:20:02,556 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:20:02,556 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:20:02,557 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:20:02,557 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:20:02,557 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:20:02,558 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:20:02,558 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:20:02,558 - api - INFO - Match 207777: 2025-04-26T20:03:00Z
+2025-04-26 15:20:02,559 - api - INFO - Returning 17 matches
+2025-04-26 15:20:02,559 - api - INFO - get_predictions executed in 0.18 seconds
+2025-04-26 15:21:45,687 - api - INFO - Started refresh process with PID: 18940
+2025-04-26 15:21:45,689 - api - INFO - refresh_data executed in 0.01 seconds
+2025-04-26 15:21:50,690 - api - INFO - Refresh process 18940 is still running (expected)
+2025-04-26 15:21:50,691 - api - INFO - Refresh process 18940 is running in the background
+2025-04-26 15:22:06,898 - api - INFO - Loaded 17 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:22:06,900 - api - INFO - Loaded 17 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-26 15:22:06,901 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:22:06,902 - api - INFO - Returning 17 matches
+2025-04-26 15:22:06,903 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:22:06,907 - api - INFO - get_upcoming_matches executed in 0.01 seconds
+2025-04-26 15:22:06,986 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:22:06,986 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:22:06,987 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:22:06,987 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:22:07,058 - api - INFO - get_player_stats executed in 0.16 seconds
+2025-04-26 15:22:07,060 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:22:07,060 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:22:07,060 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:22:07,061 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:22:07,061 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:22:07,061 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:22:07,061 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:22:07,061 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:22:07,062 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:22:07,062 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:22:07,062 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:22:07,062 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:22:07,063 - api - INFO - Match 207777: 2025-04-26T20:03:00Z
+2025-04-26 15:22:07,064 - api - INFO - Returning 17 matches
+2025-04-26 15:22:07,064 - api - INFO - get_predictions executed in 0.17 seconds
+2025-04-26 15:26:31,119 - api - INFO - Started refresh process with PID: 7640
+2025-04-26 15:26:31,120 - api - INFO - refresh_data executed in 0.00 seconds
+2025-04-26 15:26:36,122 - api - INFO - Refresh process 7640 is still running (expected)
+2025-04-26 15:26:36,122 - api - INFO - Refresh process 7640 is running in the background
+2025-04-26 15:26:38,995 - api - INFO - Loaded 18 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-26 15:26:38,996 - api - INFO - Returning 18 matches
+2025-04-26 15:26:38,997 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-26 15:26:39,080 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:26:39,081 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:26:39,081 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:26:39,081 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:26:39,157 - api - INFO - get_player_stats executed in 0.16 seconds
+2025-04-26 15:26:39,157 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:26:39,158 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:26:39,158 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:26:39,158 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:26:39,158 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:26:39,159 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:26:39,159 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:26:39,159 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:26:39,159 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:26:39,160 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:26:39,160 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:26:39,160 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:26:39,161 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:26:39,162 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:26:39,162 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:26:39,163 - api - INFO - Match 207777: 2025-04-26T20:03:00Z
+2025-04-26 15:26:39,163 - api - INFO - Match 207807: 2025-04-26T20:11:00Z
+2025-04-26 15:26:39,163 - api - INFO - Returning 18 matches
+2025-04-26 15:26:39,164 - api - INFO - get_predictions executed in 0.17 seconds
+2025-04-26 15:26:56,383 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:26:56,384 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:26:56,449 - api - INFO - get_player_stats executed in 0.15 seconds
+2025-04-26 15:26:56,638 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:26:56,639 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:26:56,720 - api - INFO - get_player_stats executed in 0.15 seconds
+2025-04-26 15:27:00,970 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:27:00,970 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:27:01,045 - api - INFO - get_player_stats executed in 0.15 seconds
+2025-04-26 15:27:01,446 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:27:01,447 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:27:01,561 - api - INFO - get_player_stats executed in 0.21 seconds
+2025-04-26 15:27:04,932 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:27:04,932 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:27:04,993 - api - INFO - get_player_stats executed in 0.17 seconds
+2025-04-26 15:27:05,135 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:27:05,136 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:27:05,209 - api - INFO - get_player_stats executed in 0.13 seconds
+2025-04-26 15:27:07,717 - api - INFO - Loaded 18 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-26 15:27:07,717 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:27:07,719 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:27:07,720 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:27:07,720 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:27:07,721 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:27:07,718 - api - INFO - Returning 18 matches
+2025-04-26 15:27:07,721 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:27:07,817 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:27:07,817 - api - INFO - get_upcoming_matches executed in 0.11 seconds
+2025-04-26 15:27:07,817 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:27:07,818 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:27:07,818 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:27:07,891 - api - INFO - get_player_stats executed in 0.18 seconds
+2025-04-26 15:27:07,891 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:27:07,892 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:27:07,893 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:27:07,894 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:27:07,894 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:27:07,895 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:27:07,895 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:27:07,896 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:27:07,896 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:27:07,896 - api - INFO - Match 207777: 2025-04-26T20:03:00Z
+2025-04-26 15:27:07,896 - api - INFO - Match 207807: 2025-04-26T20:11:00Z
+2025-04-26 15:27:07,897 - api - INFO - Returning 18 matches
+2025-04-26 15:27:07,898 - api - INFO - get_predictions executed in 0.19 seconds
+2025-04-26 15:27:08,124 - api - INFO - Loaded 18 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-26 15:27:08,125 - api - INFO - Returning 18 matches
+2025-04-26 15:27:08,128 - api - INFO - get_upcoming_matches executed in 0.01 seconds
+2025-04-26 15:27:08,248 - api - INFO - Loaded statistics for 94 players from C:\Projects\2k_spark\output\player_stats.json
+2025-04-26 15:27:08,249 - api - INFO - Returning statistics for 94 players
+2025-04-26 15:27:08,249 - api - INFO - Loaded 18 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:27:08,307 - api - INFO - get_player_stats executed in 0.11 seconds
+2025-04-26 15:27:08,307 - api - INFO - Match 207761: 2025-04-26T15:31:00Z
+2025-04-26 15:27:08,308 - api - INFO - Match 207788: 2025-04-26T15:39:00Z
+2025-04-26 15:27:08,308 - api - INFO - Match 207749: 2025-04-26T16:03:00Z
+2025-04-26 15:27:08,308 - api - INFO - Match 207802: 2025-04-26T16:11:00Z
+2025-04-26 15:27:08,308 - api - INFO - Match 207776: 2025-04-26T16:35:00Z
+2025-04-26 15:27:08,309 - api - INFO - Match 207782: 2025-04-26T16:43:00Z
+2025-04-26 15:27:08,309 - api - INFO - Match 207751: 2025-04-26T17:07:00Z
+2025-04-26 15:27:08,310 - api - INFO - Match 207814: 2025-04-26T17:15:00Z
+2025-04-26 15:27:08,310 - api - INFO - Match 207759: 2025-04-26T17:55:00Z
+2025-04-26 15:27:08,310 - api - INFO - Match 207784: 2025-04-26T18:03:00Z
+2025-04-26 15:27:08,310 - api - INFO - Match 207754: 2025-04-26T18:27:00Z
+2025-04-26 15:27:08,311 - api - INFO - Match 207790: 2025-04-26T18:35:00Z
+2025-04-26 15:27:08,311 - api - INFO - Match 207750: 2025-04-26T18:59:00Z
+2025-04-26 15:27:08,311 - api - INFO - Match 207797: 2025-04-26T19:07:00Z
+2025-04-26 15:27:08,311 - api - INFO - Match 207757: 2025-04-26T19:31:00Z
+2025-04-26 15:27:08,311 - api - INFO - Match 207791: 2025-04-26T19:39:00Z
+2025-04-26 15:27:08,311 - api - INFO - Match 207777: 2025-04-26T20:03:00Z
+2025-04-26 15:27:08,312 - api - INFO - Match 207807: 2025-04-26T20:11:00Z
+2025-04-26 15:27:08,312 - api - INFO - Returning 18 matches
+2025-04-26 15:27:08,312 - api - INFO - get_predictions executed in 0.06 seconds

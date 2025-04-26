@@ -1,0 +1,69 @@
+[
+  {
+    "fixtureId": 207761,
+    "homePlayer": {
+      "id": 108,
+      "name": "KOBRA"
+    },
+    "awayPlayer": {
+      "id": 1768,
+      "name": "PRODIGY"
+    },
+    "homeTeam": {
+      "id": 7,
+      "name": "Dallas Mavericks"
+    },
+    "awayTeam": {
+      "id": 18,
+      "name": "Minnesota Timberwolves"
+    },
+    "fixtureStart": "2025-04-26T15:31:00Z",
+    "prediction": {
+      "home_win_probability": 0.45,
+      "away_win_probability": 0.55,
+      "predicted_winner": "away",
+      "confidence": 0.55
+    },
+    "score_prediction": {
+      "home_score": 58,
+      "away_score": 55,
+      "total_score": 113,
+      "score_diff": 3
+    },
+    "generated_at": "2025-04-26T15:19:20.565719"
+  },
+  {
+    "fixtureId": 207788,
+    "homePlayer": {
+      "id": 2103,
+      "name": "RIDER"
+    },
+    "awayPlayer": {
+      "id": 1433,
+      "name": "HERO"
+    },
+    "homeTeam": {
+      "id": 21,
+      "name": "Oklahoma City Thunder"
+    },
+    "awayTeam": {
+      "id": 3,
+      "name": "Boston Celtics"
+    },
+    "fixtureStart": "2025-04-26T15:39:00Z",
+    "prediction": {
+      "home_win_probability": 0.57,
+      "away_win_probability": 0.43,
+      "predicted_winner": "home",
+      "confidence": 0.57
+    },
+    "score_prediction": {
+      "home_score": 45,
+      "away_score": 46,
+      "total_score": 91,
+      "score_diff": -1
+    },
+    "generated_at": "2025-04-26T15:19:20.565719"
+  }
+  // ... (other objects omitted for brevity)
+]

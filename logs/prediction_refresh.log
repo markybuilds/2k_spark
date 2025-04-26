@@ -1510,3 +1510,135 @@
 2025-04-26 01:19:55,505 - prediction_refresh - INFO - refresh_predictions executed in 0.52 seconds
 2025-04-26 01:19:55,505 - prediction_refresh - INFO - refresh_predictions executed in 58.70 seconds
 2025-04-26 01:19:55,505 - prediction_refresh - INFO - Refresh completed successfully in 58.70 seconds
+2025-04-26 14:44:21,887 - prediction_refresh - INFO - Starting data refresh
+2025-04-26 14:44:38,571 - prediction_refresh - INFO - Fetching match history
+2025-04-26 14:45:01,198 - prediction_refresh - INFO - Calculating player statistics
+2025-04-26 14:45:01,683 - prediction_refresh - INFO - Fetching upcoming matches for the next 30 days
+2025-04-26 14:45:17,161 - prediction_refresh - INFO - Successfully fetched 18 upcoming matches
+2025-04-26 14:45:17,162 - prediction_refresh - INFO - Match 1: ID=207758, Start=2025-04-26T14:59:00Z, Home=JUGGERNAUT, Away=PRODIGY
+2025-04-26 14:45:17,162 - prediction_refresh - INFO - Match 2: ID=207783, Start=2025-04-26T15:07:00Z, Home=HARLEM, Away=HERO
+2025-04-26 14:45:17,162 - prediction_refresh - INFO - Match 3: ID=207761, Start=2025-04-26T15:31:00Z, Home=KOBRA, Away=PRODIGY
+2025-04-26 14:45:17,163 - prediction_refresh - INFO - Match 4: ID=207788, Start=2025-04-26T15:39:00Z, Home=RIDER, Away=HERO
+2025-04-26 14:45:17,163 - prediction_refresh - INFO - Match 5: ID=207749, Start=2025-04-26T16:03:00Z, Home=KOBRA, Away=JUGGERNAUT
+2025-04-26 14:45:17,164 - prediction_refresh - INFO - Match 6: ID=207802, Start=2025-04-26T16:11:00Z, Home=RIDER, Away=HARLEM
+2025-04-26 14:45:17,164 - prediction_refresh - INFO - Match 7: ID=207776, Start=2025-04-26T16:35:00Z, Home=PRODIGY, Away=SILVER
+2025-04-26 14:45:17,165 - prediction_refresh - INFO - Match 8: ID=207782, Start=2025-04-26T16:43:00Z, Home=HERO, Away=HARLEM
+2025-04-26 14:45:17,165 - prediction_refresh - INFO - Match 9: ID=207751, Start=2025-04-26T17:07:00Z, Home=JUGGERNAUT, Away=SILVER
+2025-04-26 14:45:17,166 - prediction_refresh - INFO - Match 10: ID=207814, Start=2025-04-26T17:15:00Z, Home=HARLEM, Away=HERO
+2025-04-26 14:45:17,166 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-26 14:45:17,188 - prediction_refresh - INFO - refresh_data executed in 55.30 seconds
+2025-04-26 14:45:17,188 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-26 14:45:17,328 - prediction_refresh - ERROR - No winner prediction models available
+2025-04-26 14:45:17,333 - prediction_refresh - INFO - refresh_predictions executed in 0.15 seconds
+2025-04-26 14:45:17,335 - prediction_refresh - ERROR - Prediction refresh failed
+2025-04-26 14:45:17,335 - prediction_refresh - INFO - refresh_predictions executed in 55.45 seconds
+2025-04-26 14:49:00,527 - prediction_refresh - INFO - Starting data refresh
+2025-04-26 14:49:14,617 - prediction_refresh - INFO - Fetching match history
+2025-04-26 14:49:42,875 - prediction_refresh - INFO - Calculating player statistics
+2025-04-26 14:49:43,389 - prediction_refresh - INFO - Fetching upcoming matches for the next 30 days
+2025-04-26 14:49:58,198 - prediction_refresh - INFO - Successfully fetched 18 upcoming matches
+2025-04-26 14:49:58,199 - prediction_refresh - INFO - Match 1: ID=207758, Start=2025-04-26T14:59:00Z, Home=JUGGERNAUT, Away=PRODIGY
+2025-04-26 14:49:58,199 - prediction_refresh - INFO - Match 2: ID=207783, Start=2025-04-26T15:07:00Z, Home=HARLEM, Away=HERO
+2025-04-26 14:49:58,200 - prediction_refresh - INFO - Match 3: ID=207761, Start=2025-04-26T15:31:00Z, Home=KOBRA, Away=PRODIGY
+2025-04-26 14:49:58,200 - prediction_refresh - INFO - Match 4: ID=207788, Start=2025-04-26T15:39:00Z, Home=RIDER, Away=HERO
+2025-04-26 14:49:58,200 - prediction_refresh - INFO - Match 5: ID=207749, Start=2025-04-26T16:03:00Z, Home=KOBRA, Away=JUGGERNAUT
+2025-04-26 14:49:58,201 - prediction_refresh - INFO - Match 6: ID=207802, Start=2025-04-26T16:11:00Z, Home=RIDER, Away=HARLEM
+2025-04-26 14:49:58,201 - prediction_refresh - INFO - Match 7: ID=207776, Start=2025-04-26T16:35:00Z, Home=PRODIGY, Away=SILVER
+2025-04-26 14:49:58,201 - prediction_refresh - INFO - Match 8: ID=207782, Start=2025-04-26T16:43:00Z, Home=HERO, Away=HARLEM
+2025-04-26 14:49:58,202 - prediction_refresh - INFO - Match 9: ID=207751, Start=2025-04-26T17:07:00Z, Home=JUGGERNAUT, Away=SILVER
+2025-04-26 14:49:58,202 - prediction_refresh - INFO - Match 10: ID=207814, Start=2025-04-26T17:15:00Z, Home=HARLEM, Away=HERO
+2025-04-26 14:49:58,202 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-26 14:49:58,217 - prediction_refresh - INFO - refresh_data executed in 57.69 seconds
+2025-04-26 14:49:58,218 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-26 14:49:58,292 - prediction_refresh - INFO - Using winner prediction model None with accuracy None
+2025-04-26 14:49:58,294 - prediction_refresh - ERROR - Error loading winner prediction model: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'
+2025-04-26 14:49:58,297 - prediction_refresh - INFO - refresh_predictions executed in 0.08 seconds
+2025-04-26 14:49:58,298 - prediction_refresh - ERROR - Prediction refresh failed
+2025-04-26 14:49:58,298 - prediction_refresh - INFO - refresh_predictions executed in 57.77 seconds
+2025-04-26 14:51:43,722 - prediction_refresh - INFO - Loaded statistics for 94 players
+2025-04-26 14:51:43,723 - prediction_refresh - INFO - Loaded 18 upcoming matches
+2025-04-26 14:51:43,724 - prediction_refresh - INFO - Generated predictions for 18 matches
+2025-04-26 14:51:43,725 - prediction_refresh - INFO - Saved 18 predictions to C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:12:38,122 - prediction_refresh - INFO - Refresh script started with PID: 2172
+2025-04-26 15:12:38,124 - prediction_refresh - INFO - Starting data refresh
+2025-04-26 15:12:52,113 - prediction_refresh - INFO - Fetching match history
+2025-04-26 15:13:20,461 - prediction_refresh - INFO - Calculating player statistics
+2025-04-26 15:13:20,896 - prediction_refresh - INFO - Fetching upcoming matches for the next 30 days
+2025-04-26 15:13:35,700 - prediction_refresh - INFO - Successfully fetched 17 upcoming matches
+2025-04-26 15:13:35,700 - prediction_refresh - INFO - Match 1: ID=207761, Start=2025-04-26T15:31:00Z, Home=KOBRA, Away=PRODIGY
+2025-04-26 15:13:35,700 - prediction_refresh - INFO - Match 2: ID=207788, Start=2025-04-26T15:39:00Z, Home=RIDER, Away=HERO
+2025-04-26 15:13:35,700 - prediction_refresh - INFO - Match 3: ID=207749, Start=2025-04-26T16:03:00Z, Home=KOBRA, Away=JUGGERNAUT
+2025-04-26 15:13:35,700 - prediction_refresh - INFO - Match 4: ID=207802, Start=2025-04-26T16:11:00Z, Home=RIDER, Away=HARLEM
+2025-04-26 15:13:35,700 - prediction_refresh - INFO - Match 5: ID=207776, Start=2025-04-26T16:35:00Z, Home=PRODIGY, Away=SILVER
+2025-04-26 15:13:35,701 - prediction_refresh - INFO - Match 6: ID=207782, Start=2025-04-26T16:43:00Z, Home=HERO, Away=HARLEM
+2025-04-26 15:13:35,701 - prediction_refresh - INFO - Match 7: ID=207751, Start=2025-04-26T17:07:00Z, Home=JUGGERNAUT, Away=SILVER
+2025-04-26 15:13:35,701 - prediction_refresh - INFO - Match 8: ID=207814, Start=2025-04-26T17:15:00Z, Home=HARLEM, Away=HERO
+2025-04-26 15:13:35,701 - prediction_refresh - INFO - Match 9: ID=207759, Start=2025-04-26T17:55:00Z, Home=PATIENCE, Away=FENRIR
+2025-04-26 15:13:35,701 - prediction_refresh - INFO - Match 10: ID=207784, Start=2025-04-26T18:03:00Z, Home=RAZE, Away=GUARD
+2025-04-26 15:13:35,702 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-26 15:13:35,715 - prediction_refresh - INFO - refresh_data executed in 57.59 seconds
+2025-04-26 15:13:35,715 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-26 15:13:35,785 - prediction_refresh - INFO - Using winner prediction model None with accuracy None
+2025-04-26 15:13:35,786 - prediction_refresh - ERROR - Error loading winner prediction model: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'
+2025-04-26 15:13:35,789 - prediction_refresh - INFO - refresh_predictions executed in 0.07 seconds
+2025-04-26 15:13:35,789 - prediction_refresh - ERROR - Prediction refresh failed
+2025-04-26 15:13:35,790 - prediction_refresh - INFO - refresh_predictions executed in 57.67 seconds
+2025-04-26 15:13:35,790 - prediction_refresh - ERROR - Refresh failed after 57.67 seconds
+2025-04-26 15:19:20,565 - prediction_refresh - INFO - Loaded statistics for 94 players
+2025-04-26 15:19:20,565 - prediction_refresh - INFO - Loaded 17 upcoming matches
+2025-04-26 15:19:20,565 - prediction_refresh - INFO - Generated predictions for 17 matches
+2025-04-26 15:19:20,566 - prediction_refresh - INFO - Saved 17 predictions to C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:21:47,499 - prediction_refresh - INFO - Refresh script started with PID: 18940
+2025-04-26 15:21:47,500 - prediction_refresh - INFO - Starting data refresh
+2025-04-26 15:22:01,441 - prediction_refresh - INFO - Fetching match history
+2025-04-26 15:22:28,240 - prediction_refresh - INFO - Calculating player statistics
+2025-04-26 15:22:28,685 - prediction_refresh - INFO - Fetching upcoming matches for the next 30 days
+2025-04-26 15:22:43,755 - prediction_refresh - INFO - Successfully fetched 18 upcoming matches
+2025-04-26 15:22:43,755 - prediction_refresh - INFO - Match 1: ID=207761, Start=2025-04-26T15:31:00Z, Home=KOBRA, Away=PRODIGY
+2025-04-26 15:22:43,755 - prediction_refresh - INFO - Match 2: ID=207788, Start=2025-04-26T15:39:00Z, Home=RIDER, Away=HERO
+2025-04-26 15:22:43,756 - prediction_refresh - INFO - Match 3: ID=207749, Start=2025-04-26T16:03:00Z, Home=KOBRA, Away=JUGGERNAUT
+2025-04-26 15:22:43,756 - prediction_refresh - INFO - Match 4: ID=207802, Start=2025-04-26T16:11:00Z, Home=RIDER, Away=HARLEM
+2025-04-26 15:22:43,756 - prediction_refresh - INFO - Match 5: ID=207776, Start=2025-04-26T16:35:00Z, Home=PRODIGY, Away=SILVER
+2025-04-26 15:22:43,756 - prediction_refresh - INFO - Match 6: ID=207782, Start=2025-04-26T16:43:00Z, Home=HERO, Away=HARLEM
+2025-04-26 15:22:43,756 - prediction_refresh - INFO - Match 7: ID=207751, Start=2025-04-26T17:07:00Z, Home=JUGGERNAUT, Away=SILVER
+2025-04-26 15:22:43,757 - prediction_refresh - INFO - Match 8: ID=207814, Start=2025-04-26T17:15:00Z, Home=HARLEM, Away=HERO
+2025-04-26 15:22:43,757 - prediction_refresh - INFO - Match 9: ID=207759, Start=2025-04-26T17:55:00Z, Home=PATIENCE, Away=FENRIR
+2025-04-26 15:22:43,757 - prediction_refresh - INFO - Match 10: ID=207784, Start=2025-04-26T18:03:00Z, Home=RAZE, Away=GUARD
+2025-04-26 15:22:43,757 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-26 15:22:43,769 - prediction_refresh - INFO - refresh_data executed in 56.27 seconds
+2025-04-26 15:22:43,769 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-26 15:22:43,841 - prediction_refresh - INFO - Using winner prediction model None with accuracy None
+2025-04-26 15:22:43,842 - prediction_refresh - ERROR - Error loading winner prediction model: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'
+2025-04-26 15:22:43,845 - prediction_refresh - INFO - refresh_predictions executed in 0.08 seconds
+2025-04-26 15:22:43,845 - prediction_refresh - ERROR - Prediction refresh failed
+2025-04-26 15:22:43,845 - prediction_refresh - INFO - refresh_predictions executed in 56.35 seconds
+2025-04-26 15:22:43,846 - prediction_refresh - ERROR - Refresh failed after 56.35 seconds
+2025-04-26 15:25:45,082 - prediction_refresh - INFO - Loaded statistics for 94 players
+2025-04-26 15:25:45,083 - prediction_refresh - INFO - Loaded 18 upcoming matches
+2025-04-26 15:25:45,083 - prediction_refresh - INFO - Generated predictions for 18 matches
+2025-04-26 15:25:45,084 - prediction_refresh - INFO - Saved 18 predictions to C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-26 15:26:32,925 - prediction_refresh - INFO - Refresh script started with PID: 7640
+2025-04-26 15:26:32,926 - prediction_refresh - INFO - Starting data refresh
+2025-04-26 15:26:46,888 - prediction_refresh - INFO - Fetching match history
+2025-04-26 15:27:14,901 - prediction_refresh - INFO - Calculating player statistics
+2025-04-26 15:27:15,402 - prediction_refresh - INFO - Fetching upcoming matches for the next 30 days
+2025-04-26 15:27:30,567 - prediction_refresh - INFO - Successfully fetched 18 upcoming matches
+2025-04-26 15:27:30,567 - prediction_refresh - INFO - Match 1: ID=207761, Start=2025-04-26T15:31:00Z, Home=KOBRA, Away=PRODIGY
+2025-04-26 15:27:30,567 - prediction_refresh - INFO - Match 2: ID=207788, Start=2025-04-26T15:39:00Z, Home=RIDER, Away=HERO
+2025-04-26 15:27:30,568 - prediction_refresh - INFO - Match 3: ID=207749, Start=2025-04-26T16:03:00Z, Home=KOBRA, Away=JUGGERNAUT
+2025-04-26 15:27:30,568 - prediction_refresh - INFO - Match 4: ID=207802, Start=2025-04-26T16:11:00Z, Home=RIDER, Away=HARLEM
+2025-04-26 15:27:30,568 - prediction_refresh - INFO - Match 5: ID=207776, Start=2025-04-26T16:35:00Z, Home=PRODIGY, Away=SILVER
+2025-04-26 15:27:30,568 - prediction_refresh - INFO - Match 6: ID=207782, Start=2025-04-26T16:43:00Z, Home=HERO, Away=HARLEM
+2025-04-26 15:27:30,569 - prediction_refresh - INFO - Match 7: ID=207751, Start=2025-04-26T17:07:00Z, Home=JUGGERNAUT, Away=SILVER
+2025-04-26 15:27:30,569 - prediction_refresh - INFO - Match 8: ID=207814, Start=2025-04-26T17:15:00Z, Home=HARLEM, Away=HERO
+2025-04-26 15:27:30,569 - prediction_refresh - INFO - Match 9: ID=207759, Start=2025-04-26T17:55:00Z, Home=PATIENCE, Away=FENRIR
+2025-04-26 15:27:30,569 - prediction_refresh - INFO - Match 10: ID=207784, Start=2025-04-26T18:03:00Z, Home=RAZE, Away=GUARD
+2025-04-26 15:27:30,570 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-26 15:27:30,584 - prediction_refresh - INFO - refresh_data executed in 57.66 seconds
+2025-04-26 15:27:30,584 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-26 15:27:30,653 - prediction_refresh - INFO - Using winner prediction model None with accuracy None
+2025-04-26 15:27:30,655 - prediction_refresh - ERROR - Error loading winner prediction model: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'
+2025-04-26 15:27:30,657 - prediction_refresh - INFO - refresh_predictions executed in 0.07 seconds
+2025-04-26 15:27:30,657 - prediction_refresh - ERROR - Prediction refresh failed
+2025-04-26 15:27:30,658 - prediction_refresh - INFO - refresh_predictions executed in 57.73 seconds
+2025-04-26 15:27:30,658 - prediction_refresh - ERROR - Refresh failed after 57.73 seconds
