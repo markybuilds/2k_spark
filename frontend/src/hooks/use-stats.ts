@@ -6,6 +6,7 @@
 
 import { useState, useEffect } from 'react';
 import { apiClient } from '@/lib/api/client';
+import { useRefreshContext } from '@/contexts/refresh-context';
 
 /**
  * Hook for fetching prediction statistics.
@@ -23,6 +24,7 @@ export function useStats() {
   } | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const { refreshCounter } = useRefreshContext();
 
   useEffect(() => {
     const fetchStats = async () => {
@@ -31,6 +33,7 @@ export function useStats() {
         const data = await apiClient.getStats();
         setStats(data);
         setError(null);
+        console.log(`Stats refreshed after refresh ${refreshCounter}`);
       } catch (err) {
         console.error('Error fetching stats:', err);
         setError('Failed to fetch statistics. Please try again later.');
@@ -40,7 +43,7 @@ export function useStats() {
     };
 
     fetchStats();
-  }, []);
+  }, [refreshCounter]); // Re-fetch when refreshCounter changes
 
   return { stats, loading, error };
 }
@@ -54,6 +57,7 @@ export function useRefresh() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<boolean>(false);
+  const { triggerRefresh } = useRefreshContext();
 
   const refreshData = async () => {
     try {
@@ -65,6 +69,18 @@ export function useRefresh() {
 
       if (response.status === 'success') {
         setSuccess(true);
+
+        // Wait longer for the backend to finish processing (5 seconds)
+        setTimeout(() => {
+          console.log("Triggering component refresh after waiting for backend processing");
+          // Trigger refresh for all components
+          triggerRefresh();
+
+          // Show success message for 3 seconds
+          setTimeout(() => {
+            setSuccess(false);
+          }, 3000);
+        }, 5000);
       } else {
         setError(response.message || 'Refresh failed');
       }

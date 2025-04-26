@@ -4,11 +4,12 @@ Upcoming matches fetcher for the H2H GG League API.
 
 import json
 import requests
+import datetime
 from pathlib import Path
 
-from config.settings import H2H_BASE_URL, H2H_DEFAULT_TOURNAMENT_ID, UPCOMING_MATCHES_FILE, UPCOMING_MATCHES_DAYS
+from config.settings import H2H_BASE_URL, H2H_DEFAULT_TOURNAMENT_ID, UPCOMING_MATCHES_FILE, UPCOMING_MATCHES_DAYS, API_DATE_FORMAT
 from config.logging_config import get_data_fetcher_logger
-from utils.time import format_api_date_range
+from utils.time import format_api_date_range, format_datetime, get_current_time
 from utils.logging import log_execution_time, log_exceptions
 from utils.validation import validate_match_data
 from core.data.fetchers.token import TokenFetcher
@@ -52,20 +53,36 @@ class UpcomingMatchesFetcher:
         """
         logger.info(f"Fetching upcoming matches for the next {self.days_forward} days")
 
-        # Get date range for API request (from now to days_forward days ahead)
-        from_date, to_date = format_api_date_range(0, self.days_forward)
+        # Get current date and time
+        now = get_current_time()
+
+        # Set the from_date to 04:00 today
+        from_date_dt = datetime.datetime(now.year, now.month, now.day, 4, 0, 0, tzinfo=now.tzinfo)
+
+        # Set the to_date to 03:59 tomorrow
+        to_date_dt = from_date_dt + datetime.timedelta(days=1, minutes=-1)
+
+        # Format the dates for the API request
+        from_date = format_datetime(from_date_dt, API_DATE_FORMAT)
+        to_date = format_datetime(to_date_dt, API_DATE_FORMAT)
+
+        logger.info(f"Using official website date range format: from {from_date} (04:00 today) to {to_date} (03:59 tomorrow)")
 
         # Get authentication headers
         headers = self.token_fetcher.get_auth_headers()
 
         # Prepare request parameters
         params = {
-            'schedule-type': 'match',
+            'schedule-type': 'fixture',  # Changed from 'match' to 'fixture' to match the official website
             'from': from_date,
             'to': to_date,
             'order': 'asc',
-            'tournament-id': self.tournament_id
+            'tournament-id': self.tournament_id,
+            # Add limit parameter to get more matches
+            'limit': 100
         }
+
+        logger.info(f"Using date range: from {from_date} to {to_date}")
 
         # Make API request
         url = f"{self.base_url}/schedule"
@@ -80,31 +97,42 @@ class UpcomingMatchesFetcher:
 
             # Log the API response for debugging
             logger.info(f"API response: {json.dumps(data)[:1000]}...")
+            logger.info(f"Total matches in API response: {len(data)}")
 
             # Validate and transform match data
             matches = []
             for match in data:
                 if validate_match_data(match):
                     # Transform the match data to our expected format
+                    # Log the raw match data for debugging
+                    logger.info(f"Raw match data: {json.dumps(match)[:1000]}...")
+
+                    # Extract all possible player and team name fields
+                    home_player_name = match.get('homeParticipantName', match.get('homePlayerName', match.get('homeName', '')))
+                    away_player_name = match.get('awayParticipantName', match.get('awayPlayerName', match.get('awayName', '')))
+                    home_team_name = match.get('homeTeamName', home_player_name)
+                    away_team_name = match.get('awayTeamName', away_player_name)
+
                     transformed_match = {
                         'id': match.get('fixtureId', match.get('id')),
                         'homePlayer': {
-                            'id': match.get('homeParticipantId'),
-                            'name': match.get('homeParticipantName')
+                            'id': match.get('homeParticipantId', match.get('homePlayerId', '')),
+                            'name': home_player_name
                         },
                         'awayPlayer': {
-                            'id': match.get('awayParticipantId'),
-                            'name': match.get('awayParticipantName')
+                            'id': match.get('awayParticipantId', match.get('awayPlayerId', '')),
+                            'name': away_player_name
                         },
                         'homeTeam': {
-                            'id': match.get('homeTeamId'),
-                            'name': match.get('homeTeamName')
+                            'id': match.get('homeTeamId', ''),
+                            'name': home_team_name
                         },
                         'awayTeam': {
-                            'id': match.get('awayTeamId'),
-                            'name': match.get('awayTeamName')
+                            'id': match.get('awayTeamId', ''),
+                            'name': away_team_name
                         },
-                        'fixtureStart': match.get('fixtureStart')
+                        'fixtureStart': match.get('fixtureStart'),
+                        'raw_data': match  # Store the raw data for debugging
                     }
                     matches.append(transformed_match)
                 else:

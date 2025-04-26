@@ -43,6 +43,7 @@ class RefreshService:
         """
         self.token_fetcher = TokenFetcher()
         self.match_history_fetcher = MatchHistoryFetcher(days_back=MATCH_HISTORY_DAYS)
+        # Use the updated UPCOMING_MATCHES_DAYS value (now 30 days)
         self.upcoming_matches_fetcher = UpcomingMatchesFetcher(days_forward=UPCOMING_MATCHES_DAYS)
         self.player_stats_processor = PlayerStatsProcessor()
         self.winner_model_registry = ModelRegistry()
@@ -80,12 +81,19 @@ class RefreshService:
                 logger.error("Failed to calculate player statistics")
                 return False
 
-            # Fetch upcoming matches
-            logger.info("Fetching upcoming matches")
+            # Fetch upcoming matches for the next 30 days
+            logger.info(f"Fetching upcoming matches for the next {UPCOMING_MATCHES_DAYS} days")
             upcoming_matches = self.upcoming_matches_fetcher.fetch_upcoming_matches()
             if not upcoming_matches:
                 logger.error("Failed to fetch upcoming matches")
                 return False
+
+            # Log detailed information about the upcoming matches
+            logger.info(f"Successfully fetched {len(upcoming_matches)} upcoming matches")
+            for i, match in enumerate(upcoming_matches[:10]):  # Log first 10 matches for debugging
+                logger.info(f"Match {i+1}: ID={match.get('id')}, Start={match.get('fixtureStart')}, "
+                           f"Home={match.get('homePlayer', {}).get('name')}, "
+                           f"Away={match.get('awayPlayer', {}).get('name')}")
 
             logger.info("Data refresh completed successfully")
             return True

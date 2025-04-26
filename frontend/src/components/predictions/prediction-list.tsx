@@ -4,11 +4,84 @@
 
 "use client";
 
-import { usePredictions } from "@/hooks/use-predictions";
+import { useState, useEffect } from 'react';
+import { apiClient } from '@/lib/api/client';
 import { PredictionCard } from "./prediction-card";
 
 export function PredictionList() {
-  const { predictions, loading, error } = usePredictions();
+  const [predictions, setPredictions] = useState<any[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchPredictions = async () => {
+      try {
+        setLoading(true);
+        console.log('PredictionList: Fetching predictions directly...');
+
+        // Make the API request with fetch directly
+        const response = await fetch(`http://localhost:5000/api/predictions?timestamp=${Date.now()}`);
+
+        if (!response.ok) {
+          throw new Error(`HTTP error ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log(`PredictionList: Fetched predictions directly, response:`, data);
+
+        let predictionsData = [];
+
+        if (Array.isArray(data)) {
+          console.log(`PredictionList: Fetched ${data.length} predictions directly (array format)`);
+          predictionsData = data;
+        } else if (data && typeof data === 'object' && Array.isArray(data.predictions)) {
+          console.log(`PredictionList: Fetched ${data.predictions.length} predictions directly (object format)`);
+          predictionsData = data.predictions;
+        } else {
+          console.error('PredictionList: Unexpected API response format:', data);
+          setError('Unexpected API response format');
+          setPredictions([]);
+          return;
+        }
+
+        // Filter out matches that have already started
+        const now = new Date();
+        console.log('Current time:', now.toISOString());
+
+        const upcomingMatches = predictionsData.filter(match => {
+          // Parse the fixture start time
+          const fixtureStart = new Date(match.fixtureStart);
+
+          // Only include matches that haven't started yet
+          const isUpcoming = fixtureStart > now;
+          console.log(`Match ${match.fixtureId} start time: ${fixtureStart.toISOString()}, is upcoming: ${isUpcoming}`);
+
+          return isUpcoming;
+        });
+
+        console.log(`Showing ${upcomingMatches.length} upcoming matches after filtering out ${predictionsData.length - upcomingMatches.length} matches that have already started`);
+
+        // Sort by start time (earliest first)
+        upcomingMatches.sort((a, b) => {
+          return new Date(a.fixtureStart).getTime() - new Date(b.fixtureStart).getTime();
+        });
+
+        setPredictions(upcomingMatches);
+
+        setError(null);
+      } catch (err) {
+        console.error('PredictionList: Error fetching predictions:', err);
+        setError(`Failed to fetch predictions: ${err.message}`);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPredictions();
+  }, []);
+
+  // Debug information
+  console.log('PredictionList - predictions:', predictions);
 
   if (loading) {
     return (

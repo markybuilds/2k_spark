@@ -4,11 +4,60 @@
 
 "use client";
 
-import { useScorePredictions } from "@/hooks/use-predictions";
+import { useState, useEffect } from 'react';
+import { apiClient } from '@/lib/api/client';
 import { ScoreCard } from "./score-card";
 
 export function ScoreList() {
-  const { predictions, modelAccuracy, loading, error } = useScorePredictions();
+  const [predictions, setPredictions] = useState<any[]>([]);
+  const [modelAccuracy, setModelAccuracy] = useState<number>(0);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchScorePredictions = async () => {
+      try {
+        setLoading(true);
+        console.log('ScoreList: Fetching score predictions...');
+
+        const data = await apiClient.getScorePredictions();
+        console.log(`ScoreList: Fetched ${data.predictions.length} score predictions`);
+
+        // Filter out matches that have already started
+        const now = new Date();
+        console.log('Current time:', now.toISOString());
+
+        const upcomingMatches = data.predictions.filter(match => {
+          // Parse the fixture start time
+          const fixtureStart = new Date(match.fixtureStart);
+
+          // Only include matches that haven't started yet
+          const isUpcoming = fixtureStart > now;
+          console.log(`Match ${match.fixtureId} start time: ${fixtureStart.toISOString()}, is upcoming: ${isUpcoming}`);
+
+          return isUpcoming;
+        });
+
+        console.log(`Showing ${upcomingMatches.length} upcoming score predictions after filtering out ${data.predictions.length - upcomingMatches.length} matches that have already started`);
+
+        // Sort by start time (earliest first)
+        upcomingMatches.sort((a, b) => {
+          return new Date(a.fixtureStart).getTime() - new Date(b.fixtureStart).getTime();
+        });
+
+        setPredictions(upcomingMatches);
+        setModelAccuracy(data.summary.model_accuracy);
+        setError(null);
+      } catch (err) {
+        console.error('ScoreList: Error fetching score predictions:', err);
+        setError('Failed to fetch score predictions. Please try again later.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchScorePredictions();
+  }, []);
 
   if (loading) {
     return (
@@ -49,7 +98,7 @@ export function ScoreList() {
           <strong>Model Accuracy:</strong> The score prediction model has an average error of {modelAccuracy.toFixed(1)} points.
         </p>
       </div>
-      
+
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {predictions.map((prediction) => (
           <ScoreCard key={prediction.fixtureId} prediction={prediction} />

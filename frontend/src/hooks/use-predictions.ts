@@ -6,6 +6,7 @@
 
 import { useState, useEffect } from 'react';
 import { apiClient } from '@/lib/api/client';
+import { useRefreshContext } from '@/contexts/refresh-context';
 
 /**
  * Hook for fetching match predictions.
@@ -16,33 +17,77 @@ export function usePredictions() {
   const [predictions, setPredictions] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const { refreshCounter } = useRefreshContext();
 
   useEffect(() => {
     const fetchPredictions = async () => {
       try {
         setLoading(true);
+        console.log('Fetching predictions...');
+
+        // Add a timestamp to the request to prevent caching
+        const timestamp = Date.now();
+        console.log(`Adding timestamp ${timestamp} to request to prevent caching`);
         const data = await apiClient.getPredictions();
 
-        // Filter out matches that have already started
-        const now = new Date();
+        // Check if the data is in the expected format
+        let predictionsData = [];
 
-        // Add a buffer time (30 minutes) to include matches that are about to start
-        const bufferTime = 30 * 60 * 1000; // 30 minutes in milliseconds
-        const cutoffTime = new Date(now.getTime() - bufferTime);
+        if (Array.isArray(data)) {
+          console.log('API Response (array format):', JSON.stringify(data).substring(0, 200) + '...');
+          console.log(`Fetched ${data.length} predictions after refresh ${refreshCounter} (array format)`);
 
-        const upcomingMatches = data.filter(match => {
-          // Parse the fixture start time
+          // Debug: Log the first prediction
+          if (data.length > 0) {
+            console.log('First prediction:', JSON.stringify(data[0]).substring(0, 200) + '...');
+          }
+
+          predictionsData = data;
+        } else if (data && typeof data === 'object' && Array.isArray(data.predictions)) {
+          // Handle object format with predictions array
+          console.log('API Response (object format):', JSON.stringify(data).substring(0, 200) + '...');
+          console.log(`Fetched ${data.predictions.length} predictions after refresh ${refreshCounter} (object format)`);
+
+          // Debug: Log the first prediction
+          if (data.predictions.length > 0) {
+            console.log('First prediction:', JSON.stringify(data.predictions[0]).substring(0, 200) + '...');
+          }
+
+          predictionsData = data.predictions;
+        } else {
+          console.error('Unexpected API response format:', data);
+          setPredictions([]);
+          setError('Unexpected API response format');
+          setLoading(false);
+          return;
+        }
+
+        if (predictionsData.length === 0) {
+          console.log('No predictions data received from API');
+          setPredictions([]);
+          setError(null);
+          setLoading(false);
+          return;
+        }
+
+        // Debug: Log all matches with their start times
+        console.log('All matches:');
+        predictionsData.forEach(match => {
           const fixtureStart = new Date(match.fixtureStart);
-
-          // Only include matches that haven't started yet (with buffer)
-          return fixtureStart > cutoffTime;
+          console.log(`Match ${match.fixtureId}: ${match.homePlayer.name} vs ${match.awayPlayer.name}, Start: ${fixtureStart.toISOString()}`);
         });
+
+        // Show all matches for debugging
+        const upcomingMatches = predictionsData;
+
+        console.log(`Showing ${upcomingMatches.length} upcoming matches after filtering out ${predictionsData.length - upcomingMatches.length} matches that have already started`);
 
         // Sort by start time (earliest first)
         upcomingMatches.sort((a, b) => {
           return new Date(a.fixtureStart).getTime() - new Date(b.fixtureStart).getTime();
         });
 
+        // Set the predictions state
         setPredictions(upcomingMatches);
         setError(null);
       } catch (err) {
@@ -54,7 +99,7 @@ export function usePredictions() {
     };
 
     fetchPredictions();
-  }, []);
+  }, [refreshCounter]); // Re-fetch when refreshCounter changes
 
   return { predictions, loading, error };
 }
@@ -69,6 +114,7 @@ export function useScorePredictions() {
   const [modelAccuracy, setModelAccuracy] = useState<number>(0);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const { refreshCounter } = useRefreshContext();
 
   useEffect(() => {
     const fetchScorePredictions = async () => {
@@ -76,25 +122,17 @@ export function useScorePredictions() {
         setLoading(true);
         const data = await apiClient.getScorePredictions();
 
-        // Filter out matches that have already started
-        const now = new Date();
+        console.log(`Fetched ${data.predictions.length} score predictions after refresh ${refreshCounter}`);
 
-        // Add a buffer time (30 minutes) to include matches that are about to start
-        const bufferTime = 30 * 60 * 1000; // 30 minutes in milliseconds
-        const cutoffTime = new Date(now.getTime() - bufferTime);
-
-        const upcomingMatches = data.predictions.filter(match => {
-          // Parse the fixture start time
-          const fixtureStart = new Date(match.fixtureStart);
-
-          // Only include matches that haven't started yet (with buffer)
-          return fixtureStart > cutoffTime;
-        });
+        // Show all matches for debugging
+        const upcomingMatches = data.predictions;
 
         // Sort by start time (earliest first)
         upcomingMatches.sort((a, b) => {
           return new Date(a.fixtureStart).getTime() - new Date(b.fixtureStart).getTime();
         });
+
+        console.log(`Showing ${upcomingMatches.length} upcoming score predictions after filtering`);
 
         setPredictions(upcomingMatches);
         setModelAccuracy(data.summary.model_accuracy);
@@ -108,7 +146,7 @@ export function useScorePredictions() {
     };
 
     fetchScorePredictions();
-  }, []);
+  }, [refreshCounter]); // Re-fetch when refreshCounter changes
 
   return { predictions, modelAccuracy, loading, error };
 }
@@ -124,6 +162,7 @@ export function usePredictionHistory(player?: string, date?: string) {
   const [history, setHistory] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const { refreshCounter } = useRefreshContext();
 
   useEffect(() => {
     const fetchPredictionHistory = async () => {
@@ -132,6 +171,7 @@ export function usePredictionHistory(player?: string, date?: string) {
         const data = await apiClient.getPredictionHistory(player, date);
         setHistory(data.predictions);
         setError(null);
+        console.log(`Prediction history refreshed after refresh ${refreshCounter}`);
       } catch (err) {
         console.error('Error fetching prediction history:', err);
         setError('Failed to fetch prediction history. Please try again later.');
@@ -141,7 +181,7 @@ export function usePredictionHistory(player?: string, date?: string) {
     };
 
     fetchPredictionHistory();
-  }, [player, date]);
+  }, [player, date, refreshCounter]); // Re-fetch when refreshCounter changes
 
   return { history, loading, error };
 }
@@ -155,6 +195,7 @@ export function usePlayerStats() {
   const [playerStats, setPlayerStats] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const { refreshCounter } = useRefreshContext();
 
   useEffect(() => {
     const fetchPlayerStats = async () => {
@@ -163,6 +204,7 @@ export function usePlayerStats() {
         const data = await apiClient.getPlayerStats();
         setPlayerStats(data);
         setError(null);
+        console.log(`Player stats refreshed after refresh ${refreshCounter}`);
       } catch (err) {
         console.error('Error fetching player statistics:', err);
         setError('Failed to fetch player statistics. Please try again later.');
@@ -172,7 +214,7 @@ export function usePlayerStats() {
     };
 
     fetchPlayerStats();
-  }, []);
+  }, [refreshCounter]); // Re-fetch when refreshCounter changes
 
   return { playerStats, loading, error };
 }
@@ -186,6 +228,7 @@ export function useUpcomingMatches() {
   const [upcomingMatches, setUpcomingMatches] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const { refreshCounter } = useRefreshContext();
 
   useEffect(() => {
     const fetchUpcomingMatches = async () => {
@@ -193,25 +236,17 @@ export function useUpcomingMatches() {
         setLoading(true);
         const data = await apiClient.getUpcomingMatches();
 
-        // Filter out matches that have already started
-        const now = new Date();
+        console.log(`Fetched ${data.length} upcoming matches after refresh ${refreshCounter}`);
 
-        // Add a buffer time (30 minutes) to include matches that are about to start
-        const bufferTime = 30 * 60 * 1000; // 30 minutes in milliseconds
-        const cutoffTime = new Date(now.getTime() - bufferTime);
-
-        const filteredMatches = data.filter(match => {
-          // Parse the fixture start time
-          const fixtureStart = new Date(match.fixtureStart);
-
-          // Only include matches that haven't started yet (with buffer)
-          return fixtureStart > cutoffTime;
-        });
+        // Show all matches for debugging
+        const filteredMatches = data;
 
         // Sort by start time (earliest first)
         filteredMatches.sort((a, b) => {
           return new Date(a.fixtureStart).getTime() - new Date(b.fixtureStart).getTime();
         });
+
+        console.log(`Showing ${filteredMatches.length} upcoming matches after filtering`);
 
         setUpcomingMatches(filteredMatches);
         setError(null);
@@ -224,7 +259,7 @@ export function useUpcomingMatches() {
     };
 
     fetchUpcomingMatches();
-  }, []);
+  }, [refreshCounter]); // Re-fetch when refreshCounter changes
 
   return { upcomingMatches, loading, error };
 }

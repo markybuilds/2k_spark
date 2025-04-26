@@ -44,7 +44,7 @@ SCORE_MODEL_REGISTRY_FILE = MODELS_DIR / "score_model_registry.json"
 # Refresh settings
 REFRESH_INTERVAL = 3600  # seconds (1 hour)
 MATCH_HISTORY_DAYS = 90  # days of match history to fetch
-UPCOMING_MATCHES_DAYS = 7  # days of upcoming matches to fetch
+UPCOMING_MATCHES_DAYS = 30  # days of upcoming matches to fetch
 
 # Date format settings
 DATE_FORMAT = "%Y-%m-%d %H:%M:%S"

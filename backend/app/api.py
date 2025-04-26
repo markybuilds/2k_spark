@@ -63,6 +63,9 @@ def get_predictions():
         for match in predictions:
             logger.info(f"Match {match.get('fixtureId')}: {match.get('fixtureStart')}")
 
+            # Add a timestamp to each prediction to indicate when it was fetched
+            match['fetched_at'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
         # Return all matches with their timezone information
         logger.info(f"Returning {len(predictions)} matches")
         return jsonify(predictions)

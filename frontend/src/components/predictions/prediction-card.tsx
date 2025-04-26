@@ -26,6 +26,7 @@ interface PredictionCardProps {
       name: string;
     };
     fixtureStart: string;
+    fetched_at?: string;
     prediction: {
       home_win_probability: number;
       away_win_probability: number;
@@ -42,6 +43,7 @@ export function PredictionCard({ prediction }: PredictionCardProps) {
     homeTeam,
     awayTeam,
     fixtureStart,
+    fetched_at,
     prediction: predictionData,
   } = prediction;
 
@@ -101,9 +103,16 @@ export function PredictionCard({ prediction }: PredictionCardProps) {
         </div>
       </CardContent>
       <CardFooter className="pt-0">
-        <div className="w-full text-center">
-          <div className="text-xs text-muted-foreground">Confidence</div>
-          <div className="text-sm font-semibold">{confidencePercentage}%</div>
+        <div className="w-full">
+          <div className="text-center">
+            <div className="text-xs text-muted-foreground">Confidence</div>
+            <div className="text-sm font-semibold">{confidencePercentage}%</div>
+          </div>
+          {fetched_at && (
+            <div className="text-xs text-muted-foreground text-right mt-2">
+              Last updated: {fetched_at}
+            </div>
+          )}
         </div>
       </CardFooter>
     </Card>
