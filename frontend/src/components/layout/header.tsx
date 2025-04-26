@@ -42,9 +42,6 @@ export function Header() {
             <Link href="/live" className={`nav-link ${isActive('/live') ? 'active' : ''}`}>
               Live
             </Link>
-            <Link href="/matches" className={`nav-link ${isActive('/matches') ? 'active' : ''}`}>
-              Matches
-            </Link>
             <Link href="/players" className={`nav-link ${isActive('/players') ? 'active' : ''}`}>
               Players
             </Link>

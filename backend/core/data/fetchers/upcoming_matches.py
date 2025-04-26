@@ -9,7 +9,7 @@ from pathlib import Path
 
 from config.settings import H2H_BASE_URL, H2H_DEFAULT_TOURNAMENT_ID, UPCOMING_MATCHES_FILE, UPCOMING_MATCHES_DAYS, API_DATE_FORMAT
 from config.logging_config import get_data_fetcher_logger
-from utils.time import format_api_date_range, format_datetime, get_current_time
+from utils.time import format_datetime, get_current_time
 from utils.logging import log_execution_time, log_exceptions
 from utils.validation import validate_match_data
 from core.data.fetchers.token import TokenFetcher
@@ -51,22 +51,22 @@ class UpcomingMatchesFetcher:
         Returns:
             list: List of upcoming match data dictionaries
         """
-        logger.info(f"Fetching upcoming matches for the next {self.days_forward} days")
+        logger.info("Fetching upcoming matches for the next 24 hours")
 
         # Get current date and time
         now = get_current_time()
 
-        # Set the from_date to 04:00 today
-        from_date_dt = datetime.datetime(now.year, now.month, now.day, 4, 0, 0, tzinfo=now.tzinfo)
+        # Set the from_date to current time
+        from_date_dt = now
 
-        # Set the to_date to 03:59 tomorrow
-        to_date_dt = from_date_dt + datetime.timedelta(days=1, minutes=-1)
+        # Set the to_date to current time + 24 hours (regardless of days_forward setting)
+        to_date_dt = from_date_dt + datetime.timedelta(hours=24)
 
         # Format the dates for the API request
         from_date = format_datetime(from_date_dt, API_DATE_FORMAT)
         to_date = format_datetime(to_date_dt, API_DATE_FORMAT)
 
-        logger.info(f"Using official website date range format: from {from_date} (04:00 today) to {to_date} (03:59 tomorrow)")
+        logger.info(f"Using date range format: from {from_date} (now) to {to_date} (24 hours from now)")
 
         # Get authentication headers
         headers = self.token_fetcher.get_auth_headers()
