@@ -337,25 +337,91 @@ def refresh_data():
             f.write("""
 import sys
 import os
-import subprocess
+import traceback
+import time
 
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# Import refresh function
+# Import refresh function and logging
 from services.refresh_service import refresh_predictions
+from config.logging_config import get_prediction_refresh_logger
 
-# Run refresh
-success = refresh_predictions()
+# Initialize logger
+logger = get_prediction_refresh_logger()
 
-# Exit with appropriate code
-sys.exit(0 if success else 1)
+try:
+    # Log start time
+    start_time = time.time()
+    logger.info(f"Refresh script started with PID: {os.getpid()}")
+
+    # Run refresh
+    success = refresh_predictions()
+
+    # Log completion
+    end_time = time.time()
+    duration = end_time - start_time
+
+    if success:
+        logger.info(f"Refresh completed successfully in {duration:.2f} seconds")
+    else:
+        logger.error(f"Refresh failed after {duration:.2f} seconds")
+
+    # Exit with appropriate code
+    sys.exit(0 if success else 1)
+except Exception as e:
+    # Log any unhandled exceptions
+    logger.error(f"Unhandled exception in refresh script: {str(e)}")
+    logger.error(traceback.format_exc())
+    sys.exit(1)
             """)
 
         # Run the script in a separate process
-        subprocess.Popen(["python", str(script_path)],
-                         stdout=subprocess.PIPE,
-                         stderr=subprocess.PIPE)
+        process = subprocess.Popen(
+            ["python", str(script_path)],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+
+        # Log the process ID for debugging
+        logger.info(f"Started refresh process with PID: {process.pid}")
+
+        # Create a background thread to monitor the process
+        def monitor_process():
+            try:
+                # Wait for the process to complete (with a timeout)
+                try:
+                    stdout, stderr = process.communicate(timeout=5)
+                    if stdout:
+                        logger.info(f"Refresh process stdout: {stdout}")
+                    if stderr:
+                        logger.error(f"Refresh process stderr: {stderr}")
+                except subprocess.TimeoutExpired:
+                    # Process is still running, which is expected for longer refreshes
+                    logger.info(f"Refresh process {process.pid} is still running (expected)")
+
+                # Check if the process is still running after the timeout
+                if process.poll() is None:
+                    logger.info(f"Refresh process {process.pid} is running in the background")
+                else:
+                    # Process completed quickly
+                    exit_code = process.returncode
+                    logger.info(f"Refresh process completed with exit code: {exit_code}")
+
+                    # Check if there was any output
+                    stdout, stderr = process.communicate()
+                    if stdout:
+                        logger.info(f"Refresh process stdout: {stdout}")
+                    if stderr:
+                        logger.error(f"Refresh process stderr: {stderr}")
+            except Exception as e:
+                logger.error(f"Error monitoring refresh process: {str(e)}")
+
+        # Start the monitoring thread
+        monitor_thread = threading.Thread(target=monitor_process)
+        monitor_thread.daemon = True
+        monitor_thread.start()
 
         return jsonify({"status": "success", "message": "Refresh process started"})
     except Exception as e:

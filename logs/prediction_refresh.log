@@ -78,3 +78,111 @@
 2025-04-25 13:51:09,611 - prediction_refresh - INFO - refresh_predictions executed in 0.14 seconds
 2025-04-25 13:51:09,612 - prediction_refresh - ERROR - Prediction refresh failed
 2025-04-25 13:51:09,612 - prediction_refresh - INFO - refresh_predictions executed in 56.15 seconds
+2025-04-25 19:40:30,879 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 19:40:47,136 - prediction_refresh - INFO - Fetching match history
+2025-04-25 19:41:12,085 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 19:41:12,598 - prediction_refresh - INFO - Fetching upcoming matches
+2025-04-25 19:41:28,749 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 19:41:28,769 - prediction_refresh - INFO - refresh_data executed in 57.89 seconds
+2025-04-25 19:41:28,770 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 19:41:28,860 - prediction_refresh - INFO - Using winner prediction model 1745622274
+2025-04-25 19:41:28,879 - prediction_refresh - INFO - Using score prediction model 1745621033
+2025-04-25 19:41:28,963 - prediction_refresh - INFO - Generating predictions for 30 upcoming matches
+2025-04-25 19:41:29,003 - prediction_refresh - INFO - Saving 30 predictions
+2025-04-25 19:41:29,008 - prediction_refresh - INFO - Updating prediction history
+2025-04-25 19:41:29,029 - prediction_refresh - INFO - Prediction history updated with 30 new predictions
+2025-04-25 19:41:29,029 - prediction_refresh - INFO - Prediction refresh completed successfully
+2025-04-25 19:41:29,038 - prediction_refresh - INFO - refresh_predictions executed in 0.27 seconds
+2025-04-25 19:41:29,039 - prediction_refresh - INFO - refresh_predictions executed in 58.16 seconds
+2025-04-25 19:41:52,922 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 19:42:07,226 - prediction_refresh - INFO - Fetching match history
+2025-04-25 19:42:32,390 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 19:42:32,887 - prediction_refresh - INFO - Fetching upcoming matches
+2025-04-25 19:42:48,104 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 19:42:48,120 - prediction_refresh - INFO - refresh_data executed in 55.20 seconds
+2025-04-25 19:42:48,120 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 19:42:48,198 - prediction_refresh - INFO - Using winner prediction model 1745622274 with accuracy 0.6873545384018619
+2025-04-25 19:42:48,210 - prediction_refresh - INFO - Successfully loaded winner prediction model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 19:42:48,210 - prediction_refresh - INFO - Using score prediction model 1745598830 with MAE 4.075830549721303
+2025-04-25 19:42:48,291 - prediction_refresh - INFO - Successfully loaded score prediction model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 19:42:48,291 - prediction_refresh - INFO - Generating predictions for 30 upcoming matches
+2025-04-25 19:42:48,336 - prediction_refresh - INFO - Saving 30 predictions
+2025-04-25 19:42:48,340 - prediction_refresh - INFO - Updating prediction history
+2025-04-25 19:42:48,377 - prediction_refresh - INFO - Prediction history updated with 30 new predictions
+2025-04-25 19:42:48,378 - prediction_refresh - INFO - Prediction refresh completed successfully
+2025-04-25 19:42:48,383 - prediction_refresh - INFO - refresh_predictions executed in 0.26 seconds
+2025-04-25 19:42:48,383 - prediction_refresh - INFO - refresh_predictions executed in 55.46 seconds
+2025-04-25 19:46:24,792 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 19:46:38,846 - prediction_refresh - INFO - Fetching match history
+2025-04-25 19:47:03,901 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 19:47:04,376 - prediction_refresh - INFO - Fetching upcoming matches
+2025-04-25 19:47:07,134 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 19:47:20,429 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 19:47:20,449 - prediction_refresh - INFO - refresh_data executed in 55.66 seconds
+2025-04-25 19:47:20,450 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 19:47:20,529 - prediction_refresh - INFO - Using winner prediction model 1745622274 with accuracy 0.6873545384018619
+2025-04-25 19:47:20,541 - prediction_refresh - INFO - Successfully loaded winner prediction model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 19:47:20,541 - prediction_refresh - INFO - Using score prediction model 1745598830 with MAE 4.075830549721303
+2025-04-25 19:47:20,622 - prediction_refresh - INFO - Successfully loaded score prediction model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 19:47:20,622 - prediction_refresh - INFO - Generating predictions for 30 upcoming matches
+2025-04-25 19:47:20,662 - prediction_refresh - INFO - Saving 30 predictions
+2025-04-25 19:47:20,666 - prediction_refresh - INFO - Updating prediction history
+2025-04-25 19:47:20,705 - prediction_refresh - INFO - Prediction history updated with 30 new predictions
+2025-04-25 19:47:20,706 - prediction_refresh - INFO - Prediction refresh completed successfully
+2025-04-25 19:47:20,710 - prediction_refresh - INFO - refresh_predictions executed in 0.26 seconds
+2025-04-25 19:47:20,711 - prediction_refresh - INFO - refresh_predictions executed in 55.92 seconds
+2025-04-25 19:47:20,972 - prediction_refresh - INFO - Fetching match history
+2025-04-25 19:47:46,321 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 19:47:46,844 - prediction_refresh - INFO - Fetching upcoming matches
+2025-04-25 19:48:02,040 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 19:48:02,059 - prediction_refresh - INFO - refresh_data executed in 54.93 seconds
+2025-04-25 19:48:02,060 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 19:48:02,146 - prediction_refresh - INFO - Using winner prediction model 1745622274 with accuracy 0.6873545384018619
+2025-04-25 19:48:02,158 - prediction_refresh - INFO - Successfully loaded winner prediction model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 19:48:02,159 - prediction_refresh - INFO - Using score prediction model 1745598830 with MAE 4.075830549721303
+2025-04-25 19:48:02,238 - prediction_refresh - INFO - Successfully loaded score prediction model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 19:48:02,238 - prediction_refresh - INFO - Generating predictions for 30 upcoming matches
+2025-04-25 19:48:02,280 - prediction_refresh - INFO - Saving 30 predictions
+2025-04-25 19:48:02,284 - prediction_refresh - INFO - Updating prediction history
+2025-04-25 19:48:02,327 - prediction_refresh - INFO - Prediction history updated with 30 new predictions
+2025-04-25 19:48:02,328 - prediction_refresh - INFO - Prediction refresh completed successfully
+2025-04-25 19:48:02,334 - prediction_refresh - INFO - refresh_predictions executed in 0.27 seconds
+2025-04-25 19:48:02,334 - prediction_refresh - INFO - refresh_predictions executed in 55.20 seconds
+2025-04-25 20:06:04,025 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 20:06:18,264 - prediction_refresh - INFO - Fetching match history
+2025-04-25 20:06:43,609 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 20:06:44,070 - prediction_refresh - INFO - Fetching upcoming matches
+2025-04-25 20:07:00,255 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 20:07:00,268 - prediction_refresh - INFO - refresh_data executed in 56.24 seconds
+2025-04-25 20:07:00,268 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 20:07:00,341 - prediction_refresh - INFO - Using winner prediction model 1745622274 with accuracy 0.6873545384018619
+2025-04-25 20:07:00,353 - prediction_refresh - INFO - Successfully loaded winner prediction model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 20:07:00,353 - prediction_refresh - INFO - Using score prediction model 1745598830 with MAE 4.075830549721303
+2025-04-25 20:07:00,434 - prediction_refresh - INFO - Successfully loaded score prediction model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 20:07:00,434 - prediction_refresh - INFO - Generating predictions for 30 upcoming matches
+2025-04-25 20:07:00,476 - prediction_refresh - INFO - Saving 30 predictions
+2025-04-25 20:07:00,481 - prediction_refresh - INFO - Updating prediction history
+2025-04-25 20:07:00,522 - prediction_refresh - INFO - Prediction history updated with 30 new predictions
+2025-04-25 20:07:00,522 - prediction_refresh - INFO - Prediction refresh completed successfully
+2025-04-25 20:07:00,527 - prediction_refresh - INFO - refresh_predictions executed in 0.26 seconds
+2025-04-25 20:07:00,527 - prediction_refresh - INFO - refresh_predictions executed in 56.50 seconds
+2025-04-25 20:09:38,456 - prediction_refresh - INFO - Refresh script started with PID: 11040
+2025-04-25 20:09:38,458 - prediction_refresh - INFO - Starting data refresh
+2025-04-25 20:09:52,582 - prediction_refresh - INFO - Fetching match history
+2025-04-25 20:10:18,273 - prediction_refresh - INFO - Calculating player statistics
+2025-04-25 20:10:18,765 - prediction_refresh - INFO - Fetching upcoming matches
+2025-04-25 20:10:34,404 - prediction_refresh - INFO - Data refresh completed successfully
+2025-04-25 20:10:34,420 - prediction_refresh - INFO - refresh_data executed in 55.96 seconds
+2025-04-25 20:10:34,420 - prediction_refresh - INFO - Starting prediction refresh
+2025-04-25 20:10:34,495 - prediction_refresh - INFO - Using winner prediction model 1745622274 with accuracy 0.6873545384018619
+2025-04-25 20:10:34,508 - prediction_refresh - INFO - Successfully loaded winner prediction model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 20:10:34,508 - prediction_refresh - INFO - Using score prediction model 1745598830 with MAE 4.075830549721303
+2025-04-25 20:10:34,588 - prediction_refresh - INFO - Successfully loaded score prediction model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 20:10:34,588 - prediction_refresh - INFO - Generating predictions for 30 upcoming matches
+2025-04-25 20:10:34,630 - prediction_refresh - INFO - Saving 30 predictions
+2025-04-25 20:10:34,634 - prediction_refresh - INFO - Updating prediction history
+2025-04-25 20:10:34,680 - prediction_refresh - INFO - Prediction history updated with 30 new predictions
+2025-04-25 20:10:34,681 - prediction_refresh - INFO - Prediction refresh completed successfully
+2025-04-25 20:10:34,684 - prediction_refresh - INFO - refresh_predictions executed in 0.26 seconds
+2025-04-25 20:10:34,685 - prediction_refresh - INFO - refresh_predictions executed in 56.23 seconds
+2025-04-25 20:10:34,685 - prediction_refresh - INFO - Refresh completed successfully in 56.23 seconds

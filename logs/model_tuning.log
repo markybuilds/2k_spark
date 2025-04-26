@@ -425,3 +425,593 @@
 2025-04-25 19:07:21,199 - model_tuning - INFO - Successfully saved registry to C:\Projects\2k_spark\models\model_registry.json
 2025-04-25 19:07:21,199 - model_tuning - INFO - save_registry executed in 0.00 seconds
 2025-04-25 19:07:30,869 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 19:10:19,018 - model_tuning - INFO - Loaded registry with 5 models
+2025-04-25 19:40:30,878 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 19:40:30,879 - model_tuning - INFO - Loaded registry with 5 models
+2025-04-25 19:41:28,860 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 19:41:28,872 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745622274.json
+2025-04-25 19:41:28,879 - model_tuning - INFO - Successfully loaded model 1745622274
+2025-04-25 19:41:28,879 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\scorepredictionmodel_1745621033.pkl
+2025-04-25 19:41:28,961 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\scorepredictionmodel_info_1745621033.json
+2025-04-25 19:41:28,962 - model_tuning - INFO - Successfully loaded model 1745621033
+2025-04-25 19:41:28,963 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,963 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,964 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,965 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,965 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,965 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,966 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,966 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,967 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,967 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,968 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,968 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,968 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,969 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,969 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,970 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,970 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,970 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,971 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,971 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,972 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,973 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,973 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,973 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,974 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,974 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,974 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,975 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,975 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,976 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,977 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,977 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,977 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,978 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,978 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,979 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,979 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,980 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,980 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,981 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,981 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,981 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,982 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,982 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,983 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,983 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,984 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,984 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,985 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,985 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,986 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,986 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,987 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,987 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,988 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,988 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,988 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,989 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,989 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,990 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,990 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,991 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,991 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,992 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,992 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,993 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,993 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,994 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,994 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,995 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,995 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,995 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,996 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,996 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,997 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,997 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,998 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:28,998 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,999 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:28,999 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:29,000 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:29,001 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:29,001 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:29,001 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:29,002 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:29,002 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:29,002 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:29,002 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:29,002 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:41:29,003 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:41:52,921 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 19:41:52,922 - model_tuning - INFO - Loaded registry with 5 models
+2025-04-25 19:42:48,198 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 19:42:48,209 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745622274.json
+2025-04-25 19:42:48,210 - model_tuning - INFO - Successfully loaded model 1745622274
+2025-04-25 19:42:48,210 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 19:42:48,289 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\scorepredictionmodel_info_1745598830.json
+2025-04-25 19:42:48,290 - model_tuning - INFO - Successfully loaded model 1745598830
+2025-04-25 19:42:48,292 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,292 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,292 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,293 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,294 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,294 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,295 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,295 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,295 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,296 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,296 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,297 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,298 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,298 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,298 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,300 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,300 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,300 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,301 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,301 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,302 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,302 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,303 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,303 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,304 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,304 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,305 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,305 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,306 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,306 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,307 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,307 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,307 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,308 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,308 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,309 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,309 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,310 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,310 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,311 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,311 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,311 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,312 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,312 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,313 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,313 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,314 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,314 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,315 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,315 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,316 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,317 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,317 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,317 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,318 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,319 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,319 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,320 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,320 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,320 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,321 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,322 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,322 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,322 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,323 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,323 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,324 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,324 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,325 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,326 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,326 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,326 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,327 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,327 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,328 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,328 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,329 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,329 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,330 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,330 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,330 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,331 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,332 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,332 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,333 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,333 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,334 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,334 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:42:48,335 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:42:48,335 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:46:24,791 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 19:46:24,792 - model_tuning - INFO - Loaded registry with 5 models
+2025-04-25 19:46:36,120 - model_tuning - INFO - Loaded registry with 5 models
+2025-04-25 19:47:07,133 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 19:47:07,134 - model_tuning - INFO - Loaded registry with 5 models
+2025-04-25 19:47:20,530 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 19:47:20,540 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745622274.json
+2025-04-25 19:47:20,541 - model_tuning - INFO - Successfully loaded model 1745622274
+2025-04-25 19:47:20,542 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 19:47:20,621 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\scorepredictionmodel_info_1745598830.json
+2025-04-25 19:47:20,621 - model_tuning - INFO - Successfully loaded model 1745598830
+2025-04-25 19:47:20,623 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,623 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,623 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,624 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,624 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,625 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,625 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,626 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,626 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,626 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,627 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,627 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,627 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,628 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,628 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,629 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,629 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,629 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,630 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,630 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,631 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,631 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,632 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,632 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,633 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,633 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,633 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,634 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,634 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,635 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,635 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,636 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,636 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,637 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,637 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,638 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,639 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,639 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,639 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,640 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,640 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,640 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,641 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,641 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,642 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,642 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,643 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,643 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,644 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,644 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,644 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,645 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,646 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,646 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,647 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,647 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,647 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,648 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,648 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,649 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,649 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,650 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,650 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,651 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,651 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,652 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,652 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,653 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,653 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,654 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,654 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,654 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,655 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,655 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,655 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,656 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,656 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,656 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,657 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,657 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,657 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,658 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,658 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,659 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,659 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,659 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,660 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,660 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:47:20,661 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:47:20,661 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,146 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 19:48:02,158 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745622274.json
+2025-04-25 19:48:02,158 - model_tuning - INFO - Successfully loaded model 1745622274
+2025-04-25 19:48:02,159 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 19:48:02,237 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\scorepredictionmodel_info_1745598830.json
+2025-04-25 19:48:02,238 - model_tuning - INFO - Successfully loaded model 1745598830
+2025-04-25 19:48:02,239 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,239 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,239 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,240 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,240 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,241 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,242 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,242 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,242 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,243 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,243 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,243 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,244 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,245 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,245 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,246 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,246 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,246 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,247 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,247 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,248 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,248 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,249 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,249 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,250 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,250 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,250 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,251 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,251 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,252 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,252 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,252 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,253 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,254 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,254 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,254 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,255 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,255 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,256 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,256 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,257 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,257 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,258 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,258 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,258 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,259 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,260 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,260 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,261 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,261 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,261 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,262 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,262 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,263 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,264 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,264 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,264 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,265 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,265 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,266 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,266 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,267 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,267 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,268 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,268 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,268 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,269 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,269 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,270 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,270 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,271 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,271 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,272 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,272 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,272 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,273 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,273 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,274 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,274 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,275 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,275 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,276 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,276 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,276 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,277 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,278 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,278 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,279 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 19:48:02,279 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 19:48:02,279 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:06:04,024 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 20:06:04,025 - model_tuning - INFO - Loaded registry with 5 models
+2025-04-25 20:07:00,341 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 20:07:00,352 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745622274.json
+2025-04-25 20:07:00,353 - model_tuning - INFO - Successfully loaded model 1745622274
+2025-04-25 20:07:00,354 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 20:07:00,433 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\scorepredictionmodel_info_1745598830.json
+2025-04-25 20:07:00,434 - model_tuning - INFO - Successfully loaded model 1745598830
+2025-04-25 20:07:00,435 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,435 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,435 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,436 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,437 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,437 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,438 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,438 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,438 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,439 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,439 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,440 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,440 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,441 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,441 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,442 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,442 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,442 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,443 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,444 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,444 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,445 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,445 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,445 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,446 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,446 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,447 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,447 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,448 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,448 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,449 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,449 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,449 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,450 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,450 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,451 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,451 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,452 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,452 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,453 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,453 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,453 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,454 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,454 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,455 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,455 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,456 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,456 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,457 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,457 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,457 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,458 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,458 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,458 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,459 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,459 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,460 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,461 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,461 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,461 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,462 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,462 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,463 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,464 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,464 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,464 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,465 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,465 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,466 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,467 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,467 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,467 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,468 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,468 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,469 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,469 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,469 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,470 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,471 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,471 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,471 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,472 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,472 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,473 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,474 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,474 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,474 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,475 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:07:00,475 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:07:00,476 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:09:38,457 - model_tuning - INFO - Loaded registry with 3 models
+2025-04-25 20:09:38,458 - model_tuning - INFO - Loaded registry with 5 models
+2025-04-25 20:10:34,495 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\winnerpredictionmodel_1745622274.pkl
+2025-04-25 20:10:34,507 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\winnerpredictionmodel_info_1745622274.json
+2025-04-25 20:10:34,508 - model_tuning - INFO - Successfully loaded model 1745622274
+2025-04-25 20:10:34,508 - model_tuning - INFO - Loading model from C:\Projects\2k_spark\models\scorepredictionmodel_1745598830.pkl
+2025-04-25 20:10:34,586 - model_tuning - INFO - Loading model info from C:\Projects\2k_spark\models\scorepredictionmodel_info_1745598830.json
+2025-04-25 20:10:34,587 - model_tuning - INFO - Successfully loaded model 1745598830
+2025-04-25 20:10:34,588 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,589 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,589 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,590 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,590 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,591 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,591 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,592 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,592 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,592 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,593 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,593 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,593 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,594 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,594 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,595 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,595 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,596 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,597 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,597 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,597 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,598 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,598 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,598 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,599 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,599 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,600 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,600 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,601 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,601 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,602 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,602 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,603 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,604 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,604 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,604 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,605 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,605 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,606 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,606 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,607 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,607 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,608 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,608 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,608 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,609 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,610 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,610 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,611 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,611 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,611 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,612 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,612 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,613 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,613 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,613 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,614 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,614 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,615 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,615 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,616 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,616 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,617 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,618 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,618 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,618 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,619 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,619 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,620 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,620 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,621 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,621 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,622 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,622 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,622 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,623 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,624 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,624 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,625 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,625 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,625 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,626 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,626 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,627 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,627 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,628 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,628 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,629 - model_tuning - INFO - extract_features executed in 0.00 seconds
+2025-04-25 20:10:34,629 - model_tuning - ERROR - Error predicting winner: No features extracted
+2025-04-25 20:10:34,629 - model_tuning - INFO - extract_features executed in 0.00 seconds

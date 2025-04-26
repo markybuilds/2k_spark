@@ -478,3 +478,37 @@
 2025-04-25 19:10:42,243 - api - INFO - get_upcoming_matches executed in 0.00 seconds
 2025-04-25 19:18:14,166 - api - INFO - Starting scheduled prediction refresh
 2025-04-25 19:18:14,168 - api - INFO - Scheduled prediction refresh completed
+2025-04-25 19:40:28,867 - api - INFO - refresh_data executed in 0.01 seconds
+2025-04-25 19:41:50,999 - api - INFO - refresh_data executed in 0.00 seconds
+2025-04-25 19:46:22,920 - api - INFO - refresh_data executed in 0.00 seconds
+2025-04-25 19:46:36,119 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 19:46:36,120 - api - INFO - Returning 30 matches
+2025-04-25 19:46:36,121 - api - INFO - Retrieved score model accuracy: 4.075830549721303
+2025-04-25 19:46:36,122 - api - INFO - get_score_predictions executed in 0.01 seconds
+2025-04-25 19:46:53,609 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 19:46:53,610 - api - INFO - Returning 30 matches
+2025-04-25 19:46:53,611 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 19:46:53,910 - api - INFO - Loaded 30 upcoming matches from C:\Projects\2k_spark\output\upcoming_matches.json
+2025-04-25 19:46:53,911 - api - INFO - Returning 30 matches
+2025-04-25 19:46:53,911 - api - INFO - get_upcoming_matches executed in 0.00 seconds
+2025-04-25 19:46:56,907 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 19:46:56,907 - api - INFO - Returning 30 matches
+2025-04-25 19:46:56,908 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 19:46:56,960 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 19:46:56,960 - api - INFO - Returning 30 matches
+2025-04-25 19:46:56,961 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 19:47:05,178 - api - INFO - refresh_data executed in 0.00 seconds
+2025-04-25 20:05:47,103 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 20:05:47,105 - api - INFO - Returning 30 matches
+2025-04-25 20:05:47,107 - api - INFO - get_predictions executed in 0.03 seconds
+2025-04-25 20:05:47,139 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 20:05:47,141 - api - INFO - Returning 30 matches
+2025-04-25 20:05:47,142 - api - INFO - get_predictions executed in 0.00 seconds
+2025-04-25 20:06:02,255 - api - INFO - refresh_data executed in 0.01 seconds
+2025-04-25 20:09:36,298 - api - INFO - Started refresh process with PID: 11040
+2025-04-25 20:09:36,299 - api - INFO - refresh_data executed in 0.01 seconds
+2025-04-25 20:09:41,285 - api - INFO - Refresh process 11040 is still running (expected)
+2025-04-25 20:09:41,285 - api - INFO - Refresh process 11040 is running in the background
+2025-04-25 20:10:52,949 - api - INFO - Loaded 30 predictions from C:\Projects\2k_spark\output\upcoming_match_predictions.json
+2025-04-25 20:10:52,949 - api - INFO - Returning 30 matches
+2025-04-25 20:10:52,952 - api - INFO - get_predictions executed in 0.02 seconds

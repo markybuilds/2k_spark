@@ -124,16 +124,25 @@ class RefreshService:
                 logger.error("No winner prediction models available")
                 return False
 
-            # Use the most recently trained model
-            winner_models.sort(key=lambda x: x.get("model_id", 0), reverse=True)
-            winner_model_info = winner_models[0]
-            logger.info(f"Using winner prediction model {winner_model_info.get('model_id')}")
+            # Use the best model (highest accuracy)
+            best_winner_model_info = self.winner_model_registry.get_best_model_info()
+            if not best_winner_model_info:
+                # Fallback to most recent model if best model is not set
+                winner_models.sort(key=lambda x: x.get("model_id", 0), reverse=True)
+                best_winner_model_info = winner_models[0]
+
+            logger.info(f"Using winner prediction model {best_winner_model_info.get('model_id')} with accuracy {best_winner_model_info.get('accuracy')}")
 
             # Load winner prediction model
-            winner_model = WinnerPredictionModel.load(
-                winner_model_info.get("model_path"),
-                winner_model_info.get("info_path")
-            )
+            try:
+                winner_model = WinnerPredictionModel.load(
+                    best_winner_model_info.get("model_path"),
+                    best_winner_model_info.get("info_path")
+                )
+                logger.info(f"Successfully loaded winner prediction model from {best_winner_model_info.get('model_path')}")
+            except Exception as e:
+                logger.error(f"Error loading winner prediction model: {str(e)}")
+                return False
 
             # Get all score prediction models
             score_models = self.score_model_registry.list_models()
@@ -141,16 +150,25 @@ class RefreshService:
                 logger.error("No score prediction models available")
                 return False
 
-            # Use the most recently trained model
-            score_models.sort(key=lambda x: x.get("model_id", 0), reverse=True)
-            score_model_info = score_models[0]
-            logger.info(f"Using score prediction model {score_model_info.get('model_id')}")
+            # Use the best model (lowest MAE)
+            best_score_model_info = self.score_model_registry.get_best_model_info()
+            if not best_score_model_info:
+                # Fallback to most recent model if best model is not set
+                score_models.sort(key=lambda x: x.get("model_id", 0), reverse=True)
+                best_score_model_info = score_models[0]
+
+            logger.info(f"Using score prediction model {best_score_model_info.get('model_id')} with MAE {best_score_model_info.get('total_score_mae')}")
 
             # Load score prediction model
-            score_model = ScorePredictionModel.load(
-                score_model_info.get("model_path"),
-                score_model_info.get("info_path")
-            )
+            try:
+                score_model = ScorePredictionModel.load(
+                    best_score_model_info.get("model_path"),
+                    best_score_model_info.get("info_path")
+                )
+                logger.info(f"Successfully loaded score prediction model from {best_score_model_info.get('model_path')}")
+            except Exception as e:
+                logger.error(f"Error loading score prediction model: {str(e)}")
+                return False
 
             # Generate predictions
             logger.info(f"Generating predictions for {len(upcoming_matches)} upcoming matches")
