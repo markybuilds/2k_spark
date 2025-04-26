@@ -116,6 +116,45 @@ python app/cli.py clean-model-registry    # Clean model registry by removing pro
 - `GET /api/stats`: Get prediction statistics and metrics
 - `POST /api/refresh`: Trigger data refresh and prediction update
 
+## Deployment
+
+This application can be deployed for free using Vercel (frontend) and Render (backend).
+
+### Frontend Deployment (Vercel)
+
+1. Fork or clone this repository to your GitHub account
+2. Sign up for a free account at [Vercel](https://vercel.com)
+3. Create a new project in Vercel and import your GitHub repository
+4. Configure the following settings:
+   - Framework Preset: Next.js
+   - Root Directory: `frontend`
+   - Build Command: `npm run build`
+   - Output Directory: `.next`
+   - Environment Variables:
+     - `NEXT_PUBLIC_API_URL`: Your backend URL (e.g., https://2k-spark-backend.onrender.com)
+5. Click "Deploy"
+
+### Backend Deployment (Render)
+
+1. Sign up for a free account at [Render](https://render.com)
+2. Create a new Web Service
+3. Connect your GitHub repository
+4. Configure the following settings:
+   - Name: 2k-spark-backend (or your preferred name)
+   - Root Directory: `backend`
+   - Runtime: Python
+   - Build Command: `pip install -r requirements.txt`
+   - Start Command: `python app/api.py`
+   - Environment Variables:
+     - `CORS_ORIGINS`: Your frontend URL (e.g., https://2k-spark.vercel.app)
+5. Click "Create Web Service"
+
+### Notes
+
+- The free tier of Render will spin down after periods of inactivity, which may cause a slight delay on the first request
+- The application is configured to refresh data periodically
+- Make sure to set the environment variables correctly to ensure proper communication between frontend and backend
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
