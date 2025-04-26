@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "npm install glob && node resolve-imports.js && next build"
+    "export": "next build && next export",
+    "deploy": "next build && touch out/.nojekyll"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.7",
