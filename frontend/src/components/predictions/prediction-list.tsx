@@ -37,6 +37,12 @@ export function PredictionList() {
       <div className="flex justify-center items-center py-12">
         <div className="text-center">
           <p className="text-muted-foreground">No upcoming match predictions available.</p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            All scheduled matches have already started or there are no matches scheduled.
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Check back later for new upcoming matches or use the refresh button to update the data.
+          </p>
         </div>
       </div>
     );

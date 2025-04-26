@@ -22,7 +22,28 @@ export function usePredictions() {
       try {
         setLoading(true);
         const data = await apiClient.getPredictions();
-        setPredictions(data);
+
+        // Filter out matches that have already started
+        const now = new Date();
+
+        // Add a buffer time (30 minutes) to include matches that are about to start
+        const bufferTime = 30 * 60 * 1000; // 30 minutes in milliseconds
+        const cutoffTime = new Date(now.getTime() - bufferTime);
+
+        const upcomingMatches = data.filter(match => {
+          // Parse the fixture start time
+          const fixtureStart = new Date(match.fixtureStart);
+
+          // Only include matches that haven't started yet (with buffer)
+          return fixtureStart > cutoffTime;
+        });
+
+        // Sort by start time (earliest first)
+        upcomingMatches.sort((a, b) => {
+          return new Date(a.fixtureStart).getTime() - new Date(b.fixtureStart).getTime();
+        });
+
+        setPredictions(upcomingMatches);
         setError(null);
       } catch (err) {
         console.error('Error fetching predictions:', err);
@@ -54,7 +75,28 @@ export function useScorePredictions() {
       try {
         setLoading(true);
         const data = await apiClient.getScorePredictions();
-        setPredictions(data.predictions);
+
+        // Filter out matches that have already started
+        const now = new Date();
+
+        // Add a buffer time (30 minutes) to include matches that are about to start
+        const bufferTime = 30 * 60 * 1000; // 30 minutes in milliseconds
+        const cutoffTime = new Date(now.getTime() - bufferTime);
+
+        const upcomingMatches = data.predictions.filter(match => {
+          // Parse the fixture start time
+          const fixtureStart = new Date(match.fixtureStart);
+
+          // Only include matches that haven't started yet (with buffer)
+          return fixtureStart > cutoffTime;
+        });
+
+        // Sort by start time (earliest first)
+        upcomingMatches.sort((a, b) => {
+          return new Date(a.fixtureStart).getTime() - new Date(b.fixtureStart).getTime();
+        });
+
+        setPredictions(upcomingMatches);
         setModelAccuracy(data.summary.model_accuracy);
         setError(null);
       } catch (err) {
@@ -150,7 +192,28 @@ export function useUpcomingMatches() {
       try {
         setLoading(true);
         const data = await apiClient.getUpcomingMatches();
-        setUpcomingMatches(data);
+
+        // Filter out matches that have already started
+        const now = new Date();
+
+        // Add a buffer time (30 minutes) to include matches that are about to start
+        const bufferTime = 30 * 60 * 1000; // 30 minutes in milliseconds
+        const cutoffTime = new Date(now.getTime() - bufferTime);
+
+        const filteredMatches = data.filter(match => {
+          // Parse the fixture start time
+          const fixtureStart = new Date(match.fixtureStart);
+
+          // Only include matches that haven't started yet (with buffer)
+          return fixtureStart > cutoffTime;
+        });
+
+        // Sort by start time (earliest first)
+        filteredMatches.sort((a, b) => {
+          return new Date(a.fixtureStart).getTime() - new Date(b.fixtureStart).getTime();
+        });
+
+        setUpcomingMatches(filteredMatches);
         setError(null);
       } catch (err) {
         console.error('Error fetching upcoming matches:', err);

@@ -59,7 +59,11 @@ def get_predictions():
             predictions = json.load(f)
             logger.info(f"Loaded {len(predictions)} predictions from {PREDICTIONS_FILE}")
 
-        # For demo purposes, return all matches regardless of date
+        # Add debug information about match dates
+        for match in predictions:
+            logger.info(f"Match {match.get('fixtureId')}: {match.get('fixtureStart')}")
+
+        # Return all matches with their timezone information
         logger.info(f"Returning {len(predictions)} matches")
         return jsonify(predictions)
     except Exception as e:
