@@ -58,63 +58,80 @@ export function PredictionCard({ prediction }: PredictionCardProps) {
   const isHomeWinner = predictionData.predicted_winner === "home";
 
   return (
-    <Card className={isHomeWinner ? "border-l-4 border-l-green-500" : "border-r-4 border-r-green-500"}>
-      <CardHeader className="pb-2">
-        <CardTitle className="text-lg flex justify-between">
-          <span>{homeTeam.name} vs {awayTeam.name}</span>
-        </CardTitle>
-        <CardDescription>
-          {formattedDate} at {formattedTime}
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <div className="flex justify-between items-center mb-4">
-          <div className="flex flex-col items-center">
-            <Avatar className="h-12 w-12 mb-2">
-              <div className="flex h-full w-full items-center justify-center bg-muted font-semibold">
+    <Card className={`overflow-hidden card-highlight card-hover ${isHomeWinner ? "border-l-4 border-l-green-500" : "border-r-4 border-r-green-500"}`}>
+      <CardContent className="p-6 pt-5">
+        {/* Date/Time Badge - Moved to top right corner */}
+        <div className="absolute top-3 right-4">
+          <div className="text-xs font-medium bg-muted/80 px-3 py-1.5 rounded-full border border-border/30">
+            {formattedDate} • {formattedTime}
+          </div>
+        </div>
+
+        {/* Players */}
+        <div className="flex justify-between items-center mb-6 mt-4">
+          {/* Home Player */}
+          <div className="flex flex-col items-center text-center space-y-3">
+            <Avatar className="h-16 w-16 border-2 border-primary/20 shadow-lg shadow-primary/10">
+              <div className="flex h-full w-full items-center justify-center bg-primary/10 font-bold text-primary">
                 {homePlayer.name.substring(0, 2)}
               </div>
             </Avatar>
-            <span className="text-sm font-medium">{homePlayer.name}</span>
-            <span className="text-xs text-muted-foreground">{homeTeam.name}</span>
-            <span className="text-sm font-bold mt-1">{homeWinPercentage}%</span>
-          </div>
-
-          <div className="text-center">
-            <div className="text-2xl font-bold">VS</div>
-            <div className="text-xs text-muted-foreground mt-1">
-              Predicted Winner
-            </div>
-            <div className="text-sm font-semibold mt-1">
-              {isHomeWinner ? homePlayer.name : awayPlayer.name}
+            <div>
+              <p className="font-semibold text-base">{homePlayer.name}</p>
+              <p className="text-sm text-muted-foreground">{homeTeam.name}</p>
+              <p className="text-sm font-bold mt-1 text-primary/90">{homeWinPercentage}%</p>
             </div>
           </div>
 
-          <div className="flex flex-col items-center">
-            <Avatar className="h-12 w-12 mb-2">
-              <div className="flex h-full w-full items-center justify-center bg-muted font-semibold">
+          {/* VS */}
+          <div className="flex flex-col items-center px-2">
+            <div className="relative">
+              <p className="text-xl font-bold bg-gradient-to-r from-primary/80 to-blue-500/80 bg-clip-text text-transparent">VS</p>
+              <div className="absolute -inset-3 bg-gradient-to-r from-primary/5 to-blue-500/5 rounded-full blur-md -z-10"></div>
+            </div>
+          </div>
+
+          {/* Away Player */}
+          <div className="flex flex-col items-center text-center space-y-3">
+            <Avatar className="h-16 w-16 border-2 border-primary/20 shadow-lg shadow-primary/10">
+              <div className="flex h-full w-full items-center justify-center bg-primary/10 font-bold text-primary">
                 {awayPlayer.name.substring(0, 2)}
               </div>
             </Avatar>
-            <span className="text-sm font-medium">{awayPlayer.name}</span>
-            <span className="text-xs text-muted-foreground">{awayTeam.name}</span>
-            <span className="text-sm font-bold mt-1">{awayWinPercentage}%</span>
+            <div>
+              <p className="font-semibold text-base">{awayPlayer.name}</p>
+              <p className="text-sm text-muted-foreground">{awayTeam.name}</p>
+              <p className="text-sm font-bold mt-1 text-primary/90">{awayWinPercentage}%</p>
+            </div>
           </div>
         </div>
-      </CardContent>
-      <CardFooter className="pt-0">
-        <div className="w-full">
-          <div className="text-center">
-            <div className="text-xs text-muted-foreground">Confidence</div>
-            <div className="text-sm font-semibold">{confidencePercentage}%</div>
+
+        {/* Winner Prediction with Confidence */}
+        <div className="bg-muted/70 p-4 rounded-lg border border-border/30 shadow-sm">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center space-x-3">
+              <div className="bg-primary/10 h-8 w-8 rounded-full flex items-center justify-center border border-primary/20">
+                <div className="text-primary font-bold text-sm">
+                  {isHomeWinner ? homePlayer.name.substring(0, 2) : awayPlayer.name.substring(0, 2)}
+                </div>
+              </div>
+              <div>
+                <p className="text-sm font-medium text-primary/90">Predicted Winner</p>
+                <p className="text-base font-bold">{isHomeWinner ? homePlayer.name : awayPlayer.name}</p>
+              </div>
+            </div>
+            <div className="text-base font-bold bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+              {isHomeWinner ? homeWinPercentage : awayWinPercentage}%
+            </div>
           </div>
+
           {fetched_at && (
-            <div className="text-xs text-muted-foreground text-right mt-2">
+            <div className="text-xs text-muted-foreground mt-3 text-right">
               Last updated: {fetched_at}
             </div>
           )}
         </div>
-      </CardFooter>
+      </CardContent>
     </Card>
   );
 }

@@ -30,12 +30,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-background relative`}
       >
         <ThemeProvider defaultTheme="dark">
           <RefreshProvider>
+            {/* No background pattern - clean dark background */}
+
             <Header />
-            <main className="flex-1 container-centered py-10">
+            <main className="flex-1 container-centered py-12 relative z-10 animate-fadeIn">
               {children}
             </main>
             <Footer />

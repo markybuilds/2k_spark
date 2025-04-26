@@ -4,6 +4,7 @@
  * Header component for the application.
  */
 
+import * as React from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -15,24 +16,33 @@ export function Header() {
   const { refreshData, loading, success, error } = useRefresh();
   const pathname = usePathname();
 
+  // Use a state to track client-side rendering
+  const [isMounted, setIsMounted] = React.useState(false);
+
+  // After component mounts, set isMounted to true
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const isActive = (path: string) => {
     if (path === '/' && pathname !== '/') return false;
     return pathname === path || pathname.startsWith(`${path}/`);
   };
 
-  return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+  // Use a simplified version for server-side rendering to avoid hydration errors
+  const headerContent = (
+    <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/90 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
       <div className="container-centered flex h-16 items-center">
         <div className="mr-6 flex">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-8 h-8 rounded-md bg-primary text-primary-foreground">
+          <Link href="/" className="flex items-center space-x-2 group">
+            <div className="flex items-center justify-center w-9 h-9 rounded-md bg-primary text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 group-hover:shadow-primary/30">
               <span className="font-bold text-sm">2K</span>
             </div>
-            <span className="font-bold text-xl gradient-text">2K Flash</span>
+            <span className="font-bold text-xl gradient-text tracking-tight">2K Flash</span>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-          <nav className="flex items-center space-x-1">
+          <nav className="flex items-center space-x-2">
             <Link href="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>
               Home
             </Link>
@@ -55,27 +65,31 @@ export function Header() {
               Stats
             </Link>
           </nav>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3">
             <Button
               variant="outline"
               size="sm"
               onClick={() => refreshData()}
               disabled={loading}
-              className="flex items-center gap-1"
+              className="flex items-center gap-1.5 border-border/70 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
             >
               <RefreshCw className={`h-4 w-4 ${loading ? 'animate-spin' : ''}`} />
               {loading ? 'Refreshing...' : 'Refresh'}
             </Button>
             {success && (
-              <span className="text-xs text-green-500">Refresh successful!</span>
+              <span className="text-xs font-medium text-green-500 animate-fadeIn">Refresh successful!</span>
             )}
             {error && (
-              <span className="text-xs text-red-500">Refresh failed</span>
+              <span className="text-xs font-medium text-red-500 animate-fadeIn">Refresh failed</span>
             )}
+            <div className="border-l border-border/50 h-6 mx-1"></div>
             <ThemeToggle />
           </div>
         </div>
       </div>
     </header>
   );
+
+  // Return the header content
+  return headerContent;
 }
